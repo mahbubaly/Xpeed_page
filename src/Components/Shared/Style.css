@@ -1,0 +1,31 @@
+.BG_color {
+    background-color: #fcf7f4;
+}
+
+
+.Bold {
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* 600 Font */
+.SemiBold {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.Normal {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.XpeedText {
+    color: var(--text-color, #1A0702);
+}
+
+
+
+/* Media Queries  */
+
+@media screen and (min-width: 1920px) {
+    .ContainerBG {
+        width: 1920px;
+    }
+}
