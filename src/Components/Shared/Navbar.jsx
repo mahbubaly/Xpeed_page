@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/Images/logo 1.png'
 import '../Shared/Style.css'
 import html from '../../assets/Images/html.png'
@@ -7,8 +7,12 @@ import tailwind from '../../assets/Images/tailwind.png'
 import Bootstrap from '../../assets/Images/bootrap.png'
 import { Link } from 'react-router-dom';
 import { AiOutlineShopping } from 'react-icons/ai';
+import Modal from 'react-modal';
+import popUp from '../../assets/Images/popUp.png'
 
 const Navbar = () => {
+
+    const [Visible, SetOpen] = useState(false);
     return (
         <>
 
@@ -23,24 +27,70 @@ const Navbar = () => {
 
                     <div className='flex gap-[30px] items-center'>
                         <Link id='addCard' >
-                            <AiOutlineShopping onClick={() => window.my_modal_5.showModal()} className='w-[28px] h-[28px]' />
+                            <AiOutlineShopping onClick={() => SetOpen(true)} className='w-[28px] h-[28px]' />
 
                         </Link>
 
-                        <dialog id="my_modal_5" className="modal modal-top sm:modal-middle">
-                            <form method="dialog" className="modal-box">
-                                <h3 className="font-bold text-lg">Hello!</h3>
-                                <p className="py-4">Press ESC key or click the button below to close</p>
-                                <div className="modal-action">
+                        <Modal isOpen={Visible} onRequestClose={() => SetOpen(false)}
 
-                                    <button className="btn">Close</button>
+                            style={{
+                                overlay: {
+
+
+
+                                },
+
+                                content: {
+                                    width: '330px',
+                                    left: '50%',
+                                    right: '0px',
+                                    top: '75px',
+
+
+
+
+
+
+                                },
+
+                            }} >
+                            <div className='custom-modal'>
+
+                                <p className='text-lg font-bold Bold mb-[30px]'>Your Cart (2)</p>
+
+                                <div className='pt-[100px]'>
+                                    <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
+                                    <p className='text-center mt-[30px] font-normal Normal'>
+                                        Unlimited HTML5 Template For Your Creative Projects
+                                    </p>
                                 </div>
-                            </form>
-                        </dialog>
+                                <div className='pt-[100px]'>
+                                    <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
+                                    <p className='text-center mt-[30px] font-normal Normal'>
+                                        Unlimited HTML5 Template For Your Creative Projects
+                                    </p>
+                                </div>
 
 
 
-                        <div className='sm:flex gap-[30px] hidden items-center'>
+
+
+
+                                <div className='flex justify-center items-end mt-[126px] '>
+                                    <button className='bg-[#60599E] hover:bg-[#3f3a68] items-end  mx-auto rounded-[4px] text-white w-[270px] h-[48px] text-[14px] pb-0 font-bold Bold'>Continue Checkout $39.96</button>
+                                </div>
+
+
+                            </div>
+
+
+                        </Modal>
+
+
+
+
+
+                        <div className='lg:flex gap-[30px] hidden items-center'>
                             <button className='bg-[#60599E] rounded-[4px] text-white py-[10px] w-[163px] h-[39px] text-[14px] font-bold Bold'>Get Ultimate Access</button>
                             <Link to='/SignIn' className='font-bold text-[16px] Bold'>Sign In</Link>
                         </div>

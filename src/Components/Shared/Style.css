@@ -12,6 +12,11 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.Medium {
+    font-family: 'Plus Jakarta Sans';
+
+}
+
 .Normal {
     font-family: 'Plus Jakarta Sans';
 }
@@ -23,10 +28,30 @@
 
 .CardShadow:hover {
 
-     margin-top: -6px;
-     box-shadow: 2px    2px 2px rgb(227, 221, 248);
-     
- 
+    margin-top: -6px;
+    box-shadow: 2px 2px 2px rgb(227, 221, 248);
+
+
+
+
+
+}
+
+
+.custom-modal {
+    background-image: url(../../assets//Images/popUp.png);
+    /* Background color with opacity */
+    border-radius: 10px;
+    overflow-y: hidden;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,10 +59,38 @@
 
 
 
+.Modal_Container {
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
 /* Media Queries  */
+
+
+/* Styles for tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .PX_Width {
+        padding: 0px 30px 0px 30px;
+
+    }
+
+
+
+}
 
 @media screen and (min-width: 1920px) {
     .ContainerBG {
         width: 1920px;
+    }
+
+    .CardWidth {
+        width: 302px;
+
     }
 }

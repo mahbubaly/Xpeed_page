@@ -153,7 +153,7 @@ const Pricing = () => {
 
 
                         </div>
-                        <div className=' flex justify-center mt-[50px] pb-[30px]'>
+                        <div className='mx-4 sm:mx-0 flex justify-center mt-[50px] pb-[30px]'>
                             <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white px-[65px] py-[15px]  text-[16px] font-bold Bold'>Get started</button>
                         </div>
 

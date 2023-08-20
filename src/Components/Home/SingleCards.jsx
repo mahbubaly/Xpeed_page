@@ -6,7 +6,7 @@ const SingleCards = ({ CardsData }) => {
 
     const { img, title } = CardsData;
     return (
-        <div>
+        <>
             <div className=' px-[4px] pb-[4px] pt-[3px]   bg-white ' >
                 <div className=''>
                     {/* <img src={img} className='' alt="" /> */}
@@ -66,7 +66,7 @@ const SingleCards = ({ CardsData }) => {
 
 
 
-        </div>
+        </>
     );
 };
 

@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <div className='  BG_color'>
 
-                <div className='ContainerBG mx-auto'>
+                <div className='ContainerBG mx-auto '>
                     <Navbar />
 
                     <Cards />
