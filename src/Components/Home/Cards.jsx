@@ -24,7 +24,7 @@ const Cards = () => {
     return (
         <>
 
-            <div className='pt-[84px] px-[135px]'>
+            <div className='pt-[84px] lg:px-[100px] xl:px-[135px]'>
 
                 <div className='grid lg:grid-cols-4 grid-cols-1 gap-[30px]'>
 

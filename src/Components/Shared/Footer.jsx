@@ -1,13 +1,14 @@
 import React from 'react';
 import '../Shared/Style.css'
 import logo from '../../assets/Images/logo 1.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <>
             <div className='mt-[150px]'>
 
-                <h1 className='text-center tracking-[3px] text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
+                <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 
                 <h1 className='text-center text-[45px] font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
 
@@ -22,19 +23,25 @@ const Footer = () => {
             </div>
 
 
-            <div className='mt-[80px] pb-[30px] px-[135px]'>
-                <hr className='border-[1px] bg-[#1A0702] opacity-10' />
+            <div className='mt-[80px] mb-[30px] px-[135px]'>
+                <hr className='border-[1px] bg-[#E5DFDC] ' />
 
             </div>
 
             <div className='px-[135px] pb-[50px] flex justify-between items-center pt-[30px]'>
-                <img src={logo} className='w-[177px] h-[40px]' alt="" />
+                <Link to='/'>  <img src={logo} className='w-[177px] h-[40px]' alt="" /></Link>
+
 
                 <div className='flex gap-[40px] items-center'>
-                    <p className='font-normal text-[16px] Normal'>Team</p>
-                    <p className='font-normal text-[16px] Normal'>Case Studies</p>
-                    <p className='font-normal text-[16px] Normal'>Publications</p>
-                    
+                    <Link to='/team'>  <p className='font-normal text-[16px] Normal'>Team</p>  </Link>
+                    <Link to='/caseStudies'> <p className='font-normal text-[16px] Normal'>Case Studies</p></Link>
+
+                    <Link to='/publications'>
+                        <p className='font-normal text-[16px] Normal'>Publications</p>
+
+
+                    </Link>
+
 
                 </div>
             </div>

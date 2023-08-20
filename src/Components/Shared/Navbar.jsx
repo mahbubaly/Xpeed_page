@@ -5,6 +5,8 @@ import html from '../../assets/Images/html.png'
 import react from '../../assets/Images/react.png'
 import tailwind from '../../assets/Images/tailwind.png'
 import Bootstrap from '../../assets/Images/bootrap.png'
+import { Link } from 'react-router-dom';
+import { AiOutlineShopping } from 'react-icons/ai';
 
 const Navbar = () => {
     return (
@@ -13,17 +15,39 @@ const Navbar = () => {
             <div className='xl:px-[135px] '>
 
                 <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
-                    <img src={logo} className='w-[177px] h-[40px]' alt="" />
+                    <Link>
+                        <img src={logo} className='w-[177px] h-[40px]' alt="" />
+
+
+                    </Link>
 
                     <div className='flex gap-[30px] items-center'>
-                        <h1 className='font-bold text-[16px] Bold'>Sign In</h1>
+                        <Link id='addCard' >
+                            <AiOutlineShopping  onClick={() => window.my_modal_5.showModal()} className='w-[28px] h-[28px]' />
+
+                        </Link>
+
+                        <dialog id="my_modal_5" className="modal modal-top sm:modal-middle">
+                            <form method="dialog" className="modal-box">
+                                <h3 className="font-bold text-lg">Hello!</h3>
+                                <p className="py-4">Press ESC key or click the button below to close</p>
+                                <div className="modal-action">
+                                  
+                                    <button className="btn">Close</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+
+                        
+                        <Link to='/SignIn' className='font-bold text-[16px] Bold'>Sign In</Link>
                         <button className='bg-[#60599E] rounded-[4px] text-white py-[10px] w-[163px] h-[39px] text-[14px] font-bold Bold'>Get Ultimate Access</button>
 
                     </div>
                 </div>
 
                 <div>
-                    <hr className='border-[1px] bg-[#1A0702] opacity-10' />
+                    <hr className='border-[1px] bg-[#E5DFDC] opacity-[]' />
 
                 </div>
 
@@ -45,7 +69,7 @@ const Navbar = () => {
 
 
 
-            <div className="flex lg:ml-16 justify-center mt-[80px] pb-[50px]">
+            <div className="flex lg:ml-24 2xl:ml-28 justify-center mt-[80px] pb-[50px]">
 
 
                 <input
@@ -62,7 +86,7 @@ const Navbar = () => {
 
             {/* Cards */}
 
-            <div className='flex justify-center'>
+            <div className='flex justify-center items-center'>
                 <div className='flex gap-[30px] '>
                     <div className='w-[81px] bg-white px-[26px] pt-[12px] rounded-[10px]'>
                         <img src={html} className='w-[30] h-[30px]' alt="" />
@@ -80,7 +104,7 @@ const Navbar = () => {
                         <img src={Bootstrap} className='w-[38] mx-auto h-[30px]' alt="" />
                         <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Bootstrap</h1>
                     </div>
-                    
+
 
                 </div>
             </div>
