@@ -21,7 +21,16 @@
 }
 
 
+.CardShadow:hover {
 
+     margin-top: -6px;
+     box-shadow: 2px    2px 2px rgb(227, 221, 248);
+     
+ 
+
+
+
+}
 
 
 

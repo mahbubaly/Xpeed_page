@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <div className='mt-[150px]'>
+            <div className='mt-[100px] sm:mt-[150px]'>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 
-                <h1 className='text-center text-[45px] font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
+                <h1 className='text-center text-[25px] sm:text-[45px] font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
 
-                <p className='lg:w-[776px] text-center mx-auto mt-5 text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
+                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-5 text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
 
 
                 <div className='flex  justify-center mt-[50px] items-center'>
@@ -23,21 +23,21 @@ const Footer = () => {
             </div>
 
 
-            <div className='mt-[80px] mb-[30px] px-[135px]'>
+            <div className='mt-[80px] mb-[30px] sm:px-[30px] px-5 lg:px-[135px]'>
                 <hr className='border-[1px] bg-[#E5DFDC] ' />
 
             </div>
 
-            <div className='px-[135px] pb-[50px] flex justify-between items-center pt-[30px]'>
-                <Link to='/'>  <img src={logo} className='w-[177px] h-[40px]' alt="" /></Link>
+            <div className='sm:px-[30px] lg:px-[135px] px-5 pb-[50px] sm:flex justify-between items-center pt-[30px]'>
+                <Link to='/'>  <img src={logo} className='w-[177px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] h-[40px]' alt="" /></Link>
 
 
-                <div className='flex gap-[40px] items-center'>
-                    <Link to='/team'>  <p className='font-normal text-[16px] Normal'>Team</p>  </Link>
-                    <Link to='/caseStudies'> <p className='font-normal text-[16px] Normal'>Case Studies</p></Link>
+                <div className='flex gap-[36px] sm:gap-[40px] items-center'>
+                    <Link to='/team'>  <p className='font-normal text-[14px] sm:text-[16px] Normal'>Team</p>  </Link>
+                    <Link to='/caseStudies'> <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Case Studies</p></Link>
 
                     <Link to='/publications'>
-                        <p className='font-normal text-[16px] Normal'>Publications</p>
+                        <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Publications</p>
 
 
                     </Link>

@@ -8,7 +8,7 @@ const Pricing = () => {
         <>
 
             <div className='pt-[100px]'>
-                <h1 className='text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
+                <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
                 <p className='text-center mt-[30px] font-normal Normal'>
                     Unlimited HTML5 Template For Your Creative Projects
                 </p>
@@ -16,10 +16,11 @@ const Pricing = () => {
 
             {/* Pricing cards */}
 
-            <div className='px-[217px] mt-[80px]'>
-                <div className='grid lg:grid-cols-3 gap-[50px]'>
+            <div className='lg:px-[217px] sm:px-[45px] px-5 mt-[80px]'>
+                <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-[50px]'>
+
                     {/* 1 */}
-                    <div className='bg-[#F8EAE6] rounded-[10px]'>
+                    <div className='bg-[#F8EAE6] rounded-[10px] ' >
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$59</span>/ Month</h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
@@ -67,7 +68,7 @@ const Pricing = () => {
 
                     </div>
                     {/* 2 */}
-                    <div className='bg-[#FFDFA4] rounded-[10px]'>
+                    <div className='bg-[#FFDFA4] rounded-[10px] '>
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$129</span>/ Month</h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
@@ -115,7 +116,7 @@ const Pricing = () => {
 
                     </div>
                     {/* 3 */}
-                    <div className='bg-[#B2CEC9] rounded-[10px]'>
+                    <div className='bg-[#B2CEC9] sm:ml-[50%] lg:ml-0 sm:w-[302px] lg:w-auto rounded-[10px] '>
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$199</span>/ Month</h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
@@ -152,9 +153,8 @@ const Pricing = () => {
 
 
                         </div>
-
-                        <div className='flex justify-center mt-[50px] pb-[30px]'>
-                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white  xl:px-[65px] py-[15px]  text-[16px] font-bold Bold'>Get started</button>
+                        <div className=' flex justify-center mt-[50px] pb-[30px]'>
+                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white px-[65px] py-[15px]  text-[16px] font-bold Bold'>Get started</button>
                         </div>
 
 

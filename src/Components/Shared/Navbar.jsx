@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
 
-            <div className='xl:px-[135px] '>
+            <div className='xl:px-[135px] sm:px-[30px] px-5 '>
 
                 <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
                     <Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
 
                     <div className='flex gap-[30px] items-center'>
                         <Link id='addCard' >
-                            <AiOutlineShopping  onClick={() => window.my_modal_5.showModal()} className='w-[28px] h-[28px]' />
+                            <AiOutlineShopping onClick={() => window.my_modal_5.showModal()} className='w-[28px] h-[28px]' />
 
                         </Link>
 
@@ -32,16 +32,18 @@ const Navbar = () => {
                                 <h3 className="font-bold text-lg">Hello!</h3>
                                 <p className="py-4">Press ESC key or click the button below to close</p>
                                 <div className="modal-action">
-                                  
+
                                     <button className="btn">Close</button>
                                 </div>
                             </form>
                         </dialog>
 
 
-                        
-                        <Link to='/SignIn' className='font-bold text-[16px] Bold'>Sign In</Link>
-                        <button className='bg-[#60599E] rounded-[4px] text-white py-[10px] w-[163px] h-[39px] text-[14px] font-bold Bold'>Get Ultimate Access</button>
+
+                        <div className='sm:flex gap-[30px] hidden items-center'>
+                            <button className='bg-[#60599E] rounded-[4px] text-white py-[10px] w-[163px] h-[39px] text-[14px] font-bold Bold'>Get Ultimate Access</button>
+                            <Link to='/SignIn' className='font-bold text-[16px] Bold'>Sign In</Link>
+                        </div>
 
                     </div>
                 </div>
@@ -56,9 +58,9 @@ const Navbar = () => {
 
             </div>
 
-            <div className='w-[770px] mx-auto'>
+            <div className='sm:w-[557px] lg:w-[770px] mx-auto w-[280px]'>
 
-                <h1 className='lg:text-[50px] text-center mt-[80px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
+                <h1 className='lg:text-[50px] sm:text-[40px] text-[30px] text-center mt-[80px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
                     <span className='text-[#60599E]'> Only $9.99</span>
 
                 </h1>
@@ -68,39 +70,42 @@ const Navbar = () => {
 
 
 
+            <div className=' flex justify-center ml-32 sm:ml-24 lg:ml-28'>
 
-            <div className="flex lg:ml-24 2xl:ml-28 justify-center mt-[80px] pb-[50px]">
-
-
-                <input
-                    type="text"
-
-                    placeholder="e.g. “saas”"
-                    className="w-[634px] py-[19px] pl-[17px]  h-[58px]  rounded-[4px] border-[1px] border-[#60599E]  shadow-sm "
-                />
-                <button className='bg-[#60599E] h-[48px] relative rounded-[4px] text-white py-[15px] px-[40px]  text-[14px] right-[132px] top-[5px] font-bold Bold'>Search</button>
+                <div className="flex w-[280xp] sm:w-auto  justify-center mt-[80px] pb-[50px]">
 
 
+                    <input
+                        type="text"
+
+                        placeholder="e.g. “saas”"
+                        className="sm:w-[634px] w-[280px] py-[19px] pl-[17px]  h-[58px]  rounded-[4px] border-[1px] border-[#60599E]  shadow-sm "
+                    />
+                    <button className='bg-[#60599E] h-[48px] relative rounded-[4px] text-white py-[15px] px-[40px]  text-[14px] right-[132px] top-[5px] font-bold Bold'>Search</button>
+
+
+                </div>
             </div>
 
 
             {/* Cards */}
 
             <div className='flex justify-center items-center'>
-                <div className='flex gap-[30px] '>
-                    <div className='w-[81px] bg-white px-[26px] pt-[12px] rounded-[10px]'>
+                <div className='grid grid-cols-2 sm:grid-cols-4 gap-[30px] '>
+
+                    <div className='w-[81px]  CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
                         <img src={html} className='w-[30] h-[30px]' alt="" />
                         <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>HTML</h1>
                     </div>
-                    <div className='w-[81px] bg-white px-[26px] pt-[12px] rounded-[10px]'>
+                    <div className='w-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
                         <img src={react} className='w-[30] h-[26px]' alt="" />
                         <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>React</h1>
                     </div>
-                    <div className='w-[81px] bg-white px-[16px] pt-[12px] rounded-[10px]'>
+                    <div className='w-[81px] CardShadow bg-white px-[16px] pt-[12px] rounded-[10px]'>
                         <img src={tailwind} className='w-[50] mx-auto h-[30.266px]' alt="" />
                         <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>Tailwind</h1>
                     </div>
-                    <div className='w-[81px] bg-white  pt-[12px] mx-auto rounded-[10px]'>
+                    <div className='w-[81px] CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
                         <img src={Bootstrap} className='w-[38] mx-auto h-[30px]' alt="" />
                         <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Bootstrap</h1>
                     </div>
