@@ -13,7 +13,7 @@ const ComingPage = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_fafpnwo', 'template_go6z5r9', form.current, '-IZ0vYiwrNrv3dpz5')
+        emailjs.sendForm('service_wsc6vy1', 'template_bmnzokw', form.current, 'eYDcSzpdjig7_mdsd')
             .then((result) => {
 
                 Swal.fire({
@@ -31,12 +31,12 @@ const ComingPage = () => {
 
     return (
         <>
-            <div className=' ContainerBG mx-auto'>
-                <div className='xl:px-[135px] sm:px-[30px] px-5  bg-white'>
+            <div className=' ContainerBG mx-auto mt-[30px]'>
+                <div className='xl:px-[135px]  sm:px-[30px] px-5  bg-white'>
 
-                    <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
+                    <div className='pb-[29px] flex justify-between items-center '>
                         <Link>
-                            <img src={logo} className='w-[71px] h-[42px]' alt="" />
+                            <img src={logo} className='w-[59px] h-[35px]' alt="" />
 
 
                         </Link>
@@ -50,7 +50,7 @@ const ComingPage = () => {
 
 
                             <div className=''>
-                                <button className='bg-[#60599E] rounded-[4px] text-white py-[12px] px-5 text-[14px] font-bold Bold '>Contact Us</button>
+                                <button className='bg-[#60599E] h-[42px] rounded-[4px] text-white py-[12px] px-5 text-[14px] font-bold Bold '>Contact Us</button>
 
 
                             </div>
@@ -59,7 +59,7 @@ const ComingPage = () => {
                     </div>
 
                     <div>
-                        <img src={BoyUsingLaptop} className='w-[703px] mx-auto' alt="" />
+                        <img src={BoyUsingLaptop} className='w-[703px] h-[385px] mx-auto' alt="" />
                     </div>
 
 
@@ -76,13 +76,15 @@ const ComingPage = () => {
             <div className='BG_color'>
 
                 <div className='pt-[50px] ContainerBG mx-auto '>
-                    <div className='mr-16'>
+                    <div className='-mr-16 '>
                         <h1 className='text-[60px] font-bold text-center Bold'>Coders At Work</h1>
-                        <p className='text-[30px] mr-4 text-center'>-Coming Soon-</p>
+
                     </div>
 
+                    <p className='text-[30px] mb-[50px] ml-16 mt-0  text-center'>-Coming Soon-</p>
 
-                    <div className='flex justify-center pb-[105px] ml-10'>
+
+                    <div className='flex justify-center pb-[107px] ml-[13%]'>
                         <div>
 
                             <p className='text-[14px] pb-[15px]  font-bold Bold'>Sign Up For Early Access</p>
@@ -102,7 +104,7 @@ const ComingPage = () => {
                                             placeholder="Enter your email address"
                                             className="sm:w-[634px] w-[280px] py-[19px] pl-[17px]  h-[58px]  rounded-[4px] border-[1px] border-[#60599E]  shadow-sm "
                                         />
-                                        <button type='submit' className='bg-[#60599E] h-[48px] relative rounded-[4px] text-white py-[15px] px-[40px]  text-[14px] right-[132px] top-[5px] font-bold Bold'>Search</button>
+                                        <button type='submit' className='bg-[#60599E] h-[48px] relative rounded-[4px] text-white py-[15px] px-[40px]  text-[14px] right-[132px] top-[5px] font-bold Bold'>Submit</button>
 
 
                                     </form>
