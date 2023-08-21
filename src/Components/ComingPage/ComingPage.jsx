@@ -94,7 +94,7 @@ const ComingPage = () => {
 
 
                                         <input
-                                            type="text"
+                                            type="email"
                                             name='user_email'
 
                                             placeholder="Enter your email address"
