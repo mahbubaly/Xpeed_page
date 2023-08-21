@@ -78,7 +78,7 @@ const ComingPage = () => {
                 <div className='pt-[50px] ContainerBG mx-auto '>
                     <div className='mr-16'>
                         <h1 className='text-[60px] font-bold text-center Bold'>Coders At Work</h1>
-                        <p className='text-[30px] text-center'>-Coming Soon-</p>
+                        <p className='text-[30px] mr-4 text-center'>-Coming Soon-</p>
                     </div>
 
 
