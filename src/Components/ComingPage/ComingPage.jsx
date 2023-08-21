@@ -15,7 +15,7 @@ const ComingPage = () => {
 
         emailjs.sendForm('service_fafpnwo', 'template_go6z5r9', form.current, '-IZ0vYiwrNrv3dpz5')
             .then((result) => {
-                
+
                 Swal.fire({
                     position: 'top-center',
                     icon: 'success',
@@ -76,8 +76,10 @@ const ComingPage = () => {
             <div className='BG_color'>
 
                 <div className='pt-[50px] ContainerBG mx-auto '>
-                    <h1 className='text-[60px] font-bold text-center Bold'>Coders At Work</h1>
-                    <p className='text-[30px] text-center'>-Coming Soon-</p>
+                    <div className='mr-16'>
+                        <h1 className='text-[60px] font-bold text-center Bold'>Coders At Work</h1>
+                        <p className='text-[30px] text-center'>-Coming Soon-</p>
+                    </div>
 
 
                     <div className='flex justify-center pb-[105px] ml-10'>
@@ -90,7 +92,7 @@ const ComingPage = () => {
 
 
 
-                                    <form  ref={form} onSubmit={sendEmail} className="flex w-[280xp] sm:w-auto  justify-center  ">
+                                    <form ref={form} onSubmit={sendEmail} className="flex w-[280xp] sm:w-auto  justify-center  ">
 
 
                                         <input
