@@ -3,32 +3,35 @@ import Navbar from '../Shared/Navbar';
 import Cards from './Cards';
 import Pricing from './Pricing';
 import Footer from '../Shared/Footer';
+import Banner from './Banner';
 
 const Home = () => {
     return (
         <>
-            <div className='  BG_color'>
-
-                <div className='ContainerBG mx-auto '>
-                    <Navbar />
-
-                    <Cards />
-
-                    <Pricing />
-
-                    <Footer />
 
 
+            <div className='ContainerBG mx-auto '>
+
+                <Banner />
+
+
+                <Cards />
+
+                <Pricing />
 
 
 
 
 
 
-                </div>
+
+
 
 
             </div>
+
+
+
 
 
         </>

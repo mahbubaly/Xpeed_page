@@ -1,10 +1,12 @@
 import React from 'react';
 
 import '../Shared/Style.css';
+import { Link } from 'react-router-dom';
 
 const SingleCards = ({ CardsData }) => {
 
-    const { img, title } = CardsData;
+    const { img, title ,id } = CardsData;
+    console.log(id);
     return (
         <>
             <div className=' px-[4px] pb-[4px] pt-[3px]   bg-white ' >
@@ -54,7 +56,10 @@ const SingleCards = ({ CardsData }) => {
                     <h1 className='text-[14px] font-semibold SemiBold'>{title}</h1>
 
                     <div className='pt-5 flex justify-between  '>
-                        <button className='text-[12px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] py-[8px] px-[15px] hover:bg-[#60599E] hover:text-white'>Details</button>
+                       <Link to={ `/details/${(id)}`} >   <button className='text-[12px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] py-[8px] px-[15px] hover:bg-[#60599E] hover:text-white'>Details</button>
+                       
+                       
+                       </Link>
 
                         <button className='text-[12px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] py-[8px] px-[15px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>Add To Cart</button>
 

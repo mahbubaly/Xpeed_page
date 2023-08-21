@@ -7,7 +7,7 @@ const Cards = () => {
 
     const [ShowAll, setShowAll] = useState([]);
     const [ShowTablet, setShowTablet] = useState([]);
-    const [ShowMobile, setShowMobile] = useState([]);
+    
 
     useEffect(() => {
         fetch('Data.json')
@@ -76,11 +76,11 @@ const Cards = () => {
 
             <div className='pt-[84px] lg:px-[100px] block lg:hidden px-5 sm:px-[91px] xl:px-[135px]'>
 
-                <div className='grid   grid-cols-1 sm:grid-cols-2 gap-[30px]'>
+                <div className='grid   grid-cols-1 sm:grid-cols-2 gap-[30px] rounded-[4px]'>
 
                     {
                         ShowTablet.map(CardsData => <SingleCards
-                            key={CardsData._id}
+                            key={CardsData.id}
                             CardsData={CardsData}
 
 

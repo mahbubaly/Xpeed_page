@@ -3,7 +3,7 @@ import '../Shared/Style.css';
 import error from '../../assets/Images/illustration.png'
 import { Link } from 'react-router-dom';
 import Footer from '../Shared/Footer';
-import logo from '../../assets/Images/logo 1.png'
+import logo from '../../assets/Images/logo.png'
 import { AiOutlineShopping } from 'react-icons/ai';
 import Modal from 'react-modal';
 
@@ -18,7 +18,7 @@ const ErrorPage = () => {
                     <div className='xl:px-[135px] sm:px-[30px] px-5 '>
                         <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
                             <Link>
-                                <img src={logo} className='w-[177px] h-[40px]' alt="" />
+                                <img src={logo} className='w-[71px] h-[42px]' alt="" />
 
 
                             </Link>
@@ -121,7 +121,7 @@ const ErrorPage = () => {
 
 
                     <div className='sm:px-[30px] lg:px-[135px] px-5 pb-[50px] sm:flex justify-between items-center pt-[30px]'>
-                        <Link to='/'>  <img src={logo} className='w-[177px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] h-[40px]' alt="" /></Link>
+                        <Link to='/'>  <img src={logo} className='w-[71px] h-[42px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
 
 
                         <div className='flex gap-[36px] sm:gap-[40px] items-center'>

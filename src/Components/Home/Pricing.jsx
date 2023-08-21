@@ -170,6 +170,23 @@ const Pricing = () => {
             </div>
 
 
+            <div className='mt-[100px] sm:mt-[150px]'>
+
+                <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
+
+                <h1 className='text-center text-[25px] sm:text-[45px] font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
+
+                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-5 text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
+
+
+                <div className='flex  justify-center mt-[50px] items-center'>
+
+                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>Contact Us</button>
+                </div>
+
+            </div>
+
+
 
         </>
     );
