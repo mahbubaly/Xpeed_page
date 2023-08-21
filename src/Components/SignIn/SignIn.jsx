@@ -33,7 +33,7 @@ const SignIn = () => {
 
                     <div className='mt-[59px]'>
                         <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                        <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Your Last Name' />
+                        <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Enter Your Email' />
                     </div>
 
 
@@ -41,11 +41,11 @@ const SignIn = () => {
                     <div className='flex gap-[30px] mt-[59px]'>
                         <div className=''>
                             <p className='text-[14px] pb-[15px] font-bold Bold'>Password*</p>
-                            <input type="password" className='inputBorder w-[285px] py-5 px-[15px] ' placeholder='Your First Name' />
+                            <input type="password" className='inputBorder w-[285px] py-5 px-[15px] ' placeholder='Password' />
                         </div>
                         <div className=''>
                             <p className='text-[14px] pb-[15px] font-bold Bold'>Confirm Password*</p>
-                            <input type="password" className='inputBorder w-[285px] py-5 px-[15px] ' placeholder='Your Last Name' />
+                            <input type="Confirm Password" className='inputBorder w-[285px] py-5 px-[15px] ' placeholder='Your Last Name' />
                         </div>
                     </div>
 

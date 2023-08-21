@@ -21,12 +21,12 @@ const LogIn = () => {
                         <div>
                             <div className=''>
                                 <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                                <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Your Last Name' />
+                                <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Enter Your Email' />
                             </div>
 
                             <div className='mt-[59px]'>
                                 <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                                <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Your Last Name' />
+                                <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='Enter Your Password' />
                             </div>
                         </div>
                     </div>

@@ -4,8 +4,7 @@ import '../Shared/Style.css'
 
 import { Link } from 'react-router-dom';
 import { AiOutlineShopping } from 'react-icons/ai';
-import Modal from 'react-modal';
-import popUp from '../../assets/Images/popUp.png'
+
 
 const Navbar = () => {
 

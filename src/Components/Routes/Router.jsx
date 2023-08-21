@@ -9,6 +9,7 @@ import SignIn from "../SignIn/SignIn";
 import Main from "../Main/Main";
 import LogIn from "../SignIn/LogIn";
 import ForgetPass from "../SignIn/ForgetPass";
+import ComingPage from "../ComingPage/ComingPage";
 
 
 
@@ -52,10 +53,17 @@ const router = createBrowserRouter([
             },
 
 
+
         ]
 
 
     },
+    {
+        path: "/ComingSoon",
+        element: <ComingPage />,
+        errorElement: <ErrorPage />,
+
+    }
 ]);
 
 export default router;
