@@ -36,9 +36,9 @@ const Cards = () => {
 
             {/* Laptop desktop */}
 
-            <div className='pt-[84px] lg:px-[100px] hidden lg:block xl:px-[135px]'>
+            <div className='All_cards   hidden lg:block '>
 
-                <div className='grid lg:grid-cols-4  grid-cols-1 gap-[30px]'>
+                <div className='grid mt-[84px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
                         ShowAll.map(CardsData => <SingleCards
@@ -74,9 +74,9 @@ const Cards = () => {
 
 
 
-            <div className='pt-[84px] lg:px-[100px] block lg:hidden px-5 sm:px-[91px] xl:px-[135px]'>
+            <div className='lg:mt-[84px] sm:mt-[80px] mt-[50px]  block lg:hidden px-5 '>
 
-                <div className='grid   grid-cols-1 sm:grid-cols-2 gap-[30px] rounded-[4px]'>
+                <div className='grid   grid-cols-1 sm:grid-cols-2  gap-[30px] rounded-[4px]'>
 
                     {
                         ShowTablet.map(CardsData => <SingleCards

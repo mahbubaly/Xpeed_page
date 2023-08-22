@@ -14,7 +14,7 @@ const ErrorPage = () => {
 
             <div className='BG_color'>
 
-                <div className='ContainerBG mx-auto'>
+                <div className='container mx-auto'>
                     <div className='xl:px-[135px] sm:px-[30px] px-5 '>
                         <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
                             <Link>
@@ -121,7 +121,7 @@ const ErrorPage = () => {
 
 
                     <div className='sm:px-[30px] lg:px-[135px] px-5 pb-[50px] sm:flex justify-between items-center pt-[30px]'>
-                        <Link to='/'>  <img src={logo} className='w-[71px] h-[42px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
+                        <Link to='/'>  <img src={logo} className='w-[50px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
 
 
                         <div className='flex gap-[36px] sm:gap-[40px] items-center'>

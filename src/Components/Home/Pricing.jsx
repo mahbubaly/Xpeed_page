@@ -7,7 +7,7 @@ const Pricing = () => {
     return (
         <>
 
-            <div className='pt-[100px]'>
+            <div className='mt-[100px]'>
                 <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
                 <p className='text-center mt-[30px] font-normal Normal'>
                     Unlimited HTML5 Template For Your Creative Projects
@@ -16,7 +16,7 @@ const Pricing = () => {
 
             {/* Pricing cards */}
 
-            <div className='lg:px-[217px] sm:px-[45px] px-5 mt-[80px]'>
+            <div className='  mt-[80px]'>
                 <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-[50px]'>
 
                     {/* 1 */}
@@ -116,7 +116,7 @@ const Pricing = () => {
 
                     </div>
                     {/* 3 */}
-                    <div className='bg-[#B2CEC9] sm:ml-[50%] lg:ml-0 sm:w-[302px] lg:w-auto rounded-[10px] '>
+                    <div className='bg-[#B2CEC9] sm:ml-[60%] lg:ml-0 sm:w-[302px] lg:w-auto rounded-[10px] '>
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$199</span>/ Month</h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
@@ -170,7 +170,7 @@ const Pricing = () => {
             </div>
 
 
-            <div className='mt-[100px] sm:mt-[150px]'>
+            <div className='mt-[100px] '>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 

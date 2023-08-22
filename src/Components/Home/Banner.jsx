@@ -10,35 +10,40 @@ const Banner = () => {
 
             <div>
 
-                <div className='sm:w-[557px] lg:w-[770px] mx-auto w-[280px]'>
+                <div className=' mx-auto Choose_width'>
 
-                    <h1 className='lg:text-[50px] sm:text-[40px] text-[30px] text-center mt-[80px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
+                    <h1 className='lg:text-[50px] sm:text-[40px] text-[30px] text-center sm:mt-[50px] lg:mt-[80px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
                         <span className='text-[#60599E]'> Only $9.99</span>
 
                     </h1>
 
                 </div>
-                <div className=' flex justify-center ml-32 sm:ml-24 lg:ml-28'>
 
-                    <div className="flex w-[280xp] sm:w-auto  justify-center mt-[80px] pb-[50px]">
+
+
+               
+
+                    <div className="flex     justify-center my-[30px] sm:my-0  sm:mt-[80px] ">
 
 
                         <input
                             type="text"
 
                             placeholder="e.g. “saas”"
-                            className="sm:w-[634px] w-[280px] py-[19px] pl-[17px]  h-[58px]  rounded-[4px] border-[1px] border-[#60599E]  shadow-sm "
+                            className="w-[280px]  sm:w-[500px]  lg:w-[634px] h-[48px] sm:py-[19px] pl-[15px] ml-[17px] py-[14px]  sm:h-[58px]  rounded-[4px]  border-[1px] border-[#60599E]  shadow-sm "
                         />
-                        <button className='bg-[#60599E] h-[48px] relative rounded-[4px] text-white py-[15px] px-[40px]  text-[14px] right-[132px] top-[5px] font-bold Bold'>Search</button>
+
+
+                        <button className='bg-[#60599E] Search_btn hover:bg-[#3f3a68] rounded-[4px] text-white  text-[14px]   font-bold Bold'>Search</button>
 
 
                     </div>
-                </div>
+             
 
 
                 {/* Cards */}
 
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center sm:mt-[50px] lg:mt-[30px] items-center '>
                     <div className='grid grid-cols-2 sm:grid-cols-4 gap-[30px] '>
 
                         <div className='w-[81px]  CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>

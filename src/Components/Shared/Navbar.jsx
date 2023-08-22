@@ -13,11 +13,11 @@ const Navbar = () => {
     return (
         <>
 
-            <div className='xl:px-[135px] sm:px-[30px] px-5 '>
+            <div className='container mx-auto '>
 
-                <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
+                <div className=' flex justify-between items-center '>
                     <Link>
-                        <img src={logo} className='w-[71px] h-[42px]' alt="" />
+                        <img src={logo} className='w-[50px] h-[35px]' alt="" />
 
 
                     </Link>
@@ -61,13 +61,13 @@ const Navbar = () => {
                         <div className='lg:flex gap-[30px] hidden items-center'>
                             <button className='bg-[#60599E] rounded-[4px] text-white py-[12px] px-5 text-[14px] font-bold Bold '>Get Ultimate Access</button>
 
-                            <Link to='/signUp' className='font-bold text-[16px] Bold'>Sign In</Link>
+                            <Link to='/signIn' className='font-bold text-[16px] Bold'>Sign In</Link>
                         </div>
 
                     </div>
                 </div>
 
-                <div>
+                <div className='pt-4 sm:pt-[29px]'>
                     <hr className='border-[1px] bg-[#E5DFDC] opacity-[]' />
 
                 </div>

@@ -31,12 +31,12 @@ const ComingPage = () => {
 
     return (
         <>
-            <div className=' ContainerBG mx-auto mt-[30px]'>
+            <div className=' container mx-auto mt-[30px]'>
                 <div className='xl:px-[135px]  sm:px-[30px] px-5  bg-white'>
 
                     <div className='pb-[29px] flex justify-between items-center '>
                         <Link>
-                            <img src={logo} className='w-[59px] h-[35px]' alt="" />
+                            <img src={logo} className='w-[50px] h-[35px]' alt="" />
 
 
                         </Link>
@@ -75,7 +75,7 @@ const ComingPage = () => {
             </div>
             <div className='BG_color'>
 
-                <div className='pt-[50px] ContainerBG mx-auto '>
+                <div className='pt-[50px] container mx-auto '>
                     <div className='-mr-16 '>
                         <h1 className='text-[60px] font-bold text-center Bold'>Coders At Work</h1>
 
@@ -114,7 +114,7 @@ const ComingPage = () => {
                     </div>
 
 
-                    <p className='text-[14px] font-normal Normal tracking-[2px] text-center pb-[50px]'>© 2023 Xpeed Page, LLC</p>
+                    <p className='text-[14px] font-normal opacity-60 Normal tracking-[2px] text-center pb-[50px]'>© 2023 Xpeed Page, LLC</p>
 
 
 

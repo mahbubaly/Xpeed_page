@@ -10,7 +10,7 @@ const Home = () => {
         <>
 
 
-            <div className='ContainerBG mx-auto '>
+            <div className='container mx-auto '>
 
                 <Banner />
 

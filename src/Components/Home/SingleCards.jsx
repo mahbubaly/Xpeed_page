@@ -9,7 +9,7 @@ const SingleCards = ({ CardsData }) => {
     console.log(id);
     return (
         <>
-            <div className=' px-[4px] pb-[4px] pt-[3px]   bg-white ' >
+            <div className=' px-[4px] pb-[4px] pt-[3px]    bg-white ' >
                 <div className=''>
                     {/* <img src={img} className='' alt="" /> */}
 
@@ -52,7 +52,7 @@ const SingleCards = ({ CardsData }) => {
 
 
 
-                <div className='bg-[#fcf7f4] px-[15px] py-[15px]  lg:mt-[3px]'>
+                <div className='bg-[#fcf7f4]  px-[15px] py-[15px] mt-5 sm:mt-10  lg:mt-[3px]'>
                     <h1 className='text-[14px] font-semibold SemiBold'>{title}</h1>
 
                     <div className='pt-5 flex justify-between  '>
