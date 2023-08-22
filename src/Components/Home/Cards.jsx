@@ -38,7 +38,7 @@ const Cards = () => {
 
             <div className='All_cards   hidden lg:block '>
 
-                <div className='grid mt-[84px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
+                <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
                         ShowAll.map(CardsData => <SingleCards
@@ -55,7 +55,7 @@ const Cards = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[84px] items-center'>
+                <div className='flex  justify-center mt-[80px] items-center'>
 
                     <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
                 </div>
@@ -93,7 +93,7 @@ const Cards = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[84px] items-center'>
+                <div className='flex  justify-center mt-[80px] items-center'>
 
                     <button  className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
                 </div>

@@ -9,7 +9,7 @@ const Pricing = () => {
 
             <div className='mt-[100px]'>
                 <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
-                <p className='text-center mt-[30px] font-normal Normal'>
+                <p className='text-center mt-[20px] font-normal Normal'>
                     Unlimited HTML5 Template For Your Creative Projects
                 </p>
             </div>
@@ -170,11 +170,11 @@ const Pricing = () => {
             </div>
 
 
-            <div className='mt-[100px] '>
+            <div className='mt-[150px] '>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 
-                <h1 className='text-center text-[25px] sm:text-[45px] font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
+                <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
 
                 <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-5 text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
 

@@ -67,8 +67,8 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='pt-4 sm:pt-[29px]'>
-                    <hr className='border-[1px] bg-[#E5DFDC] opacity-[]' />
+                <div className='pt-[30px]'>
+                    <hr className='border-[1px] bg-[#E5DFDC] ' />
 
                 </div>
 

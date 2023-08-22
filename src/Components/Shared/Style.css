@@ -1,20 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hrWid {
+    stroke-width: 1px;
+    stroke: #E5DFDC;
+}
+
 .container {
     width: 100%;
     padding-top: 31px;
     padding: 20px;
 
-    
+
 
 }
 
-@media (min-width: 320px){
+@media (min-width: 320px) {
     .Search_btn {
         width: 88px;
         height: 38px;
         position: absolute;
         margin-left: 56%;
         margin-top: 5px;
-        
+
     }
 
 
@@ -51,7 +61,7 @@
     .container {
         max-width: 768px;
         padding: 30px;
-        
+
 
 
     }
@@ -73,7 +83,7 @@
         margin-top: 5px;
     }
 
-    .CardPadding{
+    .CardPadding {
         padding: 0px 91px 0px 91px;
     }
 }

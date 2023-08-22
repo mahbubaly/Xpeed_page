@@ -12,7 +12,7 @@ const Banner = () => {
 
                 <div className=' mx-auto Choose_width'>
 
-                    <h1 className='lg:text-[50px] sm:text-[40px] text-[30px] text-center sm:mt-[50px] lg:mt-[80px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
+                    <h1 className='lg:text-[50px] leading-[75px] sm:text-[40px] text-[30px] text-center mt-[18.5px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
                         <span className='text-[#60599E]'> Only $9.99</span>
 
                     </h1>
@@ -43,23 +43,23 @@ const Banner = () => {
 
                 {/* Cards */}
 
-                <div className='flex justify-center sm:mt-[50px] lg:mt-[30px] items-center '>
+                <div className='flex justify-center sm:mt-[54px] items-center '>
                     <div className='grid grid-cols-2 sm:grid-cols-4 gap-[30px] '>
 
-                        <div className='w-[81px]  CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
-                            <img src={html} className='w-[30] h-[30px]' alt="" />
+                        <div className='w-[81px] h-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
+                            <img src={html} className='w-[30px] h-[30px]' alt="" />
                             <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>HTML</h1>
                         </div>
-                        <div className='w-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
-                            <img src={react} className='w-[30] h-[26px]' alt="" />
+                        <div className='w-[81px] h-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
+                            <img src={react} className='w-[30px] h-[26px]' alt="" />
                             <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>React</h1>
                         </div>
-                        <div className='w-[81px] CardShadow bg-white px-[16px] pt-[12px] rounded-[10px]'>
-                            <img src={tailwind} className='w-[50] mx-auto h-[30.266px]' alt="" />
+                        <div className='w-[81px] h-[81px] CardShadow bg-white px-[16px] pt-[12px] rounded-[10px]'>
+                            <img src={tailwind} className='w-[50px] mx-auto h-[30.266px]' alt="" />
                             <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>Tailwind</h1>
                         </div>
-                        <div className='w-[81px] CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
-                            <img src={Bootstrap} className='w-[38] mx-auto h-[30px]' alt="" />
+                        <div className='w-[81px] h-[81px] CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
+                            <img src={Bootstrap} className='w-[38px] mx-auto h-[30px]' alt="" />
                             <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Bootstrap</h1>
                         </div>
 
