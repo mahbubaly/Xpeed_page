@@ -3,247 +3,9 @@ body {
     padding: 0;
 }
 
-.hrWid {
-    stroke-width: 1px;
-    stroke: #E5DFDC;
-}
-
-.container {
-    width: 100%;
-    padding-top: 31px;
-    padding: 20px;
-
-
-
-}
-
-@media (min-width: 320px) {
-    .Search_btn {
-        width: 88px;
-        height: 38px;
-        position: absolute;
-        margin-left: 56%;
-        margin-top: 5px;
-
-    }
-
-
-}
-
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-        padding: 30px;
-
-
-    }
-
-    .Choose_width {
-        width: 557px;
-    }
-
-    .cardWidth {
-        width: 270px;
-        gap: 30px;
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 65px;
-        margin-top: 5px;
-    }
-}
-
-/* ===================================== */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 30px;
-
-
-
-    }
-
-    .Choose_width {
-        width: 557px;
-    }
-
-    .cardWidth {
-        width: 270px;
-        gap: 30px;
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 130px;
-        margin-top: 5px;
-    }
-
-    .CardPadding {
-        padding: 0px 91px 0px 91px;
-    }
-}
-
-/* @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 30px;
-    }
-} */
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 190px;
-        margin-top: 5px;
-    }
-}
-
-/* ================================================== */
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .All_cards {
-        padding: 0px 0px 0px 0px;
-        margin-top: 50px;
-    }
-
-    .Choose_width {
-        width: 770px;
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 318px;
-        margin-top: 5px;
-    }
-
-    .items {
-        width: 330px;
-        position: absolute;
-        background-color: whitesmoke;
-
-        margin-top: 10px;
-        right: 450px;
-        top: 20%;
-    }
-}
-
-
-/* ================1440====================== */
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .All_cards {
-        padding: 0px 0px 0px 0px;
-        margin-top: 80px;
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 398px;
-        margin-top: 5px;
-    }
-
-    .cardWidth {
-        width: 270px;
-        gap: 30px;
-    }
-}
-
-.items {
-    width: 330px;
-    position: absolute;
-    background-color: whitesmoke;
-
-    margin-top: 10px;
-    right: 450px;
-    top: 20%;
-}
-
-
-
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
-}
-
-
-@media screen and (min-width: 1680px) {
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 520px;
-        margin-top: 5px;
-
-    }
-
-}
-
-
-@media screen and (min-width: 1920px) {
-    .container {
-        width: 1920px;
-    }
-
-    .CardWidth {
-        width: 302px;
-
-    }
-
-    .Search_btn {
-        width: 128px;
-        height: 48px;
-        position: absolute;
-        right: 640px;
-        margin-top: 5px;
-
-    }
-
-    .items {
-        width: 330px;
-        position: absolute;
-        background-color: whitesmoke;
-
-        margin-top: 10px;
-        right: 450px;
-        top: 15%;
-    }
-
-}
-
-
-
-
-
-
-
+/* =================================================================================
+        common css
+============================================== */
 
 
 .BG_color {
@@ -280,7 +42,9 @@ body {
     background: #FFF;
 }
 
-input[type="checkbox"] {}
+input[type="checkbox"] {
+    background: #000;
+}
 
 input[type="checkbox"]::after {
     background-color: #60599E;
@@ -357,7 +121,191 @@ input[type="checkbox"]::after {
 
 
 /* Styles for tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+.hrWid {
+    stroke-width: 1px;
+    stroke: #E5DFDC;
+}
+
+input[type="text"] {
+    outline: 1px solid #60599E;
+}
+
+input[type="password"] {
+    outline: 1px solid #60599E;
+}
+
+input[type="email"] {
+    outline: 1px solid #60599E;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+input[type="email"]:focus-visible {
+    outline: none;
+}
+
+input[type="password"]:focus-visible {
+    outline: none;
+}
+
+.items {
+    width: 330px;
+    position: absolute;
+    background-color: whitesmoke;
+
+    margin-top: 10px;
+    right: 450px;
+    top: 20%;
+}
+
+/* =============================================================================
+                                Container 
+==================================================================================*/
+
+.container {
+    width: 100%;
+    padding-top: 31px;
+    padding: 20px;
+
+
+
+}
+
+@media (min-width: 320px) {
+    .Search_btn {
+        width: 88px;
+        height: 38px;
+        position: absolute;
+        margin-left: 56%;
+        margin-top: 5px;
+
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 10%;
+        margin-top: -35px;
+    }
+
+
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        padding: 30px;
+
+
+    }
+
+    .Choose_width {
+        width: 557px;
+    }
+
+
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 65px;
+        margin-top: 5px;
+    }
+}
+
+/* ===================================== */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 30px;
+
+
+
+    }
+
+    .Choose_width {
+        width: 557px;
+    }
+
+
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 130px;
+        margin-top: 5px;
+    }
+
+    .CardPadding {
+        padding: 0px 91px 0px 91px;
+    }
+
+
+    .EyeButton {
+        position: absolute;
+        right: 13%;
+        margin-top: -35px;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 30px;
+    }
+} */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 178px;
+        margin-top: 5px;
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 22%;
+        margin-top: -35px;
+    }
+}
+
+/* ================================================== */
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .All_cards {
+        padding: 0px 0px 0px 0px;
+        margin-top: 50px;
+    }
+
+    .Choose_width {
+        width: 770px;
+    }
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 308px;
+        margin-top: 5px;
+    }
+
     .items {
         width: 330px;
         position: absolute;
@@ -365,9 +313,127 @@ input[type="checkbox"]::after {
 
         margin-top: 10px;
         right: 450px;
-        top: 10%;
+        top: 20%;
+    }
+
+    .cardWidth {
+        width: 270px;
+        gap: 30px;
+        height: 339px;
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 27%;
+        margin-top: -35px;
+    }
+}
+
+
+/* ================1440====================== */
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .All_cards {
+        padding: 0px 0px 0px 0px;
+        margin-top: 80px;
+    }
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 386px;
+        margin-top: 5px;
+    }
+
+    .cardWidth {
+        width: 270px;
+        gap: 30px;
+        height: 339px;
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 30%;
+        margin-top: -35px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 32%;
+        margin-top: -35px;
+    }
+}
+
+
+@media screen and (min-width: 1680px) {
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 520px;
+        margin-top: 5px;
+
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 33%;
+        margin-top: -35px;
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
     }
 
 
+
+    .Search_btn {
+        width: 128px;
+        height: 48px;
+        position: absolute;
+        right: 627px;
+        margin-top: 5px;
+
+    }
+
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: whitesmoke;
+
+        margin-top: 10px;
+        right: 450px;
+        top: 15%;
+    }
+
+    .EyeButton {
+        position: absolute;
+        right: 35%;
+        margin-top: -35px;
+    }
 
 }
