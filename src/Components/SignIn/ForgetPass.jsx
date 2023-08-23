@@ -16,10 +16,10 @@ const ForgetPass = () => {
 
                     <div className=''>
                         <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                        <input type="email" className='inputBorder w-[600px] py-5 px-[15px] ' placeholder='e.g. john@gmail.com' />
+                        <input type="email" className='inputBorder  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] px-[15px] ' placeholder='e.g. john@gmail.com' />
                     </div>
                     <div className=' mt-[50px]'>
-                        <button type='submit' className='text-center font-bold Bold rounded-[4px] w-[600px] py-5 bg-[#60599E] text-white hover:bg-[#3f3a68]'>
+                        <button type='submit' className='text-center font-bold  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] Bold rounded-[4px]   bg-[#60599E] text-white hover:bg-[#3f3a68]'>
                             Send Email
 
                         </button>
