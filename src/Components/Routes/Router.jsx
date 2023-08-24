@@ -10,6 +10,8 @@ import Main from "../Main/Main";
 import LogIn from "../SignIn/LogIn";
 import ForgetPass from "../SignIn/ForgetPass";
 import ComingPage from "../ComingPage/ComingPage";
+import ResourceCardDetails from "../Home/Resources/ResourceCardDetails";
+
 
 
 
@@ -38,7 +40,16 @@ const router = createBrowserRouter([
             {
                 path: "/details/:id",
                 element: <CardDetails />,
-                loader: ({params}) => fetch(`/details/${(params.id)}`) 
+                loader: ({ params }) => fetch(`/details/${(params.id)}`)
+
+
+
+
+            },
+            {
+                path: "/resource/:id",
+                element: <ResourceCardDetails />,
+                loader: ({ params }) => fetch(`/details/${(params.id)}`)
 
 
 

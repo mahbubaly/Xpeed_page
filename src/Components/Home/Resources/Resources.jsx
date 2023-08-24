@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../Shared/Style.css';
-import SingleCards from './SingleCards';
+import '../../Shared/Style.css';
+import SingleCards from '../SingleCards';
+import ResourcesSingleCards from './ResourcesSingleCards';
+
 
 
 const Resources = () => {
@@ -45,9 +47,9 @@ const Resources = () => {
                 <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
-                        ShowAll.map(CardsData => <SingleCards
-                            key={CardsData._id}
-                            CardsData={CardsData}
+                        ShowAll.map(resourceData => <ResourcesSingleCards
+                            key={resourceData._id}
+                            resourceData={resourceData}
 
 
                         />)

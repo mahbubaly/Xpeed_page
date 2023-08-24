@@ -4,7 +4,7 @@ import Cards from './Cards';
 import Pricing from './Pricing';
 import Footer from '../Shared/Footer';
 import Banner from './Banner';
-import Resources from './Resources';
+import Resources from './Resources/Resources';
 
 const Home = () => {
     return (

@@ -3,6 +3,19 @@ body {
     padding: 0;
 }
 
+/* For safari chrome and google */
+.Scroll_content::-webkit-scrollbar {
+    display: none;
+}
+
+/* firefox */
+
+.Scroll_content {
+    scrollbar-width: none;
+}
+
+
+
 /* =================================================================================
         common css
 ============================================== */
@@ -160,6 +173,11 @@ input[type="password"]:focus-visible {
     margin-top: 10px;
     right: 450px;
     top: 20%;
+}
+
+
+.OpenSans{
+    font-family: 'Open Sans';
 }
 
 /* =============================================================================

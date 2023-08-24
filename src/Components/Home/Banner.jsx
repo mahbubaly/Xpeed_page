@@ -3,6 +3,7 @@ import html from '../../assets/Images/html.png'
 import react from '../../assets/Images/react.png'
 import tailwind from '../../assets/Images/tailwind.png'
 import Bootstrap from '../../assets/Images/bootrap.png'
+import figma from '../../assets/Images/figma.png'
 
 const Banner = () => {
     return (
@@ -44,7 +45,7 @@ const Banner = () => {
                 {/* Cards */}
 
                 <div className='flex justify-center sm:mt-[54px] items-center '>
-                    <div className='grid grid-cols-2 sm:grid-cols-4 gap-[30px] '>
+                    <div className='grid grid-cols-2 sm:grid-cols-5 gap-[30px] '>
 
                         <div className='w-[81px] h-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
                             <img src={html} className='w-[30px] h-[30px]' alt="" />
@@ -61,6 +62,10 @@ const Banner = () => {
                         <div className='w-[81px] h-[81px] CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
                             <img src={Bootstrap} className='w-[38px] mx-auto h-[30px]' alt="" />
                             <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Bootstrap</h1>
+                        </div>
+                        <div className='w-[81px] h-[81px] CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
+                            <img src={figma} className='w-[20px] mx-auto h-[30px]' alt="" />
+                            <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Figma</h1>
                         </div>
 
 
