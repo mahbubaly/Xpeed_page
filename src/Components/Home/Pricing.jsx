@@ -21,22 +21,22 @@ const Pricing = () => {
 
                     {/* 1 */}
                     <div className='bg-[#F8EAE6] rounded-[10px] ' >
-                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$59</span>/ Month</h1>
+                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$66</span></h1>
 
-                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
+                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 6 Months</h2>
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  1 User</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px]  font-normal Normal'>  Access to all template</h3>
+                                <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  10 Downloads per day</h3>
+                                <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
@@ -48,7 +48,7 @@ const Pricing = () => {
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  25% Off on renew</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 
 
@@ -69,22 +69,22 @@ const Pricing = () => {
                     </div>
                     {/* 2 */}
                     <div className='bg-[#FFDFA4] rounded-[10px] '>
-                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$129</span>/ Month</h1>
+                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$119</span></h1>
 
-                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
+                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 6 Months</h2>
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  1 User</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px]  font-normal Normal'>  Access to all template</h3>
+                                <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  10 Downloads per day</h3>
+                                <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
@@ -96,7 +96,7 @@ const Pricing = () => {
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  25% Off on renew</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 
 
@@ -117,22 +117,22 @@ const Pricing = () => {
                     </div>
                     {/* 3 */}
                     <div className='bg-[#B2CEC9] sm:ml-[60%] lg:ml-0 sm:w-[302px] lg:w-auto rounded-[10px] '>
-                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$199</span>/ Month</h1>
+                        <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$199</span></h1>
 
-                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[10px]'>One Month Plan</h2>
+                        <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 12 Months</h2>
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  1 User</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px]  font-normal Normal'>  Access to all template</h3>
+                                <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  10 Downloads per day</h3>
+                                <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
@@ -144,7 +144,7 @@ const Pricing = () => {
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
                                 <AiFillCheckCircle className='w-[16px] h-[16px]' />
-                                <h3 className='text-[16px] font-normal Normal'>  25% Off on renew</h3>
+                                <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 
 
@@ -176,7 +176,7 @@ const Pricing = () => {
 
                 <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
 
-                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-5 text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
+                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-[14px] text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
 
 
                 <div className='flex  justify-center mt-[50px] items-center'>

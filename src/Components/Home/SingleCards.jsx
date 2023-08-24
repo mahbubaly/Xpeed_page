@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SingleCards = ({ CardsData }) => {
 
     const { img, title, id } = CardsData;
-    console.log(id);
+   
     return (
         <>
             <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white ' >
@@ -21,7 +21,7 @@ const SingleCards = ({ CardsData }) => {
                     <h1 className='text-[14px] pt-[15px] font-semibold SemiBold'>{title}</h1>
 
                     <div className=' flex justify-between  py-[20px] '>
-                        <Link to="#" >   <button className='text-[12px] h-[39px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]	 hover:bg-[#60599E] hover:text-white'>Details</button>
+                        <Link to={`details/${id}`} >   <button className='text-[12px] h-[39px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]	 hover:bg-[#60599E] hover:text-white'>Details</button>
 
 
                         </Link>

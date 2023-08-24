@@ -4,6 +4,7 @@ import Cards from './Cards';
 import Pricing from './Pricing';
 import Footer from '../Shared/Footer';
 import Banner from './Banner';
+import Resources from './Resources';
 
 const Home = () => {
     return (
@@ -16,6 +17,8 @@ const Home = () => {
 
 
                 <Cards />
+
+                <Resources />
 
                 <Pricing />
 
