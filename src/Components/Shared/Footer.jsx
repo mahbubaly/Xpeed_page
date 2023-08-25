@@ -18,11 +18,11 @@ const Footer = () => {
 
             </div>
 
-            <div className='container mx-auto  pb-[50px] sm:flex justify-between items-center '>
+            <div className='container mx-auto   sm:flex justify-between items-center '>
                 <Link to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
 
 
-                <div className='flex gap-[36px] justify-center sm:gap-[40px] items-center'>
+                <div className='flex gap-[36px] pb-[30px] justify-center sm:gap-[40px] items-center'>
                     <Link to='/team'>  <p className='font-normal text-[14px] sm:text-[16px] Normal'>Team</p>  </Link>
                     <Link to='/caseStudies'> <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Case Studies</p></Link>
 

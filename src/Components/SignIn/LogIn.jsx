@@ -12,7 +12,7 @@ const LogIn = () => {
         <>
 
             <div>
-                <div className=''>
+                <div className='mt-[30px] sm:mt-[99px]'>
                     <h1 className='text-center text-[25px] sm:text-[45px] font-bold Bold'>Good To See You Again 👋</h1>
 
                     <p className='text-[20px] text-center mt-5'>Don’t have an account? <Link className='text-[#60599E] hover:text-[#3f3a68] Bold font-bold text-[]' to='/signUp'>Set one up</Link>.</p>
@@ -30,7 +30,7 @@ const LogIn = () => {
 
                             <div className='mt-[28.5px]'>
                                 <p className='text-[14px] pb-[15px] font-bold Bold'>Password*</p>
-                                <input  type={OpenEye ? "password" :  "text"}  className='inputBorder  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px]  pl-[15px] ' placeholder='Enter Your Password' />
+                                <input  type={OpenEye ?"text"  : "password" }  className='inputBorder  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px]  pl-[15px] ' placeholder='Enter Your Password' />
                             </div>
 
 
@@ -40,7 +40,7 @@ const LogIn = () => {
                                         <span
                                             class="EyeButton "
                                         >
-                                            <AiOutlineEyeInvisible className='w-[18px] text-[#B4B7C2] h-[18px]></AiOutlineEyeInvisible> ' />
+                                            <AiOutlineEyeInvisible className='w-[18px] text-[#B4B7C2] h-[18px]>' />
                                         </span>
                                     </> :
 
@@ -66,15 +66,15 @@ const LogIn = () => {
 
 
 
-                    <div className='flex justify-center mt-5 '>
-                        <div className='sm:flex gap-[116px] items-center mr-20'>
+                    <div className='sm:w-[600px] w-[280px] mx-auto mt-5 '>
+                        <div className='sm:flex justify-between items-center '>
                             <div className='flex gap-[10px]  items-center '>
                                 <input type="checkbox" className='w-[16px] h-4 ' name="" id="" />
 
 
                                 <p className='text-[14px] font-semibold SemiBold'>Remember for 30 Days.</p>
                             </div>
-                            <Link to='/forgetPass' className='text-[14px] sm:mt-0 mt-[2px] sm:text-start text-center font-semibold SemiBold'>
+                            <Link to='/forgetPass' className='text-[14px]  sm:mt-0 mt-[5px] sm:text-start text-center font-semibold SemiBold'>
                                 Forgot password?
                             </Link>
                         </div>
@@ -109,7 +109,7 @@ const LogIn = () => {
                         </div>
                     </div>
 
-                    <div className='text-center mt-[30px] mr-16'>
+                    <div className='text-center mt-[30px] '>
                         <p className='text-[16px] font-normal Normal'>Don’t have an account? <Link to='/signUp' className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign Up</Link></p>
                     </div>
 
