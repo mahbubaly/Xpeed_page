@@ -121,7 +121,7 @@ const ErrorPage = () => {
 
 
                     <div className='sm:px-[30px] lg:px-[135px] px-5 pb-[50px] sm:flex justify-between items-center pt-[30px]'>
-                        <Link to='/'>  <img src={logo} className='w-[50px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
+                        <Link to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
 
 
                         <div className='flex gap-[36px] sm:gap-[40px] items-center'>

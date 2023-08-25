@@ -176,8 +176,13 @@ input[type="password"]:focus-visible {
 }
 
 
-.OpenSans{
+.OpenSans {
     font-family: 'Open Sans';
+}
+
+
+.italicBold {
+    font-family: 'Plus Jakarta Sans';
 }
 
 /* =============================================================================
@@ -198,7 +203,7 @@ input[type="password"]:focus-visible {
         width: 88px;
         height: 38px;
         position: absolute;
-        margin-left: 56%;
+        margin-left: 53%;
         margin-top: 5px;
 
     }

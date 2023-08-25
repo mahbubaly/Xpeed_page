@@ -2,6 +2,7 @@ import React from 'react';
 import '../Shared/Style.css';
 
 import { AiFillCheckCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     return (
@@ -17,10 +18,10 @@ const Pricing = () => {
             {/* Pricing cards */}
 
             <div className='  mt-[80px]'>
-                <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-[50px]'>
+                <div className='grid   sm:grid-cols-2 lg:flex gap-[50px] justify-center'>
 
                     {/* 1 */}
-                    <div className='bg-[#F8EAE6] rounded-[10px] ' >
+                    <div className='bg-[#F8EAE6] sm:w-[322px] rounded-[10px] ' >
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$66</span></h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 6 Months</h2>
@@ -58,9 +59,11 @@ const Pricing = () => {
 
                         </div>
 
-                        <div className=' flex justify-center mt-[50px] pb-[30px]'>
-                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white px-[65px] py-[15px] text-[16px] font-bold Bold'>Get started</button>
+                        <div className=' flex justify-center mt-[50px] '>
+                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px] text-[16px] font-bold Bold'>FIGMA</button>
                         </div>
+
+                        <p className='mt-[30px] px-[42px] pb-[30px] text-center italicBold text-[14px] font-bold italic'>“This Price Is Only For <Link className='text-primary'>Figma Design</Link> Resources”</p>
 
 
 
@@ -68,7 +71,7 @@ const Pricing = () => {
 
                     </div>
                     {/* 2 */}
-                    <div className='bg-[#FFDFA4] rounded-[10px] '>
+                    <div className='bg-[#FFDFA4] sm:w-[322px] rounded-[10px] '>
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$119</span></h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 6 Months</h2>
@@ -106,9 +109,13 @@ const Pricing = () => {
 
                         </div>
 
-                        <div className=' flex justify-center mt-[50px] pb-[30px]'>
-                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white px-[65px] py-[15px]  text-[16px] font-bold Bold'>Get started</button>
+                        <div className=' flex justify-center mt-[50px] '>
+                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px]  text-[16px] font-bold Bold'>HTML5</button>
                         </div>
+
+
+
+                        <p className='mt-[30px] px-[42px] pb-[30px] text-center italicBold text-[14px] font-bold italic'>“This Price Is Only For <Link className='text-primary'>HTML5</Link> Resources”</p>
 
 
 
@@ -116,7 +123,7 @@ const Pricing = () => {
 
                     </div>
                     {/* 3 */}
-                    <div className='bg-[#B2CEC9] sm:ml-[60%] lg:ml-0 sm:w-[302px] lg:w-auto rounded-[10px] '>
+                    <div className='bg-[#B2CEC9] sm:w-[322px] ml-0 sm:ml-[50%] lg:ml-0 rounded-[10px] '>
                         <h1 className=' font-normal Normal pt-[30px] text-center'><span className='text-[48px] font-semibold SemiBold'>$199</span></h1>
 
                         <h2 className='font-semibold SemiBold text-[22px] text-center mt-[14px]'>Paid Every 12 Months</h2>
@@ -154,8 +161,11 @@ const Pricing = () => {
 
                         </div>
                         <div className='mx-4 sm:mx-0 flex justify-center mt-[50px] pb-[30px]'>
-                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white px-[65px] py-[15px]  text-[16px] font-bold Bold'>Get started</button>
+                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px]  text-[16px] font-bold Bold'>FIGMA & HTML5</button>
                         </div>
+
+
+                        
 
 
 
@@ -176,7 +186,7 @@ const Pricing = () => {
 
                 <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
 
-                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-[14px] text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
+                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-[20px] text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
 
 
                 <div className='flex  justify-center mt-[50px] items-center'>

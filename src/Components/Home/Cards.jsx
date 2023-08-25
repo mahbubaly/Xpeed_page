@@ -42,7 +42,7 @@ const Cards = () => {
 
                     {
                         ShowAll.map(CardsData => <SingleCards
-                            key={CardsData._id}
+                            key={CardsData.id}
                             CardsData={CardsData}
 
 

@@ -13,7 +13,7 @@ const Banner = () => {
 
                 <div className=' mx-auto Choose_width'>
 
-                    <h1 className='lg:text-[50px] leading-[75px] sm:text-[40px] text-[30px] text-center mt-[18.5px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
+                    <h1 className='lg:text-[50px] leading-[75px] sm:text-[40px] text-[30px] text-center mt-[49.5px] font-bold Bold'>Choose The Best HTML5 Templates For Your Project's
                         <span className='text-[#60599E]'> Only $9.99</span>
 
                     </h1>

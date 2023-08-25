@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
 
             <div className='container mx-auto  pb-[50px] sm:flex justify-between items-center '>
-                <Link to='/'>  <img src={logo} className='w-[50px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
+                <Link to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
 
 
                 <div className='flex gap-[36px] justify-center sm:gap-[40px] items-center'>

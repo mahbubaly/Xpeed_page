@@ -23,7 +23,7 @@ const ResourcesSingleCards = ({resourceData}) => {
 
                         </Link>
 
-                        <button className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  bg-[#60599E] hover:bg-[#3f3a68] text-white'>Live Preview</button>
+                        <button className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  bg-[#60599E] hover:bg-[#3f3a68] text-white'>Add To Cart</button>
 
                     </div>
 
