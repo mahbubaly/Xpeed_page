@@ -3,9 +3,14 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* For safari chrome and google */
 .Scroll_content::-webkit-scrollbar {
     display: none;
+    scroll-behavior: smooth;
 }
 
 /* firefox */
@@ -142,15 +147,21 @@ input[type="checkbox"]::after {
 }
 
 input[type="text"] {
-    outline: 1px solid #60599E;
+    outline: none;
+    border: none;
+    background-color: #FFF;
 }
 
 input[type="password"] {
-    outline: 1px solid #60599E;
+    outline: none;
+    border: none;
+    background-color: #FFF;
 }
 
 input[type="email"] {
-    outline: 1px solid #60599E;
+    outline: none;
+    border: none;
+    background-color: #FFF;
 }
 
 input[type="text"]:focus-visible {

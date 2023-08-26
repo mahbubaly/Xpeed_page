@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Shared/Style.css';
-
-import { AiFillCheckCircle } from 'react-icons/ai';
+import check from '../../assets/Images/Icon/Check.png'
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -28,27 +27,27 @@ const Pricing = () => {
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Use personal & commercial</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Priority support </h3>
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 
@@ -78,27 +77,27 @@ const Pricing = () => {
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Use personal & commercial</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Priority support </h3>
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 
@@ -130,27 +129,27 @@ const Pricing = () => {
 
                         <div className='pl-[30px] '>
                             <div className='flex gap-[10px] mt-[30px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 10 Download Per Day</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px]  font-normal Normal'> Access To All Design Resources</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'>  Access To New Releases</h3>
                             </div>
                             <div className='flex gap-[10px] my-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Use personal & commercial</h3>
                             </div>
                             <div className='flex gap-[10px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> Priority support </h3>
                             </div>
                             <div className='flex gap-[10px] mt-[15px] items-center'>
-                                <AiFillCheckCircle className='w-[16px] h-[16px]' />
+                                <img src={check} className='w-[16px] h-[16px]' />
                                 <h3 className='text-[16px] font-normal Normal'> 15% Renewal Discount</h3>
                             </div>
 

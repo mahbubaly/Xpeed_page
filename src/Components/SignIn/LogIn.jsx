@@ -30,29 +30,52 @@ const LogIn = () => {
 
                             <div className='mt-[28.5px]'>
                                 <p className='text-[14px] pb-[15px] font-bold Bold'>Password*</p>
-                                <input  type={OpenEye ?"text"  : "password" }  className='inputBorder  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px]  pl-[15px] ' placeholder='Enter Your Password' />
+
                             </div>
 
 
-                            <div onClick={() => setOpenEye(prev =>! prev)}>
-                                {
-                                    OpenEye == true ? <>
-                                        <span
-                                            class="EyeButton "
-                                        >
-                                            <AiOutlineEyeInvisible className='w-[18px] text-[#B4B7C2] h-[18px]>' />
-                                        </span>
-                                    </> :
 
-                                        <>  <span
-                                            class="EyeButton "
-                                        >
-                                            <img src={eye} className='w-[18px] h-[18px] ' alt="" />
-                                        </span>
-                                        </>
+                            <div className="  flex  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] ">
 
-                                }
+                              
+
+                                    <input type={OpenEye ? "text" : "password"} className="   py-[10px]   w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
+                                
+
+
+
+
+
+                                <div className='-mr-[50px]' onClick={() => setOpenEye(prev => !prev)}>
+                                    {
+                                        OpenEye == true ? <>
+                                            <span
+                                                class=""
+                                            >
+                                                <AiOutlineEyeInvisible className='w-[18px] text-[#B4B7C2] h-[18px]>' />
+                                            </span>
+                                        </> :
+
+                                            <>  <span
+                                                class=" "
+                                            >
+                                                <img src={eye} className='w-[18px] h-[18px] ' alt="" />
+                                            </span>
+                                            </>
+
+                                    }
+                                </div>
+
+
                             </div>
+
+
+
+
+
+
+
+
 
 
                         </div>

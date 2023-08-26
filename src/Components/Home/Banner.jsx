@@ -24,18 +24,19 @@ const Banner = () => {
 
                
 
-                    <div className="flex     justify-center my-[30px] sm:my-0  sm:mt-[80px] ">
+                    <div className="  flex mb-[30px] sm:mb-0  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] justify-between  p-[5px]">
 
 
-                        <input
+                        <input  bg-white 
                             type="text"
+                            
 
                             placeholder="e.g. “saas”"
-                            className="w-[280px]  sm:w-[500px]  lg:w-[634px] h-[48px] sm:py-[19px] pl-[15px] ml-[17px] py-[14px]  sm:h-[58px]  rounded-[4px]  border-[1px] border-[#60599E]  shadow-sm "
+                            className="   py-[10px]  w-[180px] sm:w-[470px]  bg-[#FFFFFF]  "
                         />
 
 
-                        <button className='bg-[#60599E] Search_btn hover:bg-[#3f3a68] rounded-[4px] text-white  text-[14px]   font-bold Bold'>Search</button>
+                        <button className='bg-[#60599E]  w-[88px] h-[38px]  sm:w-[128px] sm:h-[48px]  hover:bg-[#3f3a68] rounded-[4px] text-white  text-[14px]   font-bold Bold'>Search</button>
 
 
                     </div>

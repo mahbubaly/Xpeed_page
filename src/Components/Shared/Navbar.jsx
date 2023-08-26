@@ -10,13 +10,15 @@ const Navbar = () => {
 
     const [Visible, SetOpen] = useState(false);
     const [cart, SetCart] = useState(false);
+
+    
     return (
         <>
 
             <div className='container mx-auto '>
 
                 <div className=' flex justify-between items-center '>
-                    <Link>
+                    <Link to='/'>
                         <img src={logo} className='w-[59px] h-[35px]' alt="" />
 
 

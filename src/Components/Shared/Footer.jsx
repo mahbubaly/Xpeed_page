@@ -24,10 +24,10 @@ const Footer = () => {
 
                 <div className='flex gap-[36px] pb-[30px] justify-center sm:gap-[40px] items-center'>
                     <Link to='/team'>  <p className='font-normal text-[14px] sm:text-[16px] Normal'>Team</p>  </Link>
-                    <Link to='/caseStudies'> <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Case Studies</p></Link>
+                    <Link to='/caseStudies'> <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Refund Policy</p></Link>
 
                     <Link to='/publications'>
-                        <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Publications</p>
+                        <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Privacy Policy</p>
 
 
                     </Link>

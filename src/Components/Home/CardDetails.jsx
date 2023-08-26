@@ -17,7 +17,9 @@ const CardDetails = () => {
 
 
 
+
     const { id } = cardDetails;
+
 
 
 
@@ -33,6 +35,13 @@ const CardDetails = () => {
 
     const selectedData = allData.find((data) => data.id == id);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
+
+
+
+
 
 
 
@@ -44,9 +53,9 @@ const CardDetails = () => {
     return (
         <>
 
-            <div className='mt-[18.5px] container mx-auto'>
+            <div id='details' className='mt-[18.5px] container mx-auto '>
                 {
-                    selectedData && <>
+                    selectedData ? <>
 
                         <h1 className='font-bold text-[30px] Bold'>{selectedData.title}</h1>
 
@@ -61,8 +70,8 @@ const CardDetails = () => {
                             </div>
                         </div>
                         <div className='flex  mt-[50px] gap-[34px]'>
-                            <div className='overflow-scroll Scroll_content  rounded-[4px]  w-[762px] h-[762px]'>
-                                <img src={selectedData.long_img} className='object-contain' alt="" />
+                            <div className='overflow-scroll Scroll_content scroll-smooth rounded-[4px]  w-[762px] h-[762px]'>
+                                <img src={selectedData.long_img} className='object-contain bg-white p-[4px]' alt="" />
                             </div>
 
                             <div className='w-[370px] bg-[#60599E] p-[30px] rounded-[4px]'>
@@ -92,6 +101,14 @@ const CardDetails = () => {
                         </div>
 
 
+                    </> : <>
+
+                        <div className='flex justify-center items-center mt-[10%]'>
+
+                            <span className="loading loading-spinner loading-md"></span>
+                            <h1 className='text-center '>Loading..........</h1>
+                        </div>
+
                     </>
                 }
 
@@ -100,7 +117,15 @@ const CardDetails = () => {
 
             </div>
 
-            <Pricing />
+            {
+                <Pricing /> ? <Pricing /> : <>
+
+
+                    <h1 className='text-center mt-[10%]'>Loading..........</h1>
+
+
+                </>
+            }
 
 
 

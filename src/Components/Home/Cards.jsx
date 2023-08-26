@@ -7,29 +7,20 @@ const Cards = () => {
 
     const [ShowAll, setShowAll] = useState([]);
     const [ShowTablet, setShowTablet] = useState([]);
-    
-
     useEffect(() => {
         fetch('Data.json')
             .then(res => res.json())
             .then(data => {
-
                 const sliceMObile = data.slice(0, 4);
                 const sliceTablet = data.slice(0, 8);
-
                 setShowTablet(sliceTablet);
-
-
-
                 setShowAll(data);
-
-
             }
             )
 
     }, [])
 
-    
+
 
     return (
         <>
@@ -41,12 +32,13 @@ const Cards = () => {
                 <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
-                        ShowAll.map(CardsData => <SingleCards
-                            key={CardsData.id}
-                            CardsData={CardsData}
+                        ShowAll.map(CardsData =>
+                            <SingleCards
+                                key={CardsData.id}
+                                CardsData={CardsData}
 
 
-                        />)
+                            />)
                     }
 
 
@@ -95,7 +87,7 @@ const Cards = () => {
 
                 <div className='flex  justify-center mt-[80px] items-center'>
 
-                    <button  className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
+                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
                 </div>
 
 
