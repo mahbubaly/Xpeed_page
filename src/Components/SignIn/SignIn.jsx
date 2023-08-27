@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Shared/Style.css';
 import googleIcon from '../../assets/Images/Icon/Google.png'
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
+
+    
+
+    
     return (
         <>
 
@@ -81,7 +85,9 @@ const SignIn = () => {
                     </div>
 
                     <div className='text-center mt-[30px] mr-16'>
-                        <p className='text-[16px] font-normal Normal'>Already have an account? <Link to='/signIn' className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '> Sign In</Link></p>
+                        <p className='text-[16px] font-normal Normal'>Already have an account? <Link to='/signIn'  onClick={()=>{
+                             window.scrollTo(0, 0);
+                        }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '> Sign In</Link></p>
                     </div>
 
                 </div>

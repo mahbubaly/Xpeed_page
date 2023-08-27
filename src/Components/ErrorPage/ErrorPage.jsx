@@ -15,10 +15,10 @@ const ErrorPage = () => {
             <div className='BG_color'>
 
                 <div className='container mx-auto'>
-                    <div className='xl:px-[135px] sm:px-[30px] px-5 '>
-                        <div className='pb-[29px] flex justify-between items-center pt-[30px]'>
+                    <div className=' '>
+                        <div className=' flex justify-between items-center '>
                             <Link>
-                                <img src={logo} className='w-[71px] h-[42px]' alt="" />
+                                <img src={logo} className='w-[71px] h-[42px] mt-[29px]' alt="" />
 
 
                             </Link>
@@ -29,60 +29,7 @@ const ErrorPage = () => {
 
                                 </Link>
 
-                                <Modal isOpen={Visible} onRequestClose={() => SetOpen(false)}
-
-                                    style={{
-                                        overlay: {
-
-
-
-                                        },
-
-                                        content: {
-                                            width: '330px',
-                                            left: '50%',
-                                            right: '0px',
-                                            top: '75px',
-
-
-
-
-
-
-                                        },
-
-                                    }} >
-                                    <div className='custom-modal'>
-
-                                        <p className='text-lg font-bold Bold mb-[30px]'>Your Cart (2)</p>
-
-                                        <div className='pt-[100px]'>
-                                            <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
-                                            <p className='text-center mt-[30px] font-normal Normal'>
-                                                Unlimited HTML5 Template For Your Creative Projects
-                                            </p>
-                                        </div>
-                                        <div className='pt-[100px]'>
-                                            <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
-                                            <p className='text-center mt-[30px] font-normal Normal'>
-                                                Unlimited HTML5 Template For Your Creative Projects
-                                            </p>
-                                        </div>
-
-
-
-
-
-
-                                        <div className='flex justify-center items-end mt-[126px] '>
-                                            <button className='bg-[#60599E] hover:bg-[#3f3a68] items-end  mx-auto rounded-[4px] text-white w-[270px] h-[48px] text-[14px] pb-0 font-bold Bold'>Continue Checkout $39.96</button>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </Modal>
+                              
 
 
 
@@ -114,13 +61,13 @@ const ErrorPage = () => {
 
                     {/* Footer */}
 
-                    <div className='mt-[80px] mb-[30px] sm:px-[30px] px-5 lg:px-[135px]'>
+                    <div className='mt-[80px] '>
                         <hr className='border-[1px] bg-[#E5DFDC] ' />
 
                     </div>
 
 
-                    <div className='sm:px-[30px] lg:px-[135px] px-5 pb-[50px] sm:flex justify-between items-center pt-[30px]'>
+                    <div className='  sm:flex justify-between items-center pt-[30px]'>
                         <Link to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px] ' alt="" /></Link>
 
 

@@ -11,6 +11,9 @@ import LogIn from "../SignIn/LogIn";
 import ForgetPass from "../SignIn/ForgetPass";
 import ComingPage from "../ComingPage/ComingPage";
 import ResourceCardDetails from "../Home/Resources/ResourceCardDetails";
+import HtmlProducts from "../HtmlProductPage/HtmlProducts";
+import FigmaProducts from "../FigmaProductPage/FigmaProducts";
+import HtmlCardDetails from "../HtmlProductPage/HtmlCardDetails";
 
 
 
@@ -58,6 +61,31 @@ const router = createBrowserRouter([
             {
                 path: "/forgetPass",
                 element: <ForgetPass />,
+
+
+
+
+            },
+            {
+                path: "/viewAllHtmlTemplate",
+                element: <HtmlProducts />
+
+
+
+
+            },
+            {
+                path: "/viewAllHtmlTemplate/details/:id",
+                element: <HtmlCardDetails />,
+                loader: ({ params }) => fetch(`/viewAllHtmlTemplate/details/${(params.id)}`)
+
+
+
+
+            },
+            {
+                path: "/viewAllFigmaTemplate",
+                element: <FigmaProducts />
 
 
 

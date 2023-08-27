@@ -60,8 +60,11 @@ const ResourceCardDetails = () => {
                             </div>
                         </div>
                         <div className='flex  mt-[50px] gap-[34px]'>
-                            <div className='overflow-scroll Scroll_content  rounded-[4px]  w-[762px] h-[762px]'>
-                                <img src={selectedData.long_img} className='object-contain bg-white p-[4px' alt="" />
+
+                            {/* Figma Img sections */}
+                            
+                            <div className='overflow-scroll Scroll_content  rounded-[4px] bg-white p-[4px] w-[762px] h-[762px]'>
+                                <img src={selectedData.long_img} className=' rounded-[4px] ' alt="" />
                             </div>
 
                             <div className='w-[370px] bg-[#60599E] p-[30px] rounded-[4px]'>
@@ -83,7 +86,7 @@ const ResourceCardDetails = () => {
                                 </div>
 
                                 <div className='mt-[57px] '>
-                                    <Link><button className='text-center text-[18px] text-white hover:text-slate-200 OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Live View</button></Link>
+                                    <Link><button className='text-center text-[18px] text-white hover:text-slate-200 OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Copy Now</button></Link>
 
                                     <Link><button className='bg-white mt-[30px] text-center text-[18px] text-[#60599E] hover:text-[#3f3a68] OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Add To Cart</button></Link>
                                 </div>

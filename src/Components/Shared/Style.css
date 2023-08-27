@@ -148,19 +148,22 @@ input[type="checkbox"]::after {
 
 input[type="text"] {
     outline: none;
-    border: none;
+   
     background-color: #FFF;
 }
 
 input[type="password"] {
     outline: none;
-    border: none;
+    
+    
     background-color: #FFF;
 }
 
 input[type="email"] {
     outline: none;
-    border: none;
+    border: 1px solid #60599E;
+    
+    
     background-color: #FFF;
 }
 
@@ -170,6 +173,7 @@ input[type="text"]:focus-visible {
 
 input[type="email"]:focus-visible {
     outline: none;
+    border: 1px solid #60599E;
 }
 
 input[type="password"]:focus-visible {

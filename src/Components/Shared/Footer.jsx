@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-           
 
 
 
-            
+
+
 
 
             <div className='   '>
@@ -19,7 +19,10 @@ const Footer = () => {
             </div>
 
             <div className='container mx-auto   sm:flex justify-between items-center '>
-                <Link to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
+                <Link onClick={() => {
+                    window.scrollTo(0, 0);
+                }}
+                    to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
 
 
                 <div className='flex gap-[36px] pb-[30px] justify-center sm:gap-[40px] items-center'>

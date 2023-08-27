@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Shared/Style.css';
 import { Link } from 'react-router-dom';
 import goggleIcon from '../../assets/Images/Icon/Google.png'
@@ -6,7 +6,6 @@ import eye from '../../assets/Images/Icon/eye on.png'
 import { AiOutlineEyeInvisible } from 'react-icons/ai';
 
 const LogIn = () => {
-
     const [OpenEye, setOpenEye] = useState(false);
     return (
         <>
@@ -25,7 +24,7 @@ const LogIn = () => {
                         <div>
                             <div className=''>
                                 <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                                <input type="email" className='inputBorder w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] px-[15px] ' placeholder='Enter Your Email' />
+                                <input type="email" className='inputBorder   w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] px-[15px] ' placeholder='Enter Your Email' />
                             </div>
 
                             <div className='mt-[28.5px]'>
@@ -37,30 +36,23 @@ const LogIn = () => {
 
                             <div className="  flex  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] ">
 
-                              
 
-                                    <input type={OpenEye ? "text" : "password"} className="   py-[10px]   w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
-                                
 
+                                <input type={OpenEye ? "text" : "password"} className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
 
 
 
 
-                                <div className='-mr-[50px]' onClick={() => setOpenEye(prev => !prev)}>
+
+
+                                <div className='pr-5' onClick={() => setOpenEye(prev => !prev)}>
                                     {
                                         OpenEye == true ? <>
-                                            <span
-                                                class=""
-                                            >
-                                                <AiOutlineEyeInvisible className='w-[18px] text-[#B4B7C2] h-[18px]>' />
-                                            </span>
+                                            <p className='text-[#C6C1C0] text-[14px] font-normal Normal'>Hide</p>
                                         </> :
 
-                                            <>  <span
-                                                class=" "
-                                            >
-                                                <img src={eye} className='w-[18px] h-[18px] ' alt="" />
-                                            </span>
+                                            <>
+                                                <p className='text-[#C6C1C0] text-[14px] font-normal Normal'>Show</p>
                                             </>
 
                                     }
@@ -133,7 +125,9 @@ const LogIn = () => {
                     </div>
 
                     <div className='text-center mt-[30px] '>
-                        <p className='text-[16px] font-normal Normal'>Don’t have an account? <Link to='/signUp' className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign Up</Link></p>
+                        <p className='text-[16px] font-normal Normal'>Don’t have an account? <Link onClick={() => {
+                            window.scrollTo(0, 0);
+                        }} to='/signUp' className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign Up</Link></p>
                     </div>
 
 

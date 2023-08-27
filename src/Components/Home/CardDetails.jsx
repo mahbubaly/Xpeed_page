@@ -70,8 +70,8 @@ const CardDetails = () => {
                             </div>
                         </div>
                         <div className='flex  mt-[50px] gap-[34px]'>
-                            <div className='overflow-scroll Scroll_content scroll-smooth rounded-[4px]  w-[762px] h-[762px]'>
-                                <img src={selectedData.long_img} className='object-contain bg-white p-[4px]' alt="" />
+                            <div className='overflow-scroll Scroll_content scroll-smooth bg-white p-[4px] rounded-[4px]  w-[762px] h-[762px]'>
+                                <img src={selectedData.long_img} className='rounded-[4px] ' alt="" />
                             </div>
 
                             <div className='w-[370px] bg-[#60599E] p-[30px] rounded-[4px]'>

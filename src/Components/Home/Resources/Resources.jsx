@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../Shared/Style.css';
 import SingleCards from '../SingleCards';
 import ResourcesSingleCards from './ResourcesSingleCards';
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,6 +10,7 @@ const Resources = () => {
 
     const [ShowAll, setShowAll] = useState([]);
     const [ShowTablet, setShowTablet] = useState([]);
+    const [ShowDesktop, setShowDesktop] = useState([]);
 
 
     useEffect(() => {
@@ -18,6 +20,8 @@ const Resources = () => {
 
                 const sliceMObile = data.slice(0, 4);
                 const sliceTablet = data.slice(0, 8);
+                const sliceDesktop = data.slice(0, 12);
+                setShowDesktop(sliceDesktop);
 
                 setShowTablet(sliceTablet);
 
@@ -34,7 +38,7 @@ const Resources = () => {
         <>
             <div className='mt-[100px]'>
                 <h1 className='text-center mx-auto lg:w-[770px] lg:text-[45px] font-bold Bold'>
-                    Download 10,000+ Figma Design Resources Only $9.99
+                    Download 10,000+ Figma Design Resources <span className='text-[#60599E]'> Only $9.99</span>
                 </h1>
             </div>
 
@@ -47,7 +51,7 @@ const Resources = () => {
                 <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
-                        ShowAll.map(resourceData => <ResourcesSingleCards
+                        ShowDesktop.map(resourceData => <ResourcesSingleCards
                             key={resourceData.id}
                             resourceData={resourceData}
 
@@ -63,7 +67,9 @@ const Resources = () => {
 
                 <div className='flex  justify-center mt-[80px] items-center'>
 
-                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
+                    <Link onClick={() => {
+                        window.scrollTo(0, 0);
+                    }}  to='/viewAllFigmaTemplate' className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</Link>
                 </div>
 
 
@@ -101,7 +107,7 @@ const Resources = () => {
 
                 <div className='flex  justify-center mt-[80px] items-center'>
 
-                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
+                    <Link to='/viewAllFigmaTemplate' className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</Link>
                 </div>
 
 
