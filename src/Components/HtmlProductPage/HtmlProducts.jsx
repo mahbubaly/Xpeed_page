@@ -3,6 +3,7 @@ import '../Shared/Style.css';
 import SingleCards from '../Home/SingleCards';
 import { Link } from 'react-router-dom';
 import Pricing from '../Home/Pricing';
+import HtmlSinglePage from './HtmlSinglePage';
 
 const HtmlProducts = () => {
 
@@ -68,7 +69,7 @@ const HtmlProducts = () => {
 
                         {
                             ShowAll.map(CardsData =>
-                                <SingleCards
+                                <HtmlSinglePage
                                     key={CardsData.id}
                                     CardsData={CardsData}
 
@@ -106,7 +107,7 @@ const HtmlProducts = () => {
                     <div className='grid   grid-cols-1 sm:grid-cols-2  gap-[30px] rounded-[4px]'>
 
                         {
-                            ShowTablet.map(CardsData => <SingleCards
+                            ShowTablet.map(CardsData => <HtmlSinglePage
                                 key={CardsData.id}
                                 CardsData={CardsData}
 

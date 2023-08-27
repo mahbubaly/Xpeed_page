@@ -56,7 +56,7 @@ const ResourceCardDetails = () => {
                             </div>
                             <div className='flex gap-[10px] items-center'>
                                 <img src={download} className='w-[16.389px] h-[16px]' alt="" />
-                                <p className='text-[16px] font-semibold SemiBold'>{selectedData.download} views</p>
+                                <p className='text-[16px] font-semibold SemiBold'>{selectedData.download} download</p>
                             </div>
                         </div>
                         <div className='flex  mt-[50px] gap-[34px]'>

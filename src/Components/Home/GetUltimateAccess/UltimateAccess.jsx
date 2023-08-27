@@ -184,7 +184,7 @@ const UltimateAccess = () => {
 
             <div className='mt-[50px] sm:mt-[150px] '>
 
-                <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
+                <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px]  font-bold Bold'>Xpeed Page Template</h1>
 
                 <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-5 sm:mt-[30px]'>Let’s Start Project Together</h1>
 

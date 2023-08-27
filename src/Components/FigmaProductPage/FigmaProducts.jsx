@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../Shared/Style.css'
 import Pricing from '../Home/Pricing';
-import SingleCards from '../Home/SingleCards';
 import { Link } from 'react-router-dom';
+import FigmaSingleCard from './FigmaSingleCard';
 
 const FigmaProducts = () => {
 
@@ -77,7 +77,7 @@ const FigmaProducts = () => {
 
                         {
                             ShowAll.map(CardsData =>
-                                <SingleCards
+                                <FigmaSingleCard
                                     key={CardsData.id}
                                     CardsData={CardsData}
 
@@ -115,7 +115,7 @@ const FigmaProducts = () => {
                     <div className='grid   grid-cols-1 sm:grid-cols-2  gap-[30px] rounded-[4px]'>
 
                         {
-                            ShowTablet.map(CardsData => <SingleCards
+                            ShowTablet.map(CardsData => <FigmaSingleCard
                                 key={CardsData.id}
                                 CardsData={CardsData}
 

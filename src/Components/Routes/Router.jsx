@@ -16,6 +16,7 @@ import FigmaProducts from "../FigmaProductPage/FigmaProducts";
 import HtmlCardDetails from "../HtmlProductPage/HtmlCardDetails";
 import Contact from "../Home/Contacts/Contact";
 import UltimateAccess from "../Home/GetUltimateAccess/UltimateAccess";
+import FigmaCardsDetailsPage from './../FigmaProductPage/FigmaCardsDetailsPage';
 
 
 
@@ -96,6 +97,15 @@ const router = createBrowserRouter([
                 path: "/viewAllHtmlTemplate/details/:id",
                 element: <HtmlCardDetails />,
                 loader: ({ params }) => fetch(`/viewAllHtmlTemplate/details/${(params.id)}`)
+
+
+
+
+            },
+            {
+                path: "/viewAllFigmaTemplate/details/:id",
+                element: <FigmaCardsDetailsPage />,
+                loader: ({ params }) => fetch(`/viewAllFigmaTemplate/details/${(params.id)}`)
 
 
 
