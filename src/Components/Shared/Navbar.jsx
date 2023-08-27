@@ -17,8 +17,8 @@ const Navbar = () => {
 
             <div className='container mx-auto '>
 
-                <div className=' flex justify-between items-center '>
-                    <Link to='/'>
+                <div className='  flex justify-between items-center '>
+                    <Link className='' to='/'>
                         <img src={logo} className='w-[59px] h-[35px]' alt="" />
 
 
@@ -26,10 +26,10 @@ const Navbar = () => {
 
                     <div className='flex gap-[30px] items-center'>
                         <div className='flex gap-5 items-center'>
-                            <Link id='addCard' >
+                            <div>
                                 <img src={shoppingCard} onClick={() => SetCart(prev => !prev)} className='w-[28px] h-[28px]' />
 
-                            </Link>
+                            </div>
 
                             {
                                 cart && <>
@@ -62,8 +62,10 @@ const Navbar = () => {
 
 
 
-                        <div className='lg:flex gap-[30px] hidden items-center'>
-                            <button className='bg-[#60599E] rounded-[4px]  text-white w-[179px] h-[42px] text-[14px] font-bold Bold '>Get Ultimate Access</button>
+                        <div onClick={() => {
+                            window.scrollTo(0, 0);
+                        }} className='lg:flex gap-[30px] hidden items-center'>
+                            <Link to='/GetUltimateAccess' className='bg-[#60599E] flex items-center justify-center rounded-[4px]  text-white w-[179px] h-[42px] text-center text-[14px] font-bold Bold '>Get Ultimate Access</Link>
 
 
                         </div>

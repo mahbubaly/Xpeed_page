@@ -239,6 +239,17 @@ textarea:focus {
         right: 10%;
         margin-top: -35px;
     }
+    .items {
+        width: 250px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 19%;
+        top: 16%;
+    }
+
 
 
 }
@@ -347,8 +358,8 @@ textarea:focus {
 
 
         margin-top: 10px;
-        right: 28.5%;
-        top: 16%;
+        right: 28%;
+        top: 18%;
     }
 
 }

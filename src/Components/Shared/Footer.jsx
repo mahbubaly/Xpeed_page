@@ -18,7 +18,7 @@ const Footer = () => {
 
             </div>
 
-            <div className='container mx-auto  gap-[48px] flex sm:justify-between items-center '>
+            <div className='container mx-auto  gap-[48px] flex justify-center sm:justify-between items-center '>
                 <Link onClick={() => {
                     window.scrollTo(0, 0);
                 }}

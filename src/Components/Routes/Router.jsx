@@ -15,6 +15,7 @@ import HtmlProducts from "../HtmlProductPage/HtmlProducts";
 import FigmaProducts from "../FigmaProductPage/FigmaProducts";
 import HtmlCardDetails from "../HtmlProductPage/HtmlCardDetails";
 import Contact from "../Home/Contacts/Contact";
+import UltimateAccess from "../Home/GetUltimateAccess/UltimateAccess";
 
 
 
@@ -78,6 +79,14 @@ const router = createBrowserRouter([
             {
                 path: "/viewAllHtmlTemplate",
                 element: <HtmlProducts />
+
+
+
+
+            },
+            {
+                path: "/GetUltimateAccess",
+                element: <UltimateAccess />
 
 
 
