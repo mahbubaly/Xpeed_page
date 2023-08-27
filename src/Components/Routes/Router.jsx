@@ -14,6 +14,7 @@ import ResourceCardDetails from "../Home/Resources/ResourceCardDetails";
 import HtmlProducts from "../HtmlProductPage/HtmlProducts";
 import FigmaProducts from "../FigmaProductPage/FigmaProducts";
 import HtmlCardDetails from "../HtmlProductPage/HtmlCardDetails";
+import Contact from "../Home/Contacts/Contact";
 
 
 
@@ -61,6 +62,14 @@ const router = createBrowserRouter([
             {
                 path: "/forgetPass",
                 element: <ForgetPass />,
+
+
+
+
+            },
+            {
+                path: "/contact",
+                element: <Contact />
 
 
 

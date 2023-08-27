@@ -36,8 +36,8 @@ const Resources = () => {
     }, [])
     return (
         <>
-            <div className='mt-[100px]'>
-                <h1 className='text-center mx-auto lg:w-[770px] lg:text-[45px] font-bold Bold'>
+            <div className='mt-[50px] sm:mt-[100px]'>
+                <h1 className='text-center mx-auto lg:w-[770px] text-[25px] lg:text-[45px] font-bold Bold'>
                     Download 10,000+ Figma Design Resources <span className='text-[#60599E]'> Only $9.99</span>
                 </h1>
             </div>

@@ -75,7 +75,7 @@ input[type="checkbox"]::after {
 .items {
     width: 330px;
     position: absolute;
-    background-color: whitesmoke;
+    background-color: white;
 
     margin-top: 10px;
     right: 32%;
@@ -148,22 +148,22 @@ input[type="checkbox"]::after {
 
 input[type="text"] {
     outline: none;
-   
+
     background-color: #FFF;
 }
 
 input[type="password"] {
     outline: none;
-    
-    
+
+
     background-color: #FFF;
 }
 
 input[type="email"] {
     outline: none;
     border: 1px solid #60599E;
-    
-    
+
+
     background-color: #FFF;
 }
 
@@ -180,10 +180,21 @@ input[type="password"]:focus-visible {
     outline: none;
 }
 
+
+textarea {
+    border: 1px solid #60599E;
+
+}
+
+textarea:focus {
+    outline: none;
+
+}
+
 .items {
     width: 330px;
     position: absolute;
-    background-color: whitesmoke;
+    background-color: white;
 
     margin-top: 10px;
     right: 450px;
@@ -289,6 +300,18 @@ input[type="password"]:focus-visible {
         right: 13%;
         margin-top: -35px;
     }
+
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 10.5%;
+        top: 16%;
+    }
+
 }
 
 /* @media (min-width: 768px) {
@@ -316,6 +339,18 @@ input[type="password"]:focus-visible {
         right: 22%;
         margin-top: -35px;
     }
+
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 28.5%;
+        top: 16%;
+    }
+
 }
 
 /* ================================================== */
@@ -347,11 +382,12 @@ input[type="password"]:focus-visible {
     .items {
         width: 330px;
         position: absolute;
-        background-color: whitesmoke;
+        background-color: white;
+
 
         margin-top: 10px;
-        right: 450px;
-        top: 20%;
+        right: 23.5%;
+        top: 16%;
     }
 
     .cardWidth {
@@ -401,6 +437,18 @@ input[type="password"]:focus-visible {
         right: 30%;
         margin-top: -35px;
     }
+    
+
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 21%;
+        top: 16%;
+    }
 }
 
 
@@ -420,6 +468,16 @@ input[type="password"]:focus-visible {
         right: 32%;
         margin-top: -35px;
     }
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 21%;
+        top: 16%;
+    }
 }
 
 
@@ -437,6 +495,17 @@ input[type="password"]:focus-visible {
         position: absolute;
         right: 33%;
         margin-top: -35px;
+    }
+    
+    .items {
+        width: 330px;
+        position: absolute;
+        background-color: white;
+
+
+        margin-top: 10px;
+        right: 22%;
+        top: 14%;
     }
 
 }
@@ -461,11 +530,11 @@ input[type="password"]:focus-visible {
     .items {
         width: 330px;
         position: absolute;
-        background-color: whitesmoke;
+        background-color: white;
 
         margin-top: 10px;
-        right: 450px;
-        top: 15%;
+        right: 26%;
+        top: 12%;
     }
 
     .EyeButton {

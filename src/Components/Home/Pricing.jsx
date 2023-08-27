@@ -9,7 +9,7 @@ const Pricing = () => {
 
             <div className='mt-[100px]'>
                 <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
-                <p className='text-center mt-[20px] font-normal Normal'>
+                <p className='text-center text-lg mt-[20px] font-normal Normal'>
                     Unlimited HTML5 Template For Your Creative Projects
                 </p>
             </div>
@@ -17,7 +17,7 @@ const Pricing = () => {
             {/* Pricing cards */}
 
             <div className='  mt-[80px]'>
-                <div className='grid   sm:grid-cols-2 lg:flex gap-[50px] justify-center'>
+                <div className='grid   sm:grid-cols-2 lg:flex gap-[50px] px-5 lg:px-0 justify-center'>
 
                     {/* 1 */}
                     <div className='bg-[#F8EAE6] sm:w-[322px] rounded-[10px] ' >
@@ -183,18 +183,20 @@ const Pricing = () => {
             </div>
 
 
-            <div className='mt-[150px] '>
+            <div className='mt-[50px] sm:mt-[150px] '>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 
-                <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-[30px]'>Let’s Start Project Together</h1>
+                <h1 className='text-center text-[25px] sm:text-[45px] leading-normal  font-bold Bold mt-5 sm:mt-[30px]'>Let’s Start Project Together</h1>
 
-                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-[20px] text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
+                <p className='lg:w-[776px] w-[280px] sm:w-[684px] text-center mx-auto mt-[15px] sm:mt-[20px] text-lg font-normal Normal'>Maybe there's an opportunity for your business to find value through a collaboration with Xpeed Page. Please share your thoughts in the form below, and we’ll respond within 48 hours of receiving the inquiry.</p>
 
 
-                <div className='flex  justify-center mt-[50px] items-center'>
+                <div className='flex  justify-center mt-[30px] sm:mt-[50px] items-center'>
 
-                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>Contact Us</button>
+                    <Link onClick={()=>{
+                        window.scrollTo(0,0);
+                    }} to='/contact' className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>Contact Us</Link>
                 </div>
 
             </div>

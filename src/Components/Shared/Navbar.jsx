@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../../assets/Images/logo.png'
 import '../Shared/Style.css'
-
 import { Link } from 'react-router-dom';
-import { AiOutlineShopping } from 'react-icons/ai';
+import cardCorn from '../../assets/Images/Icon/Polygon 1.png'
+import shoppingCard from '../../assets/Images/Icon/shoppingCard.png'
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     const [Visible, SetOpen] = useState(false);
     const [cart, SetCart] = useState(false);
 
-    
+
     return (
         <>
 
@@ -27,27 +27,25 @@ const Navbar = () => {
                     <div className='flex gap-[30px] items-center'>
                         <div className='flex gap-5 items-center'>
                             <Link id='addCard' >
-                                <AiOutlineShopping onClick={() => SetCart(prev => !prev)} className='w-[28px] h-[28px]' />
+                                <img src={shoppingCard} onClick={() => SetCart(prev => !prev)} className='w-[28px] h-[28px]' />
 
                             </Link>
 
                             {
                                 cart && <>
-                                    <div className='items p-[30px]'>
-
-                                        <p className='text-lg font-bold Bold mb-[30px]'>Your Cart (2)</p>
-
-
-
-
-
-
-
-
-                                        <div className='flex justify-center items-end mt-[126px] '>
-                                            <button className='bg-[#60599E] hover:bg-[#3f3a68] items-end  mx-auto rounded-[4px] text-white w-[270px] h-[48px] text-[14px] pb-0 font-bold Bold'>Continue Checkout $39.96</button>
+                                    <div className='items z-20'>
+                                        <div className='flex justify-end mr-5 -mt-5'>
+                                            <img src={cardCorn} className='w-[32px] z-10 h-[32px]' alt="" />
                                         </div>
 
+                                        <div className=' p-[30px]'>
+                                            <p className='text-lg font-bold Bold mb-[30px]'>Your Cart (0)</p>
+
+                                            <div className='flex justify-center items-end  '>
+                                                <button className='bg-[#60599E] hover:bg-[#3f3a68] items-end  mx-auto rounded-[4px] text-white w-[270px] h-[48px] text-[14px] pb-0 font-bold Bold'>Continue Checkout $0</button>
+                                            </div>
+
+                                        </div>
 
                                     </div>
 

@@ -18,19 +18,19 @@ const Footer = () => {
 
             </div>
 
-            <div className='container mx-auto   sm:flex justify-between items-center '>
+            <div className='container mx-auto  gap-[48px] flex sm:justify-between items-center '>
                 <Link onClick={() => {
                     window.scrollTo(0, 0);
                 }}
-                    to='/'>  <img src={logo} className='w-[59px] h-[35px] sm:mx-0 mx-auto  sm:mb-0 mb-[30px]' alt="" /></Link>
+                    to='/'>  <img src={logo} className='w-[40px] h-[24px] sm:w-[59px] sm:h-[35px] sm:mx-0 mx-auto  sm:mb-0 ' alt="" /></Link>
 
 
-                <div className='flex gap-[36px] pb-[30px] justify-center sm:gap-[40px] items-center'>
-                    <Link to='/team'>  <p className='font-normal text-[14px] sm:text-[16px] Normal'>Team</p>  </Link>
-                    <Link to='/caseStudies'> <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Refund Policy</p></Link>
+                <div className='flex gap-[10px] justify-center sm:gap-[40px] items-center'>
+                    <Link to='/team'>  <p className='font-normal text-[11px] sm:text-[16px] Normal'>Team</p>  </Link>
+                    <Link to='/caseStudies'> <p className='font-normal  text-[11px] sm:text-[16px]  Normal'>Refund Policy</p></Link>
 
                     <Link to='/publications'>
-                        <p className='font-normal  text-[14px] sm:text-[16px]  Normal'>Privacy Policy</p>
+                        <p className='font-normal  text-[11px] sm:text-[16px]  Normal'>Privacy Policy</p>
 
 
                     </Link>
