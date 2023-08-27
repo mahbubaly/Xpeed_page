@@ -58,9 +58,11 @@ const Pricing = () => {
 
                         </div>
 
-                        <div className=' flex justify-center mt-[50px] '>
-                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px] text-[16px] font-bold Bold'>FIGMA</button>
-                        </div>
+                        <Link onClick={()=>{
+                            window.scrollTo(0,0);
+                        }} to='/viewAllFigmaTemplate' className=' flex justify-center mt-[50px] '>
+                            <button  className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px] text-[16px] font-bold Bold'>FIGMA</button>
+                        </Link>
 
                         <p className='mt-[30px] px-[42px] pb-[30px] text-center italicBold text-[14px] font-bold italic'>“This Price Is Only For <Link className='text-primary'>Figma Design</Link> Resources”</p>
 
@@ -108,9 +110,11 @@ const Pricing = () => {
 
                         </div>
 
-                        <div className=' flex justify-center mt-[50px] '>
+                        <Link onClick={()=>{
+                            window.scrollTo(0,0);
+                        }} to='/viewAllHtmlTemplate' className=' flex justify-center mt-[50px] '>
                             <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px]  text-[16px] font-bold Bold'>HTML5</button>
-                        </div>
+                        </Link>
 
 
 

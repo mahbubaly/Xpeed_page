@@ -4,6 +4,7 @@ import react from '../../assets/Images/react.png'
 import tailwind from '../../assets/Images/tailwind.png'
 import Bootstrap from '../../assets/Images/bootrap.png'
 import figma from '../../assets/Images/figma.png'
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -48,10 +49,12 @@ const Banner = () => {
                 <div className='flex justify-center sm:mt-[50px]  items-center '>
                     <div className='grid grid-cols-3 sm:grid-cols-5 gap-[30px] '>
 
-                        <div className='w-[70px] h-[70px] sm:w-[81px]  sm:h-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
+                        <Link onClick={()=>{
+                            window.scrollTo(0,0);
+                        }} to='/viewAllHtmlTemplate' className='w-[70px] h-[70px] sm:w-[81px]  sm:h-[81px] CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
                             <img src={html} className='h-[24px] w-[24px] sm:w-[30px] sm:h-[30px]' alt="" />
                             <h1 className='text-[12px] font-bold Bold mt-[10px] pb-[13px]'>HTML</h1>
-                        </div>
+                        </Link>
                         <div className='w-[70px] h-[70px] sm:w-[81px]  sm:h-[81px]  CardShadow bg-white px-[26px] pt-[12px] rounded-[10px]'>
                             <img src={react} className='w-[24px] h-[20px] sm:w-[30px] sm:h-[26px]' alt="" />
                             <h1 className='text-[12px] font-bold text-center Bold mt-[10px] pb-[13px]'>React</h1>
@@ -64,10 +67,12 @@ const Banner = () => {
                             <img src={Bootstrap} className='w-[30px] h-[24px] sm:w-[38px] mx-auto sm:h-[30px]' alt="" />
                             <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Bootstrap</h1>
                         </div>
-                        <div className='ml-[70%] sm:ml-0 w-[70px] h-[70px] sm:w-[81px]  sm:h-[81px]  CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
+                        <Link onClick={()=>{
+                            window.scrollTo(0,0);
+                        }} to='/viewAllFigmaTemplate' className='ml-[70%] sm:ml-0 w-[70px] h-[70px] sm:w-[81px]  sm:h-[81px]  CardShadow bg-white  pt-[12px] mx-auto rounded-[10px]'>
                             <img src={figma} className=' sm:w-[20px] w-4 h-[24px]  mx-auto sm:h-[30px]' alt="" />
                             <h1 className='text-[12px] text-center  font-bold Bold mt-[10px] pb-[13px]'>Figma</h1>
-                        </div>
+                        </Link>
 
 
                     </div>

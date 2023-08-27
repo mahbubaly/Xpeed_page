@@ -46,7 +46,7 @@ const HtmlProducts = () => {
                     type="text"
 
 
-                    placeholder="e.g. “saas”"
+                    placeholder="Real Estate, Medical, Travel, etc"
                     className="   py-[10px]  w-[180px] sm:w-[470px]  bg-[#FFFFFF]  "
                 />
 

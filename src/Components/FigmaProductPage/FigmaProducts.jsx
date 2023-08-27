@@ -38,13 +38,13 @@ const FigmaProducts = () => {
 
     return (
         <>
-            <div className=' mx-auto Choose_width'>
+            <div className=' mx-auto lg:w-[912px]'>
 
-                <h1 className='lg:text-[50px] leading-[75px] sm:text-[40px] text-[30px] text-center mt-[79.5px] font-bold Bold'>10,000 HTML5 Templates
+                <h1 className='lg:text-[50px] leading-[75px] sm:text-[40px] text-[30px] text-center mt-[79.5px] font-bold Bold'>10,000 Design Resources To Speed Up Your Creative Workflow
 
 
                 </h1>
-                <p className='text-center mt-5 text-lg font-normal Normal'>Choose The Best HTML5 Templates For Your Projects</p>
+                
 
             </div>
 
@@ -55,7 +55,7 @@ const FigmaProducts = () => {
                     type="text"
 
 
-                    placeholder="e.g. “saas”"
+                    placeholder="Web, Dashboard, Mobile, etc"
                     className="   py-[10px]  w-[180px] sm:w-[470px]  bg-[#FFFFFF]  "
                 />
 
