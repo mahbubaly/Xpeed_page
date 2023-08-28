@@ -9,7 +9,7 @@ const FigmaSingleCard = ({ CardsData }) => {
             {
                 CardsData ? <> <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white ' >
 
-                    <img src={img} className=' flex-shrink-0' alt="" />
+                    <img src={img} className=' flex-shrink-0 rounded-[4px]' alt="" />
 
 
 

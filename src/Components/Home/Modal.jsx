@@ -111,7 +111,7 @@ const Modal = ({ closeModal }) => {
 
                         <div className='mt-[15px]'>
                             <p className='text-[14px] pb-[15px] font-bold Bold'>Set Account Password*</p>
-                            <input type="password" className='inputOutline w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='Enter Your Email' />
+                            <input type="password" className='inputOutline w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='Password' />
                         </div>
 
 
