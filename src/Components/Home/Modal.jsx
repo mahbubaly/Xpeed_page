@@ -128,7 +128,6 @@ const Modal = ({ closeModal }) => {
 
                 </div>
 
-                <button onClick={closeModal} className='btn btn-outline'>X</button>
             </div>
 
         </>
