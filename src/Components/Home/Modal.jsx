@@ -29,9 +29,9 @@ const Modal = ({ closeModal }) => {
                             <p className='text-lg font-bold Bold'>Your Cart (2)</p>
 
 
-                            <div className='overflow-y-scroll ScrollBar h-[450px]  pr-[10px]'>
+                            <div className='mt-[30px] overflow-y-scroll ScrollBar h-[450px]  pr-[10px]'>
 
-                                <div className='mt-[30px] h-[281px] w-[270px] px-[4px] pb-[4px] pt-[3px]  rounded-[4px] bg-white PopShadow  ' >
+                                <div className=' h-[281px] w-[270px] px-[4px] pb-[4px] pt-[3px]  rounded-[4px] bg-white PopShadow  ' >
 
                                     <img src={popUpCart} className=' rounded-[4px] flex-shrink-0 ' alt="" />
 
