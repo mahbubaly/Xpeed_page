@@ -95,9 +95,10 @@ const Cards = () => {
 
                 <div className='flex  justify-center mt-[80px] items-center'>
 
-                    <button className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</button>
+                    <Link onClick={() => {
+                        window.scrollTo(0, 0);
+                    }} to='/viewAllHtmlTemplate' className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>View All Template</Link>
                 </div>
-
 
 
 

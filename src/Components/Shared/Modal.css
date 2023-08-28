@@ -1,0 +1,219 @@
+.Bold {
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* 600 Font */
+.SemiBold {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.Medium {
+    font-family: 'Plus Jakarta Sans';
+
+}
+
+.Normal {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.inputBorder {
+    border-radius: 4px;
+    border: 1px solid #1A0702;
+    background: #FFF;
+}
+
+
+
+input[type="email"] {
+    border-radius: 4px;
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+
+}
+
+input[type="email"]:focus-visible {
+    border-radius: 4px;
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+
+}
+
+input[type="text"] {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+}
+
+input[type="text"]:focus-visible {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+
+}
+
+input[type="date"] {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+}
+
+input[type="date"]:focus-visible {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+    outline: none;
+
+}
+
+input[type="password"] {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+}
+
+input[type="password"]:focus-visible {
+
+    border: 1px solid #EEE9E6;
+    background: #FFF;
+
+}
+
+.ScrollBar::-webkit-scrollbar {
+    padding-left: 10px;
+    width: 6px;
+    background: #bebebe;
+
+}
+
+.ScrollBar::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 152.259px;
+    border-radius: 100px;
+    background: #60599E;
+
+}
+
+
+
+
+
+
+
+
+
+
+.Modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.modal-container {
+    position: fixed;
+    top: 75%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 736px;
+    height: 593px;
+    border-radius: 10px;
+}
+
+.PopShadow {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) {}
+
+@media (min-width: 640px) {}
+
+/* ===================================== */
+@media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {
+    .modal-container {
+        position: fixed;
+        top: 55%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 736px;
+        height: 593px;
+        border-radius: 10px;
+    }
+
+
+}
+
+/* ================================================== */
+
+@media (min-width: 1280px) {
+    .modal-container {
+        position: fixed;
+        top: 83%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 736px;
+        height: 593px;
+        border-radius: 10px;
+    }
+
+}
+
+
+/* ================1440====================== */
+
+@media (min-width: 1440px) {
+    .modal-container {
+        position: fixed;
+        top: 75%;
+        left: 71%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 736px;
+        height: 593px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1536px) {}
+
+
+@media screen and (min-width: 1680px) {}
+
+
+@media screen and (min-width: 1920px) {
+
+    .modal-container {
+        position: fixed;
+        top: 370px;
+        right: 0;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 736px;
+        height: 593px;
+        border-radius: 10px;
+    }
+}
