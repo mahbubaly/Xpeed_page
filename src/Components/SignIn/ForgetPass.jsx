@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const ForgetPass = () => {
     return (
         <>
-            <div className='mt-[210px] '>
+            <div className='mt-[149px] '>
                 <h1 className='text-center font-bold text-[45px] Bold'>Forgot your password?</h1>
                 <p className='text-center w-[570px] mx-auto mt-5 text-[20px] font-normal Normal'>Please enter your email address so we can send you a link to reset your password.</p>
             </div>
 
-            <div className='flex justify-center mt-[50px]'>
+            <div className='flex justify-center mt-[50px] pb-[269.5px]'>
 
                 <div>
 

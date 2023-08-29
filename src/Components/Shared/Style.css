@@ -56,15 +56,17 @@ html {
 
 .inputBorder {
     border-radius: 4px;
-    border: 1px solid #1A0702;
+    border: 1px solid #E1D8CB;
     background: #FFF;
+
+
 }
 
 input[type="checkbox"] {
     background: #000;
 }
 
-input[type="checkbox"]::after {
+input[type="checkbox"]:focus {
     background-color: #60599E;
 
 
@@ -103,34 +105,10 @@ input[type="checkbox"]::after {
 }
 
 
-.custom-modal {
-    background-image: url(../../assets//Images/popUp.png);
-    /* Background color with opacity */
-    border-radius: 10px;
-    overflow-y: hidden;
 
 
 
 
-
-
-
-
-
-
-
-
-}
-
-
-
-.Modal_Container {
-
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-}
 
 
 
@@ -141,19 +119,28 @@ input[type="checkbox"]::after {
 /* Styles for tablets */
 
 
-.hrWid {
-    stroke-width: 1px;
-    stroke: #E5DFDC;
+#inputSearch {
+    border: none;
 }
+
+#passwordSearch {
+    border: none;
+
+}
+
+
+
 
 input[type="text"] {
     outline: none;
+    border: none;
 
     background-color: #FFF;
 }
 
 input[type="password"] {
     outline: none;
+    border: none;
 
 
     background-color: #FFF;
@@ -169,6 +156,7 @@ input[type="email"] {
 
 input[type="text"]:focus-visible {
     outline: none;
+    border: none;
 }
 
 input[type="email"]:focus-visible {
@@ -212,36 +200,15 @@ textarea:focus {
 }
 
 
-/* Modal.css */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+.hrWid {
+    stroke-width: 1px;
+    stroke: #E5DFDC;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Change opacity here */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+
+    margin: 0 auto;
+
+}
+
 
 
 
@@ -276,6 +243,7 @@ textarea:focus {
         right: 10%;
         margin-top: -35px;
     }
+
     .items {
         width: 250px;
         position: absolute;
@@ -399,6 +367,12 @@ textarea:focus {
         top: 18%;
     }
 
+    .hrDiv {
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
 }
 
 /* ================================================== */
@@ -449,6 +423,14 @@ textarea:focus {
         right: 27%;
         margin-top: -35px;
     }
+
+    .hrDiv {
+        padding-left: 55px;
+        padding-right: 55px;
+
+    }
+
+   
 }
 
 
@@ -485,7 +467,7 @@ textarea:focus {
         right: 30%;
         margin-top: -35px;
     }
-    
+
 
     .items {
         width: 330px;
@@ -496,6 +478,18 @@ textarea:focus {
         margin-top: 10px;
         right: 21%;
         top: 16%;
+    }
+
+
+
+    .hrWid {
+        stroke-width: 1px;
+        stroke: #E5DFDC;
+
+        margin: 0 auto;
+
+
+
     }
 }
 
@@ -516,6 +510,7 @@ textarea:focus {
         right: 32%;
         margin-top: -35px;
     }
+
     .items {
         width: 330px;
         position: absolute;
@@ -526,6 +521,14 @@ textarea:focus {
         right: 21%;
         top: 16%;
     }
+
+    .hrDiv {
+        padding-left: 58px;
+        padding-right: 58px;
+
+    }
+
+   
 }
 
 
@@ -544,7 +547,7 @@ textarea:focus {
         right: 33%;
         margin-top: -35px;
     }
-    
+
     .items {
         width: 330px;
         position: absolute;
@@ -555,6 +558,14 @@ textarea:focus {
         right: 22%;
         top: 14%;
     }
+
+    .hrDiv {
+        padding-left: 120px;
+        padding-right: 120px;
+
+    }
+
+    
 
 }
 
@@ -589,6 +600,13 @@ textarea:focus {
         position: absolute;
         right: 35%;
         margin-top: -35px;
+    }
+
+
+    .hrDiv {
+        padding-left: 230px;
+        padding-right: 230px;
+
     }
 
 }

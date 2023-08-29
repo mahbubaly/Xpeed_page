@@ -39,7 +39,7 @@ const HtmlCardDetails = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='mt-[18.5px] '>
+                <div className='mt-[80px] '>
                     {
                         selectedData && <>
 
@@ -47,7 +47,7 @@ const HtmlCardDetails = () => {
 
                             <div className='mt-[30px] flex gap-5 items-center opacity-50'>
                                 <div className='flex gap-[10px] items-center'>
-                                    <img src={eye} className='w-[16.389px] h-[16px]' alt="" />
+                                    <img src={eye} className='w-[20px] h-[20px]' alt="" />
                                     <p className='text-[16px] font-semibold SemiBold'>{selectedData.view} views</p>
                                 </div>
                                 <div className='flex gap-[10px] items-center'>

@@ -51,10 +51,9 @@ const FigmaProducts = () => {
             <div className=" mt-[30px] sm:mt-[50px] flex mb-[30px] sm:mb-0  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] justify-between  p-[5px]">
 
 
-                <input bg-white
+                <input 
                     type="text"
-
-
+                    id='inputSearch'
                     placeholder="Web, Dashboard, Mobile, etc"
                     className="   py-[10px]  w-[180px] sm:w-[470px]  bg-[#FFFFFF]  "
                 />

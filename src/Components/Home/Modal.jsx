@@ -99,13 +99,13 @@ const Modal = ({ closeModal }) => {
                         <div className='mt-[15px]'>
                             <p className='text-[14px] pb-[15px] font-bold Bold'>Card Information*</p>
 
-                            <input type="text" className='rounded-t-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='Name On Card' />
+                            <input type="text"  className='rounded-t-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='Name On Card'  />
 
-                            <input type="text" className=' w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' />
+                            <input type="text" className=' w-[280px] h-[48px] sm:w-[356px] sm:h-[44px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
                             <div >
-                                <input type="date" className='rounded-s-[4px] w-[280px] h-[48px] sm:w-[178px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
-                                <input type="text" className=' rounded-e-[4px] w-[280px] h-[48px] sm:w-[178px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
+                                <input type="text" className='rounded-s-[4px] w-[280px] h-[48px] sm:w-[178px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
+                                <input type="number" className=' rounded-e-[4px] w-[280px] h-[48px] sm:w-[178px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
                             </div>
                         </div>
 

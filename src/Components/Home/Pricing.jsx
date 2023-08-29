@@ -183,7 +183,7 @@ const Pricing = () => {
             </div>
 
 
-            <div className='mt-[50px] sm:mt-[150px] '>
+            <div className='mt-[50px] sm:mt-[150px] pb-[49px]'>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 

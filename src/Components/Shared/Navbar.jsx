@@ -71,7 +71,9 @@ const Navbar = () => {
 
 
             </div>
-            <div className=' mx-auto xl:px-[50px]'>
+
+            
+            <div className=' hrDiv'>
                 <hr className='hrWid  ' />
 
             </div>

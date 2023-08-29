@@ -6,7 +6,7 @@ import check from '../../../assets/Images/Icon/Check.png'
 const UltimateAccess = () => {
     return (
         <>
-            <div className=' mx-auto sm:w-[831px] mt-[50px] sm:mt-[80px]'>
+            <div className=' mx-auto sm:w-[831px] mt-[50px] sm:mt-[79px]'>
 
                 <h1 className='lg:text-[45px]  sm:text-[40px] text-[25px] text-center  font-semibold SemiBold'>Choose The Best Plan For Your Projects Needs & Access Over 10,000 HTML5 & Figma Design Resources
 
@@ -182,7 +182,7 @@ const UltimateAccess = () => {
             </div>
 
 
-            <div className='mt-[50px] sm:mt-[150px] '>
+            <div className='mt-[50px] sm:mt-[150px] pb-[79px] '>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px]  font-bold Bold'>Xpeed Page Template</h1>
 

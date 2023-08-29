@@ -11,7 +11,7 @@ const LogIn = () => {
         <>
 
             <div>
-                <div className='mt-[30px] sm:mt-[99px]'>
+                <div className='mt-[30px] sm:mt-[79px]'>
                     <h1 className='text-center text-[25px] sm:text-[45px] font-bold Bold'>Good To See You Again 👋</h1>
 
                     <p className='text-[20px] text-center mt-5'>Don’t have an account? <Link className='text-[#60599E] hover:text-[#3f3a68] Bold font-bold text-[]' to='/signUp'>Set one up</Link>.</p>
@@ -23,36 +23,37 @@ const LogIn = () => {
                     <div className='flex justify-center mt-[50px]'>
                         <div>
                             <div className=''>
-                                <p className='text-[14px] pb-[15px] font-bold Bold'>Email*</p>
-                                <input type="email" className='inputBorder   w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] px-[15px] ' placeholder='Enter Your Email' />
+                                <p className='text-[14px] mb-[15px] font-bold Bold'>Email*</p>
+                                <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] px-[15px] ' placeholder='Enter Your Email' />
                             </div>
 
                             <div className='mt-[28.5px]'>
-                                <p className='text-[14px] pb-[15px] font-bold Bold'>Password*</p>
+                                <p className='text-[14px] mb-[15px] font-bold Bold'>Password*</p>
 
                             </div>
 
 
 
-                            <div className="  flex  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] ">
+                            <div className="  flex  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
 
 
 
-                                <input type={OpenEye ? "text" : "password"} className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
+                                <input type={OpenEye ? "text" : "password"} id='passwordSearch' className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
 
 
 
 
 
 
-                                <div className='pr-5' onClick={() => setOpenEye(prev => !prev)}>
+                                <div className='pr-[10px] sm:pr-5' onClick={() => setOpenEye(prev => !prev)}>
                                     {
                                         OpenEye == true ? <>
                                             <p className='text-[#C6C1C0] text-[14px] font-normal Normal'>Hide</p>
                                         </> :
 
-                                            <>
-                                                <p className='text-[#C6C1C0] text-[14px] font-normal Normal'>Show</p>
+                                            <> 
+                                            {/* TODO */}
+                                                <p className=' text-[14px] text-[#1A0702] font-bold Bold'>Show</p>
                                             </>
 
                                     }
@@ -124,7 +125,7 @@ const LogIn = () => {
                         </div>
                     </div>
 
-                    <div className='text-center mt-[30px] '>
+                    <div className='text-center mt-[30px] pb-[50px] '>
                         <p className='text-[16px] font-normal Normal'>Don’t have an account? <Link onClick={() => {
                             window.scrollTo(0, 0);
                         }} to='/signUp' className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign Up</Link></p>

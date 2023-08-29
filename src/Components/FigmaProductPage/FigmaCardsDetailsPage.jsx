@@ -37,7 +37,7 @@ const FigmaCardsDetailsPage = () => {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='mt-[18.5px] '>
+                <div className='mt-[80px] '>
                     {
                         selectedData && <>
 
@@ -49,7 +49,7 @@ const FigmaCardsDetailsPage = () => {
                                     <p className='text-[16px] font-semibold SemiBold'>{selectedData.view} views</p>
                                 </div>
                                 <div className='flex gap-[10px] items-center'>
-                                    <img src={download} className='w-[16.389px] h-[16px]' alt="" />
+                                    <img src={download} className='w-[20px] h-[20px]' alt="" />
                                     <p className='text-[16px] font-semibold SemiBold'>{selectedData.download} download</p>
                                 </div>
                             </div>
