@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from 'react-use-cart';
+import { toast } from 'react-toastify';
+
 
 const ResourcesSingleCards = ({ resourceData }) => {
-    const { img, title, id } = resourceData;
+    const { img, title, id, download, price } = resourceData;
+   
+    
+    const {addItem}= useCart();
+
     return (
         <>
+
+
 
             <div className=' px-[4px] pb-[4px] pt-[3px] rounded-[4px] bg-white ' >
 
@@ -25,7 +34,7 @@ const ResourcesSingleCards = ({ resourceData }) => {
 
                         </Link>
 
-                        <button className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart</button>
+                        <button  onClick={() => { addItem(resourceData); toast("cart added  !") }}   className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart</button>
 
                     </div>
 

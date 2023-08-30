@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from 'react-use-cart';
 
 const FigmaSingleCard = ({ CardsData }) => {
     const { img, title, id } = CardsData;
+
+    const {addItem}= useCart();
+
+    
     return (
         <>
 
@@ -26,7 +31,7 @@ const FigmaSingleCard = ({ CardsData }) => {
 
                             </Link>
 
-                            <button className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
+                            <button  onClick={() => { addItem(CardsData) }}  className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
 
                         </div>
 
