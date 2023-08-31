@@ -48,10 +48,10 @@ const Modal = ({ closeModal }) => {
             <div className='Modal-wrapper' onClick={closeModal}>
 
             </div>
-            <div className='modal-container  '>
+            <div className='modal-container z-10  '>
 
                 {
-                    isEmpty ? <h1 className=' flex items-center justify-center mt-[20%] font-bold text-lg Bold'>{noData}</h1> : <>
+                    isEmpty ? <h1 className=' flex items-center  justify-center mt-[20%] font-bold text-lg Bold'>{noData}</h1> : <>
                         <div className=' flex'>
                             <div className='flex pl-[29px] pt-[30px] '>
                                 <div className=''>

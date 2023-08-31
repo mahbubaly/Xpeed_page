@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
 import download2 from '../../assets/Images/Icon/download.png'
+import Modal from '../Home/Modal';
+import { Toaster, toast } from 'react-hot-toast';
+
 
 
 const FigmaSingleCard = ({ CardsData }) => {
     const { img, title, id, download, price } = CardsData;
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const closeModal = () => setIsOpen(false);
 
     const { addItem } = useCart();
 
@@ -27,10 +33,10 @@ const FigmaSingleCard = ({ CardsData }) => {
                         <div className='flex justify-between  items-center pt-[15px]'>
                             <div className='flex gap-[10px] items-center opacity-50'>
                                 <img src={download2} className='w-[20px] h-[20px]' alt="" />
-                                <p className='text-[16px] font-semibold SemiBold'>{download} download</p>
+                                <p className='text-[12px] font-semibold SemiBold'>{download} download</p>
                             </div>
 
-                            <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] border-[1px] border-[#60599E]     hover:bg-[#60599E] text-primary hover:text-white'>${price}</button>
+                            <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>${price}</button>
                         </div>
 
                         <div className='mt-[15px]'>
@@ -51,7 +57,22 @@ const FigmaSingleCard = ({ CardsData }) => {
 
                             </Link>
 
-                            <button onClick={() => { addItem(CardsData) }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
+                            <button onClick={() => {
+                                addItem(CardsData);
+                                setIsOpen(true);
+                                toast("cart added successfully!")
+                            }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
+
+
+                            {
+                                modalIsOpen && <Modal closeModal={closeModal} />
+                            }
+
+                            <Toaster />
+
+
+
+
 
                         </div>
 
