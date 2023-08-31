@@ -86,8 +86,8 @@ input[type="password"]:focus-visible {
 }
 
 .ScrollBar::-webkit-scrollbar-thumb {
-   
-    
+
+
     border-radius: 100px;
     background: #60599E;
 
@@ -114,10 +114,10 @@ input[type="password"]:focus-visible {
 .modal-container {
     position: fixed;
     top: 75%;
-    left: 71%;
+   right: 135px;
     transform: translate(-50%, -50%);
     background-color: white;
-    
+
     border-radius: 10px;
 }
 
@@ -134,22 +134,55 @@ input[type="password"]:focus-visible {
 
 
 
-@media (min-width: 320px) {}
-
-@media (min-width: 640px) {}
-
-/* ===================================== */
-@media (min-width: 768px) {}
-
-
-@media (min-width: 1024px) {
+@media (min-width: 320px) {
     .modal-container {
         position: fixed;
         top: 55%;
         left: 65%;
         transform: translate(-50%, -50%);
         background-color: white;
-        width: 735px;
+        width: 320px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 640px) {
+    .modal-container {
+        position: fixed;
+        top: 55%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 450px;
+        height: 593px;
+        border-radius: 10px;
+    }
+}
+
+/* ===================================== */
+@media (min-width: 768px) {
+    .modal-container {
+        position: fixed;
+        top: 55%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 600px;
+        height: 593px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .modal-container {
+        position: fixed;
+        top: 390px;
+        right: 135px;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 600px;
         height: 593px;
         border-radius: 10px;
     }
@@ -162,8 +195,8 @@ input[type="password"]:focus-visible {
 @media (min-width: 1280px) {
     .modal-container {
         position: fixed;
-        top: 55%;
-        left: 65%;
+        top: 390px;
+        right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
@@ -181,8 +214,8 @@ input[type="password"]:focus-visible {
 @media (min-width: 1440px) {
     .modal-container {
         position: fixed;
-        top: 75%;
-        left: 71%;
+        top: 390px;
+       right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
@@ -202,8 +235,8 @@ input[type="password"]:focus-visible {
 @media (min-width: 1536px) {
     .modal-container {
         position: fixed;
-        top: 50%;
-        left: 71%;
+        top: 390px;
+       right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
@@ -216,15 +249,15 @@ input[type="password"]:focus-visible {
 @media screen and (min-width: 1680px) {
     .modal-container {
         position: fixed;
-        top: 50%;
-        left: 71%;
+        top: 390px;
+       right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
         height: 593px;
         border-radius: 10px;
     }
-    
+
 }
 
 
@@ -232,7 +265,7 @@ input[type="password"]:focus-visible {
 
     .modal-container {
         position: fixed;
-        top: 370px;
+        top: 390px;
         right: 0;
         transform: translate(-50%, -50%);
         background-color: white;

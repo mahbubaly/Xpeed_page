@@ -5,6 +5,7 @@ import { useCart } from 'react-use-cart';
 import ModalCarts from './ModalCarts';
 import { toast } from 'react-toastify';
 import noData from '../../assets/Images/noData.gif'
+import empty from '../../assets/Images/Icon/emptyCart.png'
 
 const Modal = ({ closeModal }) => {
 
@@ -40,7 +41,7 @@ const Modal = ({ closeModal }) => {
 
     } = useCart();
 
-    
+
 
 
     return (
@@ -48,12 +49,22 @@ const Modal = ({ closeModal }) => {
             <div className='Modal-wrapper' onClick={closeModal}>
 
             </div>
-            <div className='modal-container z-10   ' onClick={()=>{
+            <div className='modal-container z-10   ' onClick={() => {
                 window.scrollTo(0, 0);
             }}>
 
                 {
-                    isEmpty ? <h1 className=' flex items-center  justify-center mt-[20%] font-bold text-lg Bold'>{noData}</h1> : <>
+                    isEmpty ? <>
+
+                        <div >
+                            <img src={empty} className=' mx-auto rounded-[4px] ' alt="" />
+
+                            <h1 className=' flex items-center   justify-center mt-5  font-bold text-lg Bold'> Your cart is empty </h1>
+                        </div>
+
+
+
+                    </> : <>
                         <div className=' flex'>
                             <div className='flex pl-[29px] pt-[30px] '>
                                 <div className=''>
