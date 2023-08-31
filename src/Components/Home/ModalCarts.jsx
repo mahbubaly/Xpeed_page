@@ -1,11 +1,20 @@
 import React from 'react';
 import close from '../../assets/Images/Icon/close.png'
 import '../Shared/Modal.css'
+import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
+
+
+
 
 
 
 const ModalCarts = ({ cartItem, removeItem }) => {
     const { img, title, id } = cartItem;
+
+    
+
+  
     return (
         <>
 

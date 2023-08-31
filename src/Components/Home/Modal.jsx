@@ -4,6 +4,7 @@ import popUpCart from '../../assets/Images/popCart.png'
 import { useCart } from 'react-use-cart';
 import ModalCarts from './ModalCarts';
 import { toast } from 'react-toastify';
+import noData from '../../assets/Images/noData.gif'
 
 const Modal = ({ closeModal }) => {
 
@@ -50,7 +51,7 @@ const Modal = ({ closeModal }) => {
             <div className='modal-container  '>
 
                 {
-                    isEmpty ? <h1 className=' flex items-center justify-center mt-[20%] font-bold text-lg Bold'>There is no Cart</h1> : <>
+                    isEmpty ? <h1 className=' flex items-center justify-center mt-[20%] font-bold text-lg Bold'>{noData}</h1> : <>
                         <div className=' flex'>
                             <div className='flex pl-[29px] pt-[30px] '>
                                 <div className=''>

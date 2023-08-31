@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import logo from '../../assets/Images/logo.png'
 import '../Shared/Style.css'
 import { Link } from 'react-router-dom';
-import cardCorn from '../../assets/Images/Icon/Polygon 1.png'
 import shoppingCard from '../../assets/Images/Icon/shoppingCard.png'
+import shoppingCardEmpty from '../../assets/Images/Icon/shopping-bag.png'
 import Modal from '../Home/Modal';
+import { useCart } from 'react-use-cart';
 
 
 
@@ -13,6 +14,10 @@ const Navbar = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
 
     const closeModal = () => setIsOpen(false);
+
+    const {
+        isEmpty,
+ } = useCart();
 
     return (
         <>
@@ -29,7 +34,10 @@ const Navbar = () => {
                     <div className='flex gap-[30px] items-center'>
                         <div className='flex gap-5 items-center'>
                             <div>
-                                <img src={shoppingCard} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' />
+                              {
+                                isEmpty ?       <img src={shoppingCardEmpty} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' /> : <img src={shoppingCard} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' /> 
+                             
+                              }
 
                                 {
                                     modalIsOpen && <Modal closeModal={closeModal}/>
