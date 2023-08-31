@@ -32,7 +32,7 @@ const FigmaSingleCard = ({ CardsData }) => {
 
                         <div className='flex justify-between  items-center pt-[15px]'>
                             <div className='flex gap-[10px] items-center opacity-50'>
-                                <img src={download2} className='w-[20px] h-[20px]' alt="" />
+                                <img src={download2} className='w-[14px] h-[14px]' alt="" />
                                 <p className='text-[12px] font-semibold SemiBold'>{download} download</p>
                             </div>
 
@@ -58,9 +58,11 @@ const FigmaSingleCard = ({ CardsData }) => {
                             </Link>
 
                             <button onClick={() => {
+                                 window.scrollTo(0, 0);
                                 addItem(CardsData);
                                 setIsOpen(true);
-                                toast("cart added successfully!")
+                                toast("cart added successfully!");
+                               
                             }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
 
 

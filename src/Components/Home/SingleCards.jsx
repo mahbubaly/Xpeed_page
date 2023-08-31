@@ -25,7 +25,7 @@ const SingleCards = ({ CardsData }) => {
 
                             <div className='flex justify-between  items-center pt-[15px]'>
                                 <div className='flex gap-[10px] items-center opacity-50'>
-                                    <img src={download2} className='w-[20px] h-[20px]' alt="" />
+                                    <img src={download2} className='w-[14px] h-[14px]' alt="" />
                                     <p className='text-[12px] font-semibold SemiBold'>{download} download</p>
                                 </div>
 

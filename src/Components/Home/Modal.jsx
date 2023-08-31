@@ -48,7 +48,9 @@ const Modal = ({ closeModal }) => {
             <div className='Modal-wrapper' onClick={closeModal}>
 
             </div>
-            <div className='modal-container z-10  '>
+            <div className='modal-container z-10   ' onClick={()=>{
+                window.scrollTo(0, 0);
+            }}>
 
                 {
                     isEmpty ? <h1 className=' flex items-center  justify-center mt-[20%] font-bold text-lg Bold'>{noData}</h1> : <>
