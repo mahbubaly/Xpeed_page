@@ -104,16 +104,16 @@ const Modal = ({ closeModal }) => {
                                 <div className='flex gap-[93px] items-center'>
                                     <p className='text-lg font-bold Bold '>Checkout</p>
                                     <div className='flex gap-[15px]'>
-                                        <NavLink  onClick={() => {
+                                        <button  onClick={() => {
                                             setPaypal(false);
-                                        }}  className={` ${Paypal === false ? "  w-[80px] justify-center flex items-center btn_active h-[35px] bg-primary text-white     text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]" : " w-[80px] justify-center flex items-center btn_active h-[35px]   text-[#60599E]   text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]"  }`}>
+                                        }}  className={` ${Paypal === false ? "  w-[80px]    h-[35px] bg-primary text-white     text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]" : " w-[80px]   h-[35px]   text-[#60599E]   text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]"  }`}>
                                             Paddle
-                                        </NavLink>
+                                        </button>
 
-                                        <NavLink onClick={() => {
+                                        <button onClick={() => {
                                             setPaypal(true);
-                                        }}  className={` ${Paypal === true ? "  w-[80px] justify-center flex items-center btn_active h-[35px] bg-primary text-white     text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]" : 
-                                        " w-[80px] justify-center flex items-center btn_active h-[35px]   text-[#60599E]   text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]"  }`}>Paypal</NavLink>
+                                        }}  className={` ${Paypal === true ? "  w-[80px]   h-[35px] bg-primary text-white     text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]" : 
+                                        " w-[80px]  h-[35px]   text-[#60599E]   text-[12px] font-bold Bold border-[1px] rounded-[4px] border-[#60599E]"  }`}>Paypal</button>
                                     </div>
                                 </div>
 
@@ -140,7 +140,7 @@ const Modal = ({ closeModal }) => {
                                         </div>
 
 
-                                        <p className='text-[14px] mt-[110px] text-[#C6C1C0] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for 2 products. Download with All-Access instead?</p>
+                                        <p className='text-[14px] mt-[110px] text-[#C6C1C0] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
 
                                         <div className=' mt-[30px] mb-2'>
                                             <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
@@ -181,7 +181,7 @@ const Modal = ({ closeModal }) => {
                                         </div>
 
 
-                                        <p className='text-[14px] mt-[28px] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of $19.98 for 2 products. Download with All-Access instead?</p>
+                                        <p className='text-[14px] mt-[28px] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
 
                                         <div className=' mt-[30px] mb-2'>
                                             <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
