@@ -6,18 +6,19 @@ import shoppingCard from '../../assets/Images/Icon/shoppingCard.png'
 import shoppingCardEmpty from '../../assets/Images/Icon/shopping-bag.png'
 import Modal from '../Home/Modal';
 import { useCart } from 'react-use-cart';
+import SignInPage from '../SingInModalPage/SignInPage';
 
 
 
 const Navbar = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [signInModal, setSignInModal] = useState(false);
 
     const closeModal = () => setIsOpen(false);
+    const closeSignModal = () => setSignInModal(false);
 
-    const {
-        isEmpty,
- } = useCart();
+    const { isEmpty } = useCart();
 
     return (
         <>
@@ -34,13 +35,13 @@ const Navbar = () => {
                     <div className='flex gap-[30px] items-center'>
                         <div className='flex gap-5 items-center'>
                             <div>
-                              {
-                                isEmpty ?       <img src={shoppingCardEmpty} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' /> : <img src={shoppingCard} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' /> 
-                             
-                              }
+                                {
+                                    isEmpty ? <img src={shoppingCardEmpty} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' /> : <img src={shoppingCard} onClick={() => setIsOpen(true)} className='w-[28px] h-[28px]' />
+
+                                }
 
                                 {
-                                    modalIsOpen && <Modal closeModal={closeModal}/>
+                                    modalIsOpen && <Modal closeModal={closeModal} />
                                 }
                             </div>
 
@@ -52,7 +53,11 @@ const Navbar = () => {
 
 
 
-                            <Link to='/signIn' className='font-bold text-[16px] Bold'>Sign In</Link>
+                            <Link  className='font-bold text-[16px] Bold' onClick={() => setSignInModal(true)}>Sign In</Link>
+
+                            {
+                                signInModal && <SignInPage  closeSignModal={closeSignModal}/>
+                            }
                         </div>
 
 
@@ -80,7 +85,7 @@ const Navbar = () => {
 
             </div>
 
-            
+
             <div className=' hrDiv'>
                 <hr className='hrWid  ' />
 

@@ -3,8 +3,7 @@ import '../Shared/Modal.css'
 import { useCart } from 'react-use-cart';
 import ModalCarts from './ModalCarts';
 import empty from '../../assets/Images/Icon/emptyCart.png'
-import { Link } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
+
 
 const Modal = ({ closeModal }) => {
 

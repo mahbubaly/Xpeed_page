@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import close from '../../assets/Images/Icon/close.png'
 import '../Shared/Modal.css'
-import { toast } from 'react-toastify';
-import Swal from 'sweetalert2';
+import Delete from '../../assets/Images/Icon/delete.png'
 
 
 
@@ -12,12 +11,12 @@ import Swal from 'sweetalert2';
 const ModalCarts = ({ cartItem, removeItem }) => {
     const { img, title, id } = cartItem;
 
-    
 
 
-    
 
-  
+
+
+
     return (
         <>
 
@@ -39,7 +38,9 @@ const ModalCarts = ({ cartItem, removeItem }) => {
                         <div className='flex items-center pt-[15px] px-[15px] justify-between'>
                             <h1 className='text-[14px]  font-semibold SemiBold'>Gravity - Multi-Purpose...</h1>
 
-                            <img onClick={() => removeItem(id)} src={close} className='w-[24px] h-[24px]' alt="" />
+                            
+
+                            <button onClick={() => removeItem(id)} className='border-[2px] rounded-[50%] hover:border-[#2e2c3d]   border-primary w-[24px] h-[24px]'> <img src={Delete} alt="" className='w-[13.44px] h-[13.44px] mx-auto ' /> </button>
                         </div>
 
 
