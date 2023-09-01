@@ -129,18 +129,18 @@ const Modal = ({ closeModal }) => {
                                             <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
                                         </div>
 
-                                        <div className='mt-[15px] '>
+                                        <div className='mt-[13px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name *</p>
                                             <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter full Name' />
                                         </div>
 
-                                        <div className='mt-[15px] '>
+                                        <div className='mt-[13px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password *</p>
                                             <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Password' />
                                         </div>
 
 
-                                        <p className='text-[14px] mt-[110px] text-[#C6C1C0] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
+                                        <p className='text-[14px] mt-[117px] text-[#C6C1C0] text-center w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
 
                                         <div className=' mt-[30px] mb-2'>
                                             <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
