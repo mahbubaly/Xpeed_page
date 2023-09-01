@@ -78,21 +78,31 @@ input[type="password"]:focus-visible {
 
 }
 
+#borderBottom{
+    border-bottom: none;
+}
+
 .ScrollBar::-webkit-scrollbar {
     padding-left: 10px;
     width: 6px;
-    background: #bebebe;
+    border-radius: 100px;
+    background: rgba(96, 89, 158, 0.10);
 
 }
 
 .ScrollBar::-webkit-scrollbar-thumb {
-
+    width: 6px;
+    height: 152px;
 
     border-radius: 100px;
     background: #60599E;
 
 }
 
+
+.btn_active:active{
+    background: #60599E;
+}
 
 
 
@@ -114,7 +124,7 @@ input[type="password"]:focus-visible {
 .modal-container {
     position: fixed;
     top: 75%;
-   right: 135px;
+    right: 135px;
     transform: translate(-50%, -50%);
     background-color: white;
 
@@ -155,7 +165,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 450px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 }
@@ -169,7 +179,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 600px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 }
@@ -183,7 +193,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 600px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 
@@ -200,9 +210,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-        height: 593px;
-        width: 735px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 
@@ -215,15 +223,17 @@ input[type="password"]:focus-visible {
     .modal-container {
         position: fixed;
         top: 390px;
-       right: 135px;
+        right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 
 }
+
+
 
 
 
@@ -236,11 +246,11 @@ input[type="password"]:focus-visible {
     .modal-container {
         position: fixed;
         top: 390px;
-       right: 135px;
+        right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 }
@@ -250,11 +260,11 @@ input[type="password"]:focus-visible {
     .modal-container {
         position: fixed;
         top: 390px;
-       right: 135px;
+        right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 
@@ -270,7 +280,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-        height: 593px;
+         height: 590px;
         border-radius: 10px;
     }
 }

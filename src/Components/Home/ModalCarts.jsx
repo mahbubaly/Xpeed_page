@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import close from '../../assets/Images/Icon/close.png'
 import '../Shared/Modal.css'
 import { toast } from 'react-toastify';
@@ -14,6 +14,9 @@ const ModalCarts = ({ cartItem, removeItem }) => {
 
     
 
+
+    
+
   
     return (
         <>
@@ -22,7 +25,7 @@ const ModalCarts = ({ cartItem, removeItem }) => {
 
             <div className=''>
 
-                <div className='mt-5 h-[259px]  w-[270px] px-[4px]  pt-[3.5px]  rounded-[4px] bg-white PopShadow  ' >
+                <div className=' h-[259px]  w-[270px] px-[4px]  pt-[3.5px]  rounded-[4px] bg-white PopShadow  ' >
 
                     <img src={img} className=' rounded-[4px] flex-shrink-0 ' alt="" />
 
