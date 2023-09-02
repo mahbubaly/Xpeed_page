@@ -164,13 +164,14 @@ const Modal = ({ closeModal }) => {
                                         <div className='mt-[13px]'>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Card Information*</p>
 
-                                            <input id='borderBottom' type="text" className='rounded-t-[4px]  sm:w-[280px] h-[45px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
+                                            <input id='borderBottom' type="text" className='rounded-[4px]  sm:w-[280px] h-[45px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
 
-                                            <input type="text" id='borderBottom' className=' sm:w-[280px] h-[45px] xl:w-[357px] rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
+                                            <input type="text" id='borderBottom' className='-mt-[1px] sm:w-[280px] h-[45px] xl:w-[357px]  rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
-                                            <div >
-                                                <input type="text" className='rounded-s-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
-                                                <input type="text" className=' rounded-e-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
+                                            <div className='-mt-[1px]'>
+                                                <input type="text"  className='border-r-0 rounded-s-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
+
+                                                <input type="text" id='input_border_Left' className=' rounded-e-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
                                             </div>
                                         </div>
 

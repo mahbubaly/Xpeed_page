@@ -105,6 +105,11 @@ input[type="password"]:focus-visible {
 }
 
 
+#input_border_Left {
+    border-left: 0;
+
+}
+
 
 
 
