@@ -78,7 +78,7 @@ input[type="password"]:focus-visible {
 
 }
 
-#borderBottom{
+#borderBottom {
     border-bottom: none;
 }
 
@@ -100,7 +100,7 @@ input[type="password"]:focus-visible {
 }
 
 
-.btn_active:active{
+.btn_active:active {
     background: #60599E;
 }
 
@@ -117,24 +117,7 @@ input[type="password"]:focus-visible {
 
 
 
-.Modal-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.35);
-}
 
-.modal-container {
-    position: fixed;
-    top: 75%;
-    right: 135px;
-    transform: translate(-50%, -50%);
-    background-color: white;
-
-    border-radius: 10px;
-}
 
 .PopShadow {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
@@ -150,14 +133,25 @@ input[type="password"]:focus-visible {
 
 
 @media (min-width: 320px) {
+
+    .Modal-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.35);
+    }
+
     .modal-container {
         position: fixed;
-        top: 55%;
-        left: 65%;
+        top: 120px;
+        left: 120px;
         transform: translate(-50%, -50%);
         background-color: white;
-        width: 320px;
-        height: 200px;
+        width: 300px;
+
+
         border-radius: 10px;
     }
 }
@@ -165,12 +159,12 @@ input[type="password"]:focus-visible {
 @media (min-width: 640px) {
     .modal-container {
         position: fixed;
-        top: 55%;
+        top: 120px;
         left: 65%;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 450px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 }
@@ -179,12 +173,12 @@ input[type="password"]:focus-visible {
 @media (min-width: 768px) {
     .modal-container {
         position: fixed;
-        top: 55%;
+        top: 120px;
         left: 65%;
         transform: translate(-50%, -50%);
         background-color: white;
         width: 600px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 }
@@ -197,8 +191,8 @@ input[type="password"]:focus-visible {
         right: 135px;
         transform: translate(-50%, -50%);
         background-color: white;
-        width: 600px;
-         height: 590px;
+        width: 735px;
+        height: 590px;
         border-radius: 10px;
     }
 
@@ -215,7 +209,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 
@@ -232,7 +226,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 
@@ -255,7 +249,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 }
@@ -269,7 +263,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 
@@ -285,7 +279,7 @@ input[type="password"]:focus-visible {
         transform: translate(-50%, -50%);
         background-color: white;
         width: 735px;
-         height: 590px;
+        height: 590px;
         border-radius: 10px;
     }
 }

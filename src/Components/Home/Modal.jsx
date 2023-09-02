@@ -65,7 +65,7 @@ const Modal = ({ closeModal }) => {
 
 
                     </> : <>
-                        <div className=' flex'>
+                        <div className=' sm:flex'>
                             <div className='flex pl-[20px] pt-[26px] '>
                                 <div className=''>
                                     <p className='text-lg font-bold Bold'>Your Cart ({totalItems})</p>
@@ -125,17 +125,17 @@ const Modal = ({ closeModal }) => {
 
                                         <div className='mt-[30px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                            <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
+                                            <input type="email" className='   w-[200px] h-[38px] sm:h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
                                         </div>
 
                                         <div className='mt-[13px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name *</p>
-                                            <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter full Name' />
+                                            <input type="email" className='    w-[200px] h-[38px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter full Name' />
                                         </div>
 
                                         <div className='mt-[13px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password *</p>
-                                            <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Password' />
+                                            <input type="email" className='    w-[200px] h-[38px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Password' />
                                         </div>
 
 
@@ -158,15 +158,15 @@ const Modal = ({ closeModal }) => {
 
                                         <div className='mt-[30px] '>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                            <input type="email" className='    sm:w-[280px] h-[45px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
+                                            <input type="email" className='    w-[200px] h-[38px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
                                         </div>
 
                                         <div className='mt-[13px]'>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Card Information*</p>
 
-                                            <input id='borderBottom' type="text" className='rounded-[4px]  sm:w-[280px] h-[45px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
+                                            <input id='borderBottom' type="text" className='rounded-[4px]  w-[200px] h-[38px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
 
-                                            <input type="text" id='borderBottom' className='-mt-[2px] sm:w-[280px] h-[45px] xl:w-[357px]  rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
+                                            <input type="text" id='borderBottom' className='-mt-[2px] w-[200px] h-[38px] xl:w-[357px]  rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
                                             <div className='-mt-[2px]'>
                                                 <input type="text"  className='border-r-0 rounded-s-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
@@ -177,7 +177,7 @@ const Modal = ({ closeModal }) => {
 
                                         <div className='mt-[13px]'>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password*</p>
-                                            <input type="password" className='    sm:w-[280px] h-[45px] xl:w-[357px] py-5 px-[15px] rounded-[4px]' placeholder='Password' />
+                                            <input type="password" className='    w-[200px] h-[38px] xl:w-[357px] py-5 px-[15px] rounded-[4px]' placeholder='Password' />
                                         </div>
 
 

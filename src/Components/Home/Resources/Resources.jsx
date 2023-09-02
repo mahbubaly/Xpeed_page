@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../../Shared/Style.css';
-import SingleCards from '../SingleCards';
+
 import ResourcesSingleCards from './ResourcesSingleCards';
 import { Link } from 'react-router-dom';
 
@@ -91,9 +91,9 @@ const Resources = () => {
                 <div className='grid   grid-cols-1 sm:grid-cols-2  gap-[30px] rounded-[4px]'>
 
                     {
-                        ShowTablet.map(CardsData => <SingleCards
-                            key={CardsData.id}
-                            CardsData={CardsData}
+                        ShowDesktop.map(resourceData => <ResourcesSingleCards
+                            key={resourceData.id}
+                            resourceData={resourceData}
 
 
                         />)

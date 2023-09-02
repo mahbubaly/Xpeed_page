@@ -60,12 +60,30 @@ const SignInPage = ({ closeSignModal }) => {
                                             <div>
                                                 <div className=''>
                                                     <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name*</p>
-                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
+                                                </div>
+
+                                                <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
+
+                                                    <input type="text" id='passwordSearch' className="  w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Your Full Name' />
+
                                                 </div>
 
                                                 <div className='mt-[13px]'>
                                                     <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
+                                                </div>
+
+                                                <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
+
+
+
+                                                    <input type="email" id='passwordSearch' className="  w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Enter your Email' />
+
+
+
+
+
+
+
                                                 </div>
 
                                                 <div className='mt-[13px]'>
@@ -75,7 +93,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                                <div className="  flex  w-[280px] h-[48px] sm:w-[350px] sm:h-[45px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
+                                                <div className="  flex  w-[280px] h-[48px] sm:w-[350px] sm:h-[45px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
 
 
 
@@ -179,9 +197,24 @@ const SignInPage = ({ closeSignModal }) => {
                                                     <div>
                                                         <div className=''>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name*</p>
-
-                                                            <input type="text" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Your Full Name' />
                                                         </div>
+
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
+
+
+
+                                                            <input type="text" id='passwordSearch' className="  w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Your Full Name' />
+
+
+
+
+
+
+
+                                                        </div>
+
+
+
 
                                                         <div className='mt-[13px]'>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
@@ -190,7 +223,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
 
 
 
@@ -219,7 +252,7 @@ const SignInPage = ({ closeSignModal }) => {
                                                 </div>
 
 
-                                              
+
 
 
                                                 <div className='flex justify-center mt-[28px]'>
@@ -227,7 +260,7 @@ const SignInPage = ({ closeSignModal }) => {
                                                     <div>
                                                         <div className=' '>
                                                             <button type='submit' className='text-center font-bold Bold rounded-[8px]  w-[280px] h-[48px] sm:w-[350px] sm:h-[50px] mx-auto  bg-[#60599E] text-white hover:bg-[#3f3a68]'>
-                                                            Reset Password
+                                                                Reset Password
 
                                                             </button>
                                                         </div>
@@ -236,7 +269,8 @@ const SignInPage = ({ closeSignModal }) => {
                                                 </div>
                                                 <div className='text-center mt-[20px]  '>
                                                     <p className='text-[14px] Bold font-bold'>Remembered your password? <Link onClick={() => {
-                                                         setOpenForgetPass(false)}} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign in </Link></p>
+                                                        setOpenForgetPass(false)
+                                                    }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign in </Link></p>
                                                 </div>
 
 
@@ -283,7 +317,20 @@ const SignInPage = ({ closeSignModal }) => {
                                                     <div>
                                                         <div className=''>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                            <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
+                                                        </div>
+
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
+
+
+
+                                                            <input type="email" id='passwordSearch' className="  w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Enter Your Email' />
+
+
+
+
+
+
+
                                                         </div>
 
                                                         <div className='mt-[13px]'>
@@ -293,7 +340,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[8px] ">
 
 
 

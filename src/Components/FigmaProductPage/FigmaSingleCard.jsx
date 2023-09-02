@@ -28,7 +28,7 @@ const FigmaSingleCard = ({ CardsData }) => {
 
 
 
-                    <div className='bg-[#fcf7f4]  px-[15px]   mt-5 sm:mt-10  lg:mt-[3px]'>
+                    <div className='bg-[#fcf7f4]  px-[15px]  mt-[3px]'>
 
                         <div className='flex justify-between  items-center pt-[15px]'>
                             <div className='flex gap-[10px] items-center opacity-50'>

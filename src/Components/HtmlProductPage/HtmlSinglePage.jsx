@@ -18,7 +18,7 @@ const HtmlSinglePage = ({ CardsData }) => {
 
 
 
-                    <div className='bg-[#fcf7f4]  px-[15px]   mt-5 sm:mt-10  lg:mt-[3px]'>
+                    <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
 
 
 
