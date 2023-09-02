@@ -166,9 +166,9 @@ const Modal = ({ closeModal }) => {
 
                                             <input id='borderBottom' type="text" className='rounded-[4px]  sm:w-[280px] h-[45px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
 
-                                            <input type="text" id='borderBottom' className='-mt-[1px] sm:w-[280px] h-[45px] xl:w-[357px]  rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
+                                            <input type="text" id='borderBottom' className='-mt-[2px] sm:w-[280px] h-[45px] xl:w-[357px]  rounded-[4px] py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
-                                            <div className='-mt-[1px]'>
+                                            <div className='-mt-[2px]'>
                                                 <input type="text"  className='border-r-0 rounded-s-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='MM / YY' />
 
                                                 <input type="text" id='input_border_Left' className=' rounded-e-[4px] w-[280px] h-[48px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />

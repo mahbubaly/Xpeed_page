@@ -60,12 +60,12 @@ const SignInPage = ({ closeSignModal }) => {
                                             <div>
                                                 <div className=''>
                                                     <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name*</p>
-                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[350px] sm:h-[45px] px-[15px] ' placeholder='Enter Your Email' />
+                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
                                                 </div>
 
                                                 <div className='mt-[13px]'>
                                                     <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[350px] sm:h-[45px] px-[15px] ' placeholder='Enter Your Email' />
+                                                    <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
                                                 </div>
 
                                                 <div className='mt-[13px]'>
@@ -79,7 +79,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                                    <input type={OpenEye ? "text" : "password"} id='passwordSearch' className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
+                                                    <input type={OpenEye ? "text" : "password"} id='passwordSearch' className="      w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
 
 
 
@@ -180,7 +180,7 @@ const SignInPage = ({ closeSignModal }) => {
                                                         <div className=''>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name*</p>
 
-                                                            <input type="text" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[350px] sm:h-[45px] px-[15px] ' placeholder='Your Full Name' />
+                                                            <input type="text" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Your Full Name' />
                                                         </div>
 
                                                         <div className='mt-[13px]'>
@@ -190,11 +190,11 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                                        <div className="  flex  w-[280px] h-[48px] sm:w-[350px] sm:h-[45px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
 
 
 
-                                                            <input type="email" id='passwordSearch' className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Email' />
+                                                            <input type="email" id='passwordSearch' className="      w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Enter Your Email' />
 
 
 
@@ -268,7 +268,7 @@ const SignInPage = ({ closeSignModal }) => {
                                     <div>
                                         <div className='flex' >
                                             <div className='  pl-[61px] pr-[61px] sm:mt-[79px]'>
-                                                <h1 className='mt-[11px] text-center text-[25px] sm:text-[35px] font-bold Bold'> 👋 <br />
+                                                <h1 className='mt-[11px] text-center text-[25px] sm:text-[35px] font-bold Bold leading-normal'> 👋 <br />
                                                     Good To See You Again</h1>
 
                                                 <p className='text-[18px] text-center font-normal Normal mt-[15px]'>Sign in to your account </p>
@@ -283,21 +283,21 @@ const SignInPage = ({ closeSignModal }) => {
                                                     <div>
                                                         <div className=''>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                            <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[350px] sm:h-[45px] px-[15px] ' placeholder='Enter Your Email' />
+                                                            <input type="email" className='  border-[1px]  border-[#E1D8CB]   w-[200px] h-[38px] sm:w-[352px] sm:h-[47px] px-[15px] ' placeholder='Enter Your Email' />
                                                         </div>
 
-                                                        <div className='mt-[14px]'>
+                                                        <div className='mt-[13px]'>
                                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Password*</p>
 
                                                         </div>
 
 
 
-                                                        <div className="  flex  w-[280px] h-[48px] sm:w-[350px] sm:h-[45px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
+                                                        <div className="  flex  w-[200px] h-[38px] sm:w-[352px] sm:h-[47px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#E1D8CB] items-center  rounded-[4px] ">
 
 
 
-                                                            <input type={OpenEye ? "text" : "password"} id='passwordSearch' className="     lg:w-[555px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
+                                                            <input type={OpenEye ? "text" : "password"} id='passwordSearch' className="      w-[200px] h-[38px] sm:w-[350px]  bg-[#FFFFFF]  " placeholder='Enter Your Password' />
 
 
 
@@ -321,27 +321,12 @@ const SignInPage = ({ closeSignModal }) => {
 
                                                         </div>
 
-
-
-
-
-
-
-
-
-
                                                     </div>
 
 
                                                 </div>
 
-
-
-
-
-
-
-                                                <div className='sm:w-[350px] w-[280px] mx-auto mt-5 '>
+                                                <div className='sm:w-[350px] w-[280px] mx-auto mt-[13.5px] '>
                                                     <div className='sm:flex justify-between items-center '>
                                                         <div className='flex gap-[10px]  items-center '>
                                                             <input type="checkbox" className='w-[16px] h-4 ' name="" id="" />
