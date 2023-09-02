@@ -4,7 +4,11 @@ import eye from '../../../assets/Images/Icon/eye 2.png'
 import download from '../../../assets/Images/Icon/download.png'
 import fileName from '../../../assets/Images/Icon/file-copies 1.png'
 import calender from '../../../assets/Images/Icon/calendar-date 1.png'
-import { AiFillCheckCircle } from 'react-icons/ai';
+import img1 from '../../../assets/Images/Figma/f5.png'
+import img2 from '../../../assets/Images/Figma/f6.png'
+import img3 from '../../../assets/Images/Figma/f7.png'
+import img4 from '../../../assets/Images/Figma/f8.png'
+import download2 from '../../../assets/Images/Icon/download.png'
 import Pricing from '../Pricing';
 
 const ResourceCardDetails = () => {
@@ -34,7 +38,7 @@ const ResourceCardDetails = () => {
 
 
 
-   
+
 
     const selectedData = allData.find((data) => data.id == id);
 
@@ -95,6 +99,192 @@ const ResourceCardDetails = () => {
 
                         </>
                     }
+
+
+                </div>
+            </div>
+
+
+
+
+
+            {/* figma relate product */}
+
+
+
+            <div className='flex justify-center px-[30px] sm:px-[50px] 2xl:px-[135px]'>
+                <div className=' mt-5'>
+                    <div className='mt-[100px]'>
+                        <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>You May Also Like</h1>
+                        <p className='text-center w-[576px] mx-auto text-lg mt-[20px] font-normal Normal'>
+                            Check the latest products added to the marketplace. Fresh designs with the finest HTML5 CSS3 coding.
+                        </p>
+                    </div>
+
+
+
+                    {/* Related products list */}
+
+
+                    <div className='grid lg:grid-cols-4 gap-[30px] mt-[50px] '>
+
+                        {/* 1 */}
+                        <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
+
+                            <img src={img1} className=' h-[262px] flex-shrink-0 ' alt="" />
+
+                            <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
+
+                                <div className='flex justify-between  items-center pt-[15px]'>
+                                    <div className='flex gap-[10px] items-center opacity-50'>
+                                        <img src={download2} className='w-[14px] h-[14px]' alt="" />
+                                        <p className='text-[12px] font-semibold SemiBold'>202 Downloads</p>
+                                    </div>
+
+                                    <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>$9.99</button>
+                                </div>
+
+                                <div className='mt-[15px]'>
+                                    <hr className='hrWid h-[1px]' />
+
+                                </div>
+
+                                <h1 className='text-[14px] w-[232px] mt-[14px] leading-[22px] font-semibold SemiBold'>Gravity - Multi-Purpose HTML Template</h1>
+
+                                <div className=' flex justify-between  py-[20px] '>
+                                    <Link onClick={() => {
+                                        window.scrollTo(0, 0);
+                                    }} to={`details/${id}`}    >   <button className='text-[12px] h-[38px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] text-primary py-[8px]  hover:bg-[#60599E] hover:text-white'>Details</button>
+
+
+                                    </Link>
+
+                                    <button className='text-[12px] font-bold Bold h-[38px] w-[98px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   hover:bg-[#60599E] text-primary hover:text-white'>Live Preview</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* 2 */}
+                        <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
+
+                            <img src={img2} className=' h-[262px] flex-shrink-0 ' alt="" />
+
+                            <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
+
+                                <div className='flex justify-between  items-center pt-[15px]'>
+                                    <div className='flex gap-[10px] items-center opacity-50'>
+                                        <img src={download2} className='w-[14px] h-[14px]' alt="" />
+                                        <p className='text-[12px] font-semibold SemiBold'>202 Downloads</p>
+                                    </div>
+
+                                    <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>$9.99</button>
+                                </div>
+
+                                <div className='mt-[15px]'>
+                                    <hr className='hrWid h-[1px]' />
+
+                                </div>
+
+                                <h1 className='text-[14px] w-[232px] mt-[14px] leading-[22px] font-semibold SemiBold'>Gravity - Multi-Purpose HTML Template</h1>
+
+                                <div className=' flex justify-between  py-[20px] '>
+                                    <Link onClick={() => {
+                                        window.scrollTo(0, 0);
+                                    }} to={`details/${id}`}    >   <button className='text-[12px] h-[38px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] text-primary py-[8px]  hover:bg-[#60599E] hover:text-white'>Details</button>
+
+
+                                    </Link>
+
+                                    <button className='text-[12px] font-bold Bold h-[38px] w-[98px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   hover:bg-[#60599E] text-primary hover:text-white'>Live Preview</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* 3 */}
+
+                        <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
+
+                            <img src={img3} className=' h-[262px] flex-shrink-0 ' alt="" />
+
+                            <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
+
+                                <div className='flex justify-between  items-center pt-[15px]'>
+                                    <div className='flex gap-[10px] items-center opacity-50'>
+                                        <img src={download2} className='w-[14px] h-[14px]' alt="" />
+                                        <p className='text-[12px] font-semibold SemiBold'>202 Downloads</p>
+                                    </div>
+
+                                    <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>$9.99</button>
+                                </div>
+
+                                <div className='mt-[15px]'>
+                                    <hr className='hrWid h-[1px]' />
+
+                                </div>
+
+                                <h1 className='text-[14px] w-[232px] mt-[14px] leading-[22px] font-semibold SemiBold'>Gravity - Multi-Purpose HTML Template</h1>
+
+                                <div className=' flex justify-between  py-[20px] '>
+                                    <Link onClick={() => {
+                                        window.scrollTo(0, 0);
+                                    }} to={`details/${id}`}    >   <button className='text-[12px] h-[38px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] text-primary py-[8px]  hover:bg-[#60599E] hover:text-white'>Details</button>
+
+
+                                    </Link>
+
+                                    <button className='text-[12px] font-bold Bold h-[38px] w-[98px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   hover:bg-[#60599E] text-primary hover:text-white'>Live Preview</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* 4 */}
+                        <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
+
+                            <img src={img4} className=' h-[262px] flex-shrink-0 ' alt="" />
+
+                            <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
+
+                                <div className='flex justify-between  items-center pt-[15px]'>
+                                    <div className='flex gap-[10px] items-center opacity-50'>
+                                        <img src={download2} className='w-[14px] h-[14px]' alt="" />
+                                        <p className='text-[12px] font-semibold SemiBold'>202 Downloads</p>
+                                    </div>
+
+                                    <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>$9.99</button>
+                                </div>
+
+                                <div className='mt-[15px]'>
+                                    <hr className='hrWid h-[1px]' />
+
+                                </div>
+
+                                <h1 className='text-[14px] w-[232px] mt-[14px] leading-[22px] font-semibold SemiBold'>Gravity - Multi-Purpose HTML Template</h1>
+
+                                <div className=' flex justify-between  py-[20px] '>
+                                    <Link onClick={() => {
+                                        window.scrollTo(0, 0);
+                                    }} to={`details/${id}`}    >   <button className='text-[12px] h-[38px] w-[71px] font-bold Bold rounded-[4px] border-[1px] border-[#60599E] text-primary py-[8px]  hover:bg-[#60599E] hover:text-white'>Details</button>
+
+
+                                    </Link>
+
+                                    <button className='text-[12px] font-bold Bold h-[38px] w-[98px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   hover:bg-[#60599E] text-primary hover:text-white'>Live Preview</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
 
                 </div>
