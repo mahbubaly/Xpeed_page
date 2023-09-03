@@ -322,48 +322,53 @@ const Modal = ({ closeModal }) => {
                                                 :
 
                                                 <>
+                                                    {/* email */}
+                                                    
+                                                    <div className='flex justify-center '>
+                                                        <div className=''>
+                                                            <div className='mt-[30px] '>
+                                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
+                                                                <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
+                                                            </div>
 
-                                                   
-                                                        <div className='flex justify-center '>
-                                                            <div className=''>
-                                                                <div className='mt-[30px] '>
-                                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                                    <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
-                                                                </div>
+                                                            {/* card information  */}
 
-                                                                <div className='mt-[13px]  w-[280px]'>
-                                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Card Information*</p>
+                                                            <div className='mt-[13px]  w-[280px]'>
+                                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Card Information*</p>
 
-                                                                    <input id='borderBottom' type="text" className='rounded-s-[4px] rounded-e-[4px] rounded-b-none w-[280px] h-[44px] sm:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
+                                                                <input id='borderBottom' type="text" className='rounded-t-[4px] w-[280px] h-[44px] sm:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
 
-                                                                    <input type="text" id='borderBottom' className=' w-[280px] h-[44px] xl:w-[357px]   py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
+                                                                <input type="text"  className=' w-[280px] h-[44px] xl:w-[357px]   py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
-                                                                    <div className='flex'>
-                                                                        <input type="text" className='border-r-0  w-[140px] h-[44px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] Border_bottom_Left ' placeholder='MM / YY' />
+                                                                <div className='flex'>
+                                                                    <input type="text" className='  w-[140px] h-[44px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] Border_bottom_Left border-t-0' placeholder='MM / YY' />
 
-                                                                        <input type="text" id='input_border_Left' className=' Border_bottom_right w-[140px] h-[44px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className='mt-[13px]'>
-                                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password*</p>
-                                                                    <input type="password" className='    w-[280px] h-[44px] xl:w-[357px] py-5 px-[15px] rounded-[4px]' placeholder='Password' />
-                                                                </div>
-
-
-                                                                <p className='text-[14px] mt-5 sm:mt-[28px] text-center w-[280px] sm:w-[324px]  font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
-
-                                                                <div className=' mt-[30px] '>
-                                                                    <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
-                                                                    </button>
-
+                                                                    <input type="text"  className=' Border_bottom_right w-[140px] border-t-0  h-[44px] sm:w-[178.5px] sm:h-[44px] py-5 px-[15px] ' placeholder='CVC' />
                                                                 </div>
                                                             </div>
+
+
+                                                            {/* set account password */}
+
+                                                            <div className='mt-[13px]'>
+                                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password*</p>
+                                                                <input type="password" className='    w-[280px] h-[44px] xl:w-[357px] py-5 px-[15px] rounded-[4px]' placeholder='Password' />
+                                                            </div>
+
+
+                                                            <p className='text-[14px] mt-5 sm:mt-[28px] text-center w-[280px] sm:w-[324px]  font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
+
+                                                            <div className=' mt-[30px] '>
+                                                                <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
+                                                                </button>
+
+                                                            </div>
                                                         </div>
+                                                    </div>
 
 
-                                                        
-                                                   
+
+
 
                                                 </>
                                         }
