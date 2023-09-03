@@ -24,9 +24,9 @@ const ModalCarts = ({ cartItem, removeItem }) => {
 
             <div className=''>
 
-                <div className=' h-[259px]  sm:w-[270px] px-[4px]  pt-[3.5px]  rounded-[4px] bg-white PopShadow  ' >
+                <div className=' h-[259px] w-[270px] px-[4px] mx-auto pt-[3.5px]  rounded-[4px] bg-white PopShadow  ' >
 
-                    <img src={img} className=' rounded-[4px] flex-shrink-0 ' alt="" />
+                    <img src={img} className='sm:w-auto sm:h-auto w-[262px] h-[196px] rounded-[4px] flex-shrink-0 ' alt="" />
 
 
 
@@ -40,7 +40,7 @@ const ModalCarts = ({ cartItem, removeItem }) => {
 
                             
 
-                            <button onClick={() => removeItem(id)} className='border-[2px] rounded-[50%] hover:border-[#2e2c3d]   border-primary w-[24px] h-[24px]'> <img src={Delete} alt="" className='w-[13.44px] h-[13.44px] mx-auto ' /> </button>
+                            <button onClick={() => removeItem(id)} className='border-[2px] rounded-[50%] hover:border-[#2e2c3d]   border-primary w-[24px] h-[24px] sm:w-[24px] sm:h-[24px]'> <img src={Delete} alt="" className='w-[13.44px] h-[13.44px] mx-auto ' /> </button>
                         </div>
 
 

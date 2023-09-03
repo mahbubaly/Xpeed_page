@@ -407,7 +407,7 @@ const Modal = ({ closeModal }) => {
                                     </div>
 
 
-                                    <div className='gap-[20px] flex flex-col overflow-y-scroll mt-[30px] ScrollBar h-[259px]  pr-[10px]'>
+                                    <div className='gap-[20px] flex flex-col overflow-y-scroll mt-[30px] ScrollBar h-[259px]  '>
 
                                         {
                                             items.map(cartItem => <ModalCarts
