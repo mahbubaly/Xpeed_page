@@ -149,7 +149,8 @@ input[type="password"]:focus-visible {
         left: 120px;
         transform: translate(-50%, -50%);
         background-color: white;
-        width: 300px;
+        width: 320px;
+        height: 601px;
 
 
         border-radius: 10px;
