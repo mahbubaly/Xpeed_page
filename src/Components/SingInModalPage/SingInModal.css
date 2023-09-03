@@ -49,10 +49,11 @@
         border-radius: 25px;
         background: #FCF7F4;
         position: fixed;
-        top: 380px;
+        top: 340px;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 10px;
+        
     }
 
 

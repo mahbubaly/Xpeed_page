@@ -222,6 +222,8 @@ const Modal = ({ closeModal }) => {
 
 
             {/* Mobile design */}
+
+
             <div className=' z-10 block sm:hidden  ' onClick={() => {
                 window.scrollTo(0, 0);
             }}>
@@ -231,7 +233,7 @@ const Modal = ({ closeModal }) => {
 
 
                         <div className='modal-container ' >
-                            <img src={empty} className='sm:w-auto w-[320px] mx-auto rounded-[4px] ' alt="" />
+                            <img src={empty} className='sm:w-auto w-full mx-auto rounded-[4px] ' alt="" />
 
                             <h1 className=' flex items-center   justify-center mt-5  font-bold text-lg Bold'> Your cart is empty </h1>
                         </div>
@@ -242,7 +244,7 @@ const Modal = ({ closeModal }) => {
 
                         {
                             mobileCart ? <>
-                                <div className='px-5 modal-container w-[320px] h-[650px]'>
+                                <div className='px-5 modal-container w-full h-[650px]'>
 
                                     <div className='flex justify-between items-center pt-[30px] '>
                                         <img src={logo} alt="" className='w-[40px] h-[24px]' />
@@ -278,30 +280,32 @@ const Modal = ({ closeModal }) => {
 
                                             {/* Paypal is true then  */}
 
-                                            <div className='mt-[30px] '>
-                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
-                                                <input type="email" className='   w-[280px] h-[44px] sm:h-[45px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
+                                            <div>
+                                                <div className='mt-[30px] '>
+                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Email*</p>
+                                                    <input type="email" className='   w-[280px] h-[44px] sm:h-[45px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
+                                                </div>
+
+                                                <div className='mt-[13px] '>
+                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name *</p>
+                                                    <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter full Name' />
+                                                </div>
+
+                                                <div className='mt-[13px] '>
+                                                    <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password *</p>
+                                                    <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Password' />
+                                                </div>
+
+
+                                                <p className='text-[14px] mt-[20px] text-[#C6C1C0] text-center  w-[280px] sm:mr-0  sm:w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
+
+                                                <div className=' mt-[60px] mb-2'>
+                                                    <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] text-[14px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
+                                                    </button>
+
+                                                </div>
+
                                             </div>
-
-                                            <div className='mt-[13px] '>
-                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Full Name *</p>
-                                                <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Enter full Name' />
-                                            </div>
-
-                                            <div className='mt-[13px] '>
-                                                <p className='text-[14px] mb-[10px] font-bold Bold'>Set Account Password *</p>
-                                                <input type="email" className='    w-[280px] h-[44px] sm:w-[357px]  py-5 px-[15px] ' placeholder='Password' />
-                                            </div>
-
-
-                                            <p className='text-[14px] mt-[20px] text-[#C6C1C0] text-center  w-[280px] sm:w-[324px] mx-auto font-normal Normal'>Paying a total of ${cartTotal} for {totalUniqueItems} products. Download with All-Access instead?</p>
-
-                                            <div className=' mt-[60px] mb-2'>
-                                                <button type='submit' className='  text-center font-bold Bold rounded-[4px] w-[280px] text-[14px] h-[48px] sm:w-[356px] sm:h-[48px]  bg-[#60599E] text-white hover:bg-[#3f3a68]'>Pay ${cartTotal}
-                                                </button>
-
-                                            </div>
-
 
 
 
@@ -365,7 +369,7 @@ const Modal = ({ closeModal }) => {
                             </> : <>
 
 
-                                <div className='px-5 modal-container w-[320px] h-[568px]'>
+                                <div className='px-5 modal-container w-full h-[568px]'>
 
                                     <div className='flex justify-between items-center pt-[30px] '>
                                         <img src={logo} alt="" className='w-[40px] h-[24px]' />

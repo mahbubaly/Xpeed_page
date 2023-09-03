@@ -176,7 +176,7 @@ input[type="password"]:focus-visible {
     .modal-container {
         position: fixed;
         top: 340px;
-        left: 190px;
+        left: 187.5px;
         transform: translate(-50%, -50%);
         background: #FCF7F4;
        
