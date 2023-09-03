@@ -168,10 +168,12 @@ const Modal = ({ closeModal }) => {
                                             <input type="email" className='    w-[200px] h-[38px] xl:w-[357px]  py-5 px-[15px] ' placeholder='Enter Your Email' />
                                         </div>
 
+                                        {/* card information */}
+
                                         <div className='mt-[13px]'>
                                             <p className='text-[14px] mb-[10px] font-bold Bold'>Card Information*</p>
 
-                                            <input id='borderBottom' type="text" className='rounded-s-[4px] rounded-e-[4px] rounded-b-none w-[200px] h-[38px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
+                                            <input id='borderBottom' type="text" className='rounded-t-[4px] w-[200px] h-[38px] xl:w-[357px] py-5 px-[15px] ' placeholder='Name On Card' />
 
                                             <input type="text" id='borderBottom' className=' w-[200px] h-[38px] xl:w-[357px]   py-5 px-[15px] ' placeholder='1234 1234 1234 1234' data-mask="000 000 000 0000" />
 
