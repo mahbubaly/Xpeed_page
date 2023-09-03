@@ -53,7 +53,7 @@ const SignInPage = ({ closeSignModal }) => {
                             <div className='sm:hidden block'>
 
                                 <div className='flex justify-between items-center pt-[30px] px-5'>
-                                    <img src={logo} alt="" className='w-[40px] h-[24px]' />
+                                    <Link to='/'> <img src={logo} alt="" className='w-[40px] h-[24px]' /></Link>
                                     <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                         <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
@@ -211,7 +211,7 @@ const SignInPage = ({ closeSignModal }) => {
                                     <div className='sm:hidden block'>
 
                                         <div className='flex justify-between items-center pt-[30px] px-5'>
-                                            <img src={logo} alt="" className='w-[40px] h-[24px]' />
+                                           <Link to='/'>  <img src={logo} alt="" className='w-[40px] h-[24px]' /></Link>
                                             <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                                 <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
@@ -337,7 +337,7 @@ const SignInPage = ({ closeSignModal }) => {
                                     <div className='sm:hidden block'>
 
                                         <div className='flex justify-between items-center pt-[30px] px-5'>
-                                            <img src={logo} alt="" className='w-[40px] h-[24px]' />
+                                           <Link to='/'>  <img src={logo} alt="" className='w-[40px] h-[24px]' /></Link>
                                             <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                                 <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
