@@ -39,7 +39,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                         <div className='Modal-container h-[680px] w-[320px] sm:h-[462px] sm:w-[970px]'>
                             <div className='crossBar hidden sm:block'>
-                                <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
+                                <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
 
                                 </button>
 
@@ -54,7 +54,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                                 <div className='flex justify-between items-center pt-[30px] px-5'>
                                     <img src={logo} alt="" className='w-[40px] h-[24px]' />
-                                    <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'>
+                                    <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                         <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
 
@@ -197,7 +197,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                                 <div className='Modal-container w-[320px] h-[568px] sm:h-[408px] sm:w-[970px]'>
                                     <div className='crossBar hidden sm:block'>
-                                        <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
+                                        <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
 
                                         </button>
 
@@ -212,7 +212,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                                         <div className='flex justify-between items-center pt-[30px] px-5'>
                                             <img src={logo} alt="" className='w-[40px] h-[24px]' />
-                                            <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'>
+                                            <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                                 <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
 
@@ -323,7 +323,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                                     {/* desktop logo and cancel icon  */}
                                     <div className='crossBar hidden sm:block'>
-                                        <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
+                                        <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
 
                                         </button>
 
@@ -338,7 +338,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                                         <div className='flex justify-between items-center pt-[30px] px-5'>
                                             <img src={logo} alt="" className='w-[40px] h-[24px]' />
-                                            <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[42px] h-[42px] sm:w-[50px] sm:h-[50px]'>
+                                            <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'>
 
                                                 <img src={MobileCancel} alt="" className='w-[28px] sm:hidden block h-[28px] mx-auto ' />
 

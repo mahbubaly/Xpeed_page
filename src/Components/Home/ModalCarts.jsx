@@ -34,7 +34,7 @@ const ModalCarts = ({ cartItem, removeItem }) => {
 
 
 
-                    <div className='bg-[#fcf7f4] pb-[15px]    mt-5 sm:mt-10  lg:mt-[3px]'>
+                    <div className='bg-[#fcf7f4] pb-[15px]    mt-[3px]'>
                         <div className='flex items-center pt-[15px] px-[15px] justify-between'>
                             <h1 className='text-[14px]  font-semibold SemiBold'>Gravity - Multi-Purpose...</h1>
 
