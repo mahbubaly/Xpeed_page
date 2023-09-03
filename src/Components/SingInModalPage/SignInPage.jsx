@@ -38,6 +38,9 @@ const SignInPage = ({ closeSignModal }) => {
                     OpenJoinPage ? <>
 
                         <div className='Modal-container w-full h-[680px]  sm:h-[462px] sm:w-[970px]'>
+
+                            {/* desktop cancel icon */}
+
                             <div className='crossBar hidden sm:block'>
                                 <button onClick={closeSignModal} className='border-[2px] rounded-[50%] sm:hover:border-white hover:border-[#28244c] sm:border-[#E5DFDC] border-primary w-[34px] h-[34px] sm:w-[50px] sm:h-[50px]'> <img src={cancel} alt="" className='w-[28px]  h-[28px] mx-auto ' />
 
@@ -67,12 +70,12 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                            <div>
+                            <div className='flex justify-center'>
                                 <div className='sm:flex p-5 sm:p-0' >
-                                    <div className=' sm:pl-[61px] sm:pr-[81px] sm:mt-[79px]'>
-                                        <h1 className='mt-[45px]  sm:text-center text-[25px] sm:text-[35px] font-bold Bold'> Create Your Account</h1>
+                                    <div className=' mt-[27px] sm:pl-[61px] sm:pr-[81px] sm:mt-[79px]'>
+                                        <h1 className='  sm:text-center text-[25px] sm:text-[35px] font-bold Bold'> Create Your Account</h1>
 
-                                        <p className='text-[14px] sm:text-[18px] sm:text-center sm:w-[303px] mx-auto font-normal Normal mt-[15px]'>Let's Sign Up first enter into Xpeed Page website! </p>
+                                        <p className='text-[14px] sm:text-[18px] sm:text-center w-[280px] sm:w-[303px] mx-auto font-normal Normal mt-[15px]'>Let's Sign Up first enter into Xpeed Page website! </p>
                                     </div>
 
                                     <hr className=' border-[1px] sm:block hidden mt-[60px] h-[204px]' />
@@ -221,13 +224,13 @@ const SignInPage = ({ closeSignModal }) => {
                                     </div>
 
 
-                                    <div>
+                                    <div className='flex justify-center'>
                                         <div className='sm:flex p-5 sm:p-0' >
                                             <div className=' sm:pl-[61px] sm:pr-[61px] mt-[15px] sm:mt-[79px]'>
                                                 <h1 className='mt-[3px]  sm:text-center text-[25px] sm:text-[35px] font-bold Bold'>
                                                     Reset Your Password</h1>
 
-                                                <p className='text-[14px] sm:text-[18px] sm:w-[366px] mx-auto sm:text-center font-normal Normal mt-[15px]'>Your password reset link will be sent to the registered email address.</p>
+                                                <p className='text-[14px] sm:text-[18px] w-[280px] sm:w-[366px] mx-auto sm:text-center font-normal Normal mt-[15px]'>Your password reset link will be sent to the registered email address.</p>
                                             </div>
 
                                             <hr className=' border-[1px] hidden sm:block mt-[60px] h-[204px]' />
@@ -346,7 +349,7 @@ const SignInPage = ({ closeSignModal }) => {
                                     </div>
 
 
-                                    <div>
+                                    <div className='flex justify-center'>
                                         <div className='sm:flex sm:p-0 px-5 pt-5' >
                                             <div className='  sm:pl-[61px] sm:pr-[61px] sm:mt-[79px]'>
                                                 <h1 className='mt-[11px] sm:text-center text-[25px] sm:text-[35px] font-bold Bold '> 👋 <br />
