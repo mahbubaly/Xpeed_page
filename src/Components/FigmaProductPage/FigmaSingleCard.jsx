@@ -61,7 +61,7 @@ const FigmaSingleCard = ({ CardsData }) => {
                                  window.scrollTo(0, 0);
                                 addItem(CardsData);
                                 setIsOpen(true);
-                                toast("cart added successfully!");
+                               
                                
                             }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]  text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart </button>
 

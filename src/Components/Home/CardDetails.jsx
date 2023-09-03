@@ -11,22 +11,15 @@ import img3 from '../../assets/Images/7.png'
 import img4 from '../../assets/Images/8.png'
 import download2 from '../../assets/Images/Icon/download.png'
 import Pricing from './Pricing';
+import { useCart } from 'react-use-cart';
 
 const CardDetails = () => {
 
     const cardDetails = useParams();
-
-
     const [allData, setAllData] = useState([]);
-
-
-
-
     const { id } = cardDetails;
 
-
-
-
+    const { addItem } = useCart();
 
 
     useEffect(() => {
@@ -98,7 +91,13 @@ const CardDetails = () => {
                                     <div className='mt-[57px] '>
                                         <Link><button className='text-center text-[18px] text-white hover:text-slate-200 OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Live View</button></Link>
 
-                                        <Link><button className='bg-white mt-[30px] text-center text-[18px] text-[#60599E] hover:text-[#3f3a68] OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Add To Cart</button></Link>
+                                        <Link><button  onClick={() => {
+                                            window.scrollTo(0, 0);
+                                            addItem(selectedData);
+                                           
+
+
+                                        }} className='bg-white mt-[30px] text-center text-[18px] text-[#60599E] hover:text-[#3f3a68] OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Add To Cart</button></Link>
                                     </div>
                                 </div>
                             </div>

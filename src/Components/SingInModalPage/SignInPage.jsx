@@ -37,6 +37,8 @@ const SignInPage = ({ closeSignModal }) => {
                 {
                     OpenJoinPage ? <>
 
+                    {/* Create Your Account */}
+
                         <div className='Modal-container w-full h-[680px]  sm:h-[462px] sm:w-[970px]'>
 
                             {/* desktop cancel icon */}
@@ -72,7 +74,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                             <div className='flex justify-center'>
                                 <div className='sm:flex p-5 sm:p-0' >
-                                    <div className=' mt-[27px] sm:pl-[61px] sm:pr-[81px] sm:mt-[79px]'>
+                                    <div className=' mt-[27px] sm:pl-[61px] sm:pr-[81px] sm:mt-[124px]'>
                                         <h1 className='  sm:text-center text-[25px] sm:text-[35px] font-bold Bold'> Create Your Account</h1>
 
                                         <p className='text-[14px] sm:text-[18px] sm:text-center w-[280px] sm:w-[303px] mx-auto font-normal Normal mt-[15px]'>Let's Sign Up first enter into Xpeed Page website! </p>
@@ -174,7 +176,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
                                         <div className='sm:text-center mt-[20px]  '>
-                                            <p className='text-[14px] Bold font-bold'>Already have an account?   <Link onClick={() => { setOpenJoinPage(false) }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign in</Link></p>
+                                            <p className='text-[14px] Bold font-bold'>Already have an account?   <Link onClick={() => { setOpenJoinPage(false) }} className='font-bold Bold text-[#60599E] hover:underline hover:text-[#3f3a68] '>  Sign in</Link></p>
                                         </div>
 
 
@@ -457,7 +459,7 @@ const SignInPage = ({ closeSignModal }) => {
                                                 </div>
 
                                                 <div className='sm:text-center mt-[20px] '>
-                                                    <p className='text-[14px] Bold font-bold '>Not Registered?  <Link onClick={() => { setOpenJoinPage(true) }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Join Us</Link></p>
+                                                    <p className='text-[14px] Bold font-bold '>Not Registered?  <Link onClick={() => { setOpenJoinPage(true) }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68]  hover:underline'>  Join Us</Link></p>
                                                 </div>
 
 
