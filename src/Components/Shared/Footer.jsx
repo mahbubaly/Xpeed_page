@@ -13,8 +13,8 @@ const Footer = () => {
 
 
 
-            <div className='   '>
-                <hr className='hrWid  mt-[49px]' />
+            <div className=' hrDiv mt-[50px]'>
+                <hr className='hrWid  ' />
 
             </div>
 

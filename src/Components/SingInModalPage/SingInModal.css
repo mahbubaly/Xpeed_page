@@ -81,7 +81,7 @@
     .crossBar {
         position: relative;
         top: -100px;
-        left: 1000px;
+        left: 950px;
         color: white;
     }
 
@@ -91,7 +91,14 @@
 
 /* ================================================== */
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    .crossBar {
+        position: relative;
+        top: -130px;
+        left: 1150px;
+        color: white;
+    }
+}
 
 
 /* ================1440====================== */
