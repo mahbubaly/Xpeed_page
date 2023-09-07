@@ -45,15 +45,44 @@
         color: white;
     }
 
+    .Modal-containerLogIn  {
+        border-radius: 25px;
+        background: #FCF7F4;
+        position: fixed;
+        left: 50%;
+        top: 300px;
+
+
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
+    }
+
     .Modal-container {
         border-radius: 25px;
         background: #FCF7F4;
         position: fixed;
-        top: 340px;
-        left: 50%;
+
+        top: 280px;
+
+
         transform: translate(-50%, -50%);
         border-radius: 10px;
-        
+
+    }
+
+    .Modal-containerJoinPage {
+        border-radius: 25px;
+        background: #FCF7F4;
+        position: fixed;
+        left: 50%;
+
+        top: 335px;
+
+
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
     }
 
 
@@ -68,20 +97,51 @@
 
 @media (min-width: 1024px) {
 
+   
+    .Modal-containerLogIn {
+        border-radius: 25px;
+        background: #FCF7F4;
+        position: fixed;
+        left: 50%;
+        top: 400px;
+
+
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
+    }
+
     .Modal-container {
         border-radius: 25px;
         background: #FCF7F4;
         position: fixed;
+
         top: 400px;
-        left: 50%;
+
+
         transform: translate(-50%, -50%);
         border-radius: 10px;
+
+    }
+
+    .Modal-containerJoinPage {
+        border-radius: 25px;
+        background: #FCF7F4;
+        position: fixed;
+        left: 50%;
+
+        top: 430px;
+
+
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
     }
 
     .crossBar {
         position: relative;
         top: -100px;
-        left: 950px;
+        left: 700px;
         color: white;
     }
 
@@ -94,8 +154,8 @@
 @media (min-width: 1280px) {
     .crossBar {
         position: relative;
-        top: -130px;
-        left: 1150px;
+        top: -120px;
+        left: 1050px;
         color: white;
     }
 }

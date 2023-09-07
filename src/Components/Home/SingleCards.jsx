@@ -1,8 +1,9 @@
 import React from 'react';
 import '../Shared/Style.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import download2 from '../../assets/Images/Icon/download.png'
 import { Jelly } from '@uiball/loaders';
+import { BsDownload } from 'react-icons/bs';
 
 const SingleCards = ({ CardsData }) => {
 
@@ -31,9 +32,10 @@ const SingleCards = ({ CardsData }) => {
                         <div className='bg-[#fcf7f4]  px-[15px]   mt-[3px]'>
 
                             <div className='flex justify-between  items-center pt-[15px]'>
-                                <div className='flex gap-[10px] items-center opacity-50'>
-                                    <img src={download2} className='w-[14px] h-[14px]' alt="" />
-                                    <p className='text-[12px] font-semibold SemiBold'>{download} download</p>
+                                <div className='flex gap-[10px] items-center  '>
+
+                                    <BsDownload className='w-[14px] h-[14px] text-[#30313B] opacity-[50%]' />
+                                    <p className='text-[12px] font-semibold SemiBold text-[#30313B]  opacity-[50%]'>{download} download</p>
                                 </div>
 
                                 <button className='text-[12px] font-bold Bold h-[27px] w-[50px] rounded-[4px] bg-[#60599E]  text-white'>${price}</button>

@@ -39,7 +39,7 @@ const SignInPage = ({ closeSignModal }) => {
 
                         {/* Create Your Account */}
 
-                        <div className='Modal-container w-full h-[680px]  sm:h-[462px] sm:w-[970px]'>
+                        <div className='Modal-containerJoinPage w-full h-[680px] z-40  sm:h-[462px] sm:w-[970px]'>
 
                             {/* desktop cancel icon */}
 
@@ -320,7 +320,7 @@ const SignInPage = ({ closeSignModal }) => {
 
 
 
-                                <div className='Modal-container w-full h-[620px] sm:h-[408px] sm:w-[970px]'>
+                                <div className='Modal-containerLogIn    w-full h-[620px] sm:h-[408px] sm:w-[970px]'>
 
                                     {/* desktop logo and cancel icon  */}
                                     <div className='crossBar hidden sm:block'>
