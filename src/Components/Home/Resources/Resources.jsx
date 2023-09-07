@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Resources = () => {
+const Resources = ({ searchCarts }) => {
 
     const [ShowAll, setShowAll] = useState([]);
     const [ShowTablet, setShowTablet] = useState([]);
@@ -36,7 +36,16 @@ const Resources = () => {
     }, [])
     return (
         <>
-            <div className='mt-[50px] sm:mt-[100px]'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+
+                className='mt-[50px] sm:mt-[100px]'>
                 <h1 className='text-center mx-auto lg:w-[770px] text-[25px] lg:text-[45px] font-bold Bold'>
                     Download 10,000+ Figma Design Resources <span className='text-[#60599E]'> Only $9.99</span>
                 </h1>
@@ -51,7 +60,9 @@ const Resources = () => {
                 <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
-                        ShowDesktop.map(resourceData => <ResourcesSingleCards
+                        ShowDesktop.filter((item) => {
+                            return searchCarts.toLowerCase() === '' ? item : item.title.toLowerCase().includes(searchCarts);
+                        }).map(resourceData => <ResourcesSingleCards
                             key={resourceData.id}
                             resourceData={resourceData}
 
@@ -65,7 +76,14 @@ const Resources = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[80px] items-center'>
+                <div data-aos="fade-up"
+
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="false"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-center" className='flex  justify-center mt-[80px] items-center'>
 
                     <Link onClick={() => {
                         window.scrollTo(0, 0);
@@ -105,7 +123,14 @@ const Resources = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[80px] items-center'>
+                <div data-aos="fade-up"
+
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="false"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-center" className='flex  justify-center mt-[80px] items-center'>
 
                     <Link onClick={() => {
                         window.scrollTo(0, 0);

@@ -2,6 +2,7 @@ import React from 'react';
 import '../Shared/Style.css';
 import { Link, NavLink } from 'react-router-dom';
 import download2 from '../../assets/Images/Icon/download.png'
+import { Jelly } from '@uiball/loaders';
 
 const SingleCards = ({ CardsData }) => {
 
@@ -11,7 +12,13 @@ const SingleCards = ({ CardsData }) => {
         <>
             {
                 CardsData ? <>
-                    <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
+                    <div data-aos="fade-up"
+
+                        data-aos-duration="500"
+                        data-aos-easing="ease-in"
+                        data-aos-mirror="false"
+                        data-aos-once="true"
+                        data-aos-anchor-placement="top-center" className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
 
                         <img src={img} className=' h-[262px] flex-shrink-0 ' alt="" />
 
@@ -58,7 +65,12 @@ const SingleCards = ({ CardsData }) => {
 
 
                 </> : <>
-                    <p>Loading..........</p>
+                    <Jelly
+                        size={30}
+                        speed={1}
+
+                        color="#60599E"
+                    />
 
 
                 </>

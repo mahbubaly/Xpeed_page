@@ -37,7 +37,7 @@ const SignInPage = ({ closeSignModal }) => {
                 {
                     OpenJoinPage ? <>
 
-                    {/* Create Your Account */}
+                        {/* Create Your Account */}
 
                         <div className='Modal-container w-full h-[680px]  sm:h-[462px] sm:w-[970px]'>
 
@@ -299,7 +299,7 @@ const SignInPage = ({ closeSignModal }) => {
                                                 <div className='sm:text-center mt-[20px]  '>
                                                     <p className='text-[14px] Bold font-bold'>Remembered your password? <Link onClick={() => {
                                                         setOpenForgetPass(false)
-                                                    }} className='font-bold Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign in </Link></p>
+                                                    }} className='font-bold hover:underline Bold text-[#60599E] hover:text-[#3f3a68] '>  Sign in </Link></p>
                                                 </div>
 
 

@@ -6,7 +6,15 @@ const Contact = () => {
         <>
 
 
-            <div className='mt-[178px]'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                className='mt-[178px]'>
                 <h1 className='text-[25px] sm:w-[672px] mx-auto sm:text-[45px] text-center font-semibold SemiBold'>Let’s Start Landing Page Only $99.99
 
                 </h1>
@@ -15,7 +23,14 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className='flex justify-center'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center" className='flex justify-center'>
                 <div className='mt-[80px]'>
 
                     <div className='sm:flex gap-[30px] '>

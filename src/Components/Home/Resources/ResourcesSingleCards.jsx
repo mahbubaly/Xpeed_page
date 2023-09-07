@@ -25,7 +25,13 @@ const ResourcesSingleCards = ({ resourceData }) => {
 
 
 
-            <div className=' px-[4px] pb-[4px] pt-[3px] rounded-[4px] bg-white  ' >
+            <div data-aos="fade-up"
+
+                data-aos-duration="500"
+                data-aos-easing="ease-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center" className=' px-[4px] pb-[4px] pt-[3px] rounded-[4px] bg-white  ' >
 
                 <img src={img} className='h-[262px] flex-shrink-0 rounded-[4px]' alt="" />
 
@@ -66,10 +72,10 @@ const ResourcesSingleCards = ({ resourceData }) => {
                         </Link>
 
 
-                        <button onClick={() => { addItem(resourceData);  setIsOpen(true); window.scrollTo(0,0) }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart</button>
+                        <button onClick={() => { addItem(resourceData); setIsOpen(true); window.scrollTo(0, 0) }} className='text-[12px] font-bold Bold h-[39px] w-[99px] rounded-[4px] border-[1px] border-[#60599E] py-[8px] leading-[22px]   text-primary hover:bg-[#60599E]  hover:text-white'>Add To Cart</button>
 
 
-                       
+
 
 
                         {

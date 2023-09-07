@@ -1,50 +1,35 @@
-import React, { useEffect } from 'react';
-import Navbar from '../Shared/Navbar';
-import Cards from './Cards';
+import React, { useEffect, useState } from 'react';
 import Pricing from './Pricing';
-import Footer from '../Shared/Footer';
 import Banner from './Banner';
-import Resources from './Resources/Resources';
+import { Jelly } from '@uiball/loaders';
+import { Lines } from 'react-preloaders';
 
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     })
+    const [isLoading, setIsLoading] = useState(true);
+
+
     return (
         <>
 
 
-            {
-                <div className='container mx-auto '>
-
-                    <Banner />
 
 
-                    <Cards />
 
-                    <Resources />
+            <div className='container mx-auto '>
 
-                    <Pricing />
+                <Banner />
 
 
 
 
 
 
+                <Pricing />
 
-
-
-
-                </div> ? <> <div className='container mx-auto '>
-
-                    <Banner />
-
-
-                    <Cards />
-
-                    <Resources />
-
-                    <Pricing />
+               
 
 
 
@@ -55,8 +40,10 @@ const Home = () => {
 
 
 
-                </div>   </> : <>  <h1>Loading............</h1></>
-            }
+
+
+            </div>
+
 
 
 

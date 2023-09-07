@@ -12,6 +12,7 @@ import img4 from '../../assets/Images/8.png'
 import download2 from '../../assets/Images/Icon/download.png'
 import Pricing from './Pricing';
 import { useCart } from 'react-use-cart';
+import { Jelly } from '@uiball/loaders';
 
 const CardDetails = () => {
 
@@ -53,63 +54,73 @@ const CardDetails = () => {
                     {
                         selectedData ? <>
 
-                            <h1 className='font-bold text-[30px] Bold'>{selectedData.title}</h1>
+                            <div data-aos="fade-up"
 
-                            <div className='mt-[30px] flex gap-5 items-center opacity-50'>
-                                <div className='flex gap-[10px] items-center'>
-                                    <img src={eye} className='w-[16.389px] h-[16px]' alt="" />
-                                    <p className='text-[16px] font-semibold SemiBold'>{selectedData.view} views</p>
+                                data-aos-delay="50"
+                                data-aos-duration="800"
+                                data-aos-easing="ease-in-out"
+                                data-aos-mirror="false"
+                                data-aos-once="true"
+                                data-aos-anchor-placement="top-center">
+                                <h1 className='font-bold text-[30px] Bold'>{selectedData.title}</h1>
+
+                                <div className='mt-[30px] flex gap-5 items-center opacity-50'>
+                                    <div className='flex gap-[10px] items-center'>
+                                        <img src={eye} className='w-[16.389px] h-[16px]' alt="" />
+                                        <p className='text-[16px] font-semibold SemiBold'>{selectedData.view} views</p>
+                                    </div>
+                                    <div className='flex gap-[10px] items-center'>
+                                        <img src={download} className='w-[20px] h-[20px]' alt="" />
+                                        <p className='text-[16px] font-semibold SemiBold'>{selectedData.download} download</p>
+                                    </div>
                                 </div>
-                                <div className='flex gap-[10px] items-center'>
-                                    <img src={download} className='w-[20px] h-[20px]' alt="" />
-                                    <p className='text-[16px] font-semibold SemiBold'>{selectedData.download} download</p>
+                                <div className='flex  mt-[50px] gap-[34px]'>
+                                    <div className='overflow-scroll Scroll_content scroll-smooth bg-white p-[4px] rounded-[4px]  w-[762px] h-[762px]'>
+                                        <img src={selectedData.long_img} className='rounded-[4px] ' alt="" />
+                                    </div>
+
+                                    <div className='w-[370px] bg-[#60599E] p-[30px] rounded-[4px]'>
+                                        <h1 className='font-bold text-white text-[20px] Bold'>{selectedData.title}</h1>
+                                        <p className='mt-5 text-[16px] font-normal Normal opacity-75 text-white'>{selectedData.description}</p>
+                                        <hr className='mt-[30px] opacity-25 ' />
+
+                                        <p className='mt-[30px] text-[40px] font-bold Bold  text-center text-white  '>${selectedData.price}</p>
+                                        <hr className='w-[112px] mx-auto border-[1px] -mt-[5px]' />
+
+
+                                        <div className='flex gap-[15px] mt-[56px] items-center'>
+                                            <img src={fileName} className='w-[16.389px] h-[16px]' alt="" />
+                                            <p className='text-[16px] font-semibold SemiBold text-white'>HTML5, Figma</p>
+                                        </div>
+                                        <div className='flex gap-[15px] mt-[30px] items-center'>
+                                            <img src={calender} className='w-[16.389px] h-[16px]' alt="" />
+                                            <p className='text-[16px] font-semibold SemiBold text-white'>April 18th 2023</p>
+                                        </div>
+
+                                        <div className='mt-[57px] '>
+                                            <Link><button className='text-center text-[18px] text-white hover:text-slate-200 OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Live View</button></Link>
+
+                                            <Link><button onClick={() => {
+                                                window.scrollTo(0, 0);
+                                                addItem(selectedData);
+
+
+
+                                            }} className='bg-white mt-[30px] text-center text-[18px] text-[#60599E] hover:text-[#3f3a68] OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Add To Cart</button></Link>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
-                            <div className='flex  mt-[50px] gap-[34px]'>
-                                <div className='overflow-scroll Scroll_content scroll-smooth bg-white p-[4px] rounded-[4px]  w-[762px] h-[762px]'>
-                                    <img src={selectedData.long_img} className='rounded-[4px] ' alt="" />
-                                </div>
-
-                                <div className='w-[370px] bg-[#60599E] p-[30px] rounded-[4px]'>
-                                    <h1 className='font-bold text-white text-[20px] Bold'>{selectedData.title}</h1>
-                                    <p className='mt-5 text-[16px] font-normal Normal opacity-75 text-white'>{selectedData.description}</p>
-                                    <hr className='mt-[30px] opacity-25 ' />
-
-                                    <p className='mt-[30px] text-[40px] font-bold Bold  text-center text-white  '>${selectedData.price}</p>
-                                    <hr className='w-[112px] mx-auto border-[1px] -mt-[5px]' />
-
-
-                                    <div className='flex gap-[15px] mt-[56px] items-center'>
-                                        <img src={fileName} className='w-[16.389px] h-[16px]' alt="" />
-                                        <p className='text-[16px] font-semibold SemiBold text-white'>HTML5, Figma</p>
-                                    </div>
-                                    <div className='flex gap-[15px] mt-[30px] items-center'>
-                                        <img src={calender} className='w-[16.389px] h-[16px]' alt="" />
-                                        <p className='text-[16px] font-semibold SemiBold text-white'>April 18th 2023</p>
-                                    </div>
-
-                                    <div className='mt-[57px] '>
-                                        <Link><button className='text-center text-[18px] text-white hover:text-slate-200 OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Live View</button></Link>
-
-                                        <Link><button  onClick={() => {
-                                            window.scrollTo(0, 0);
-                                            addItem(selectedData);
-                                           
-
-
-                                        }} className='bg-white mt-[30px] text-center text-[18px] text-[#60599E] hover:text-[#3f3a68] OpenSans font-bold w-[310px] h-[65px] border-[1px] rounded-[4px]'>Add To Cart</button></Link>
-                                    </div>
-                                </div>
-                            </div>
-
 
                         </> : <>
 
-                            <div className='flex justify-center items-center mt-[10%]'>
+                            <Jelly
+                                size={30}
+                                speed={1}
 
-                                <span className="loading loading-spinner loading-md"></span>
-                                <h1 className='text-center '>Loading..........</h1>
-                            </div>
+                                color="#60599E"
+                            />
 
                         </>
                     }
@@ -126,7 +137,15 @@ const CardDetails = () => {
 
             <div className='flex justify-center px-[30px] sm:px-[50px] 2xl:px-[135px]'>
                 <div className=' mt-5'>
-                    <div className='mt-[100px]'>
+                    <div data-aos="fade-up"
+
+                        data-aos-delay="50"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="true"
+                        data-aos-anchor-placement="top-center"
+                        className='mt-[100px]'>
                         <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>You May Also Like</h1>
                         <p className='text-center w-[576px] mx-auto text-lg mt-[20px] font-normal Normal'>
                             Check the latest products added to the marketplace. Fresh designs with the finest HTML5 CSS3 coding.
@@ -138,7 +157,14 @@ const CardDetails = () => {
                     {/* Related products list */}
 
 
-                    <div className='grid lg:grid-cols-4 gap-[30px] mt-[50px] '>
+                    <div data-aos="fade-up"
+
+                        data-aos-delay="50"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="true"
+                        data-aos-anchor-placement="top-center" className='grid lg:grid-cols-4 gap-[30px] mt-[50px] '>
 
                         {/* 1 */}
                         <div className=' px-[4px] pb-[4px] pt-[3px]  bg-white rounded-[4px]' >
@@ -311,7 +337,12 @@ const CardDetails = () => {
                 <Pricing /> ? <Pricing /> : <>
 
 
-                    <h1 className='text-center mt-[10%]'>Loading..........</h1>
+                    <Jelly
+                        size={30}
+                        speed={1}
+
+                        color="#60599E"
+                    />
 
 
                 </>

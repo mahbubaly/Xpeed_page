@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import html from '../../assets/Images/html.png'
 import react from '../../assets/Images/react.png'
 import tailwind from '../../assets/Images/tailwind.png'
 import Bootstrap from '../../assets/Images/bootrap.png'
 import figma from '../../assets/Images/figma.png'
 import { Link } from 'react-router-dom';
+import Cards from './Cards';
+import Resources from './Resources/Resources';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Banner = () => {
+    const [searchCarts, SetSearchCarts] = useState('');
+    console.log(searchCarts);
     return (
         <>
 
-            <div>
+            <div data-aos="fade-up"
+               
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center">
 
                 <div className=' mx-auto Choose_width'>
 
@@ -28,12 +42,14 @@ const Banner = () => {
                 <div className=" mt-[30px] sm:mt-[80px] flex mb-[30px] sm:mb-0  w-[280px] h-[48px] sm:w-[600px] sm:h-[54px] lg:h-[58px]  pl-[15px]  mx-auto bg-[#FFFFFF] border-[1px]  border-[#60599E] items-center  rounded-[4px] justify-between  p-[5px]">
 
 
-                    <input id='inputSearch' bg-white
+                    <input onChange={(e) => {
+                        SetSearchCarts(e.target.value);
+                    }} id='inputSearch' bg-white
                         type="text"
 
 
                         placeholder="e.g. “saas”"
-                        className="   py-[10px]  w-[180px] sm:w-[470px]  bg-[#FFFFFF]  "
+                        className="   py-[10px]  w-[200px] sm:w-[430px]  bg-[#FFFFFF]  "
                     />
 
 
@@ -86,6 +102,11 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+
+
+            <Cards searchCarts={searchCarts} />
+
+            <Resources searchCarts={searchCarts} />
 
         </>
     );

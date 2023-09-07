@@ -4,7 +4,7 @@ import '../Shared/Style.css'
 import SingleCards from './SingleCards';
 import { Link } from 'react-router-dom';
 
-const Cards = () => {
+const Cards = ({ searchCarts }) => {
 
     const [ShowAll, setShowAll] = useState([]);
     const [ShowTablet, setShowTablet] = useState([]);
@@ -38,7 +38,9 @@ const Cards = () => {
                 <div className='grid mt-[80px] xl:grid-cols-4  md:grid-cols-2  lg:grid-cols-3 grid-cols-1 gap-[30px]'>
 
                     {
-                        ShowDesktop.map(CardsData =>
+                        ShowDesktop.filter((item) => {
+                            return searchCarts.toLowerCase() === '' ? item : item.title.toLowerCase().includes(searchCarts);
+                        }).map(CardsData =>
                             <SingleCards
                                 key={CardsData.id}
                                 CardsData={CardsData}
@@ -53,7 +55,13 @@ const Cards = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[80px] items-center'>
+                <div data-aos="fade-up"
+                       
+                       data-aos-duration="700"
+                   
+                       data-aos-mirror="false"
+                       data-aos-once="true"
+                        className='flex  justify-center mt-[80px] items-center'>
 
                     <Link onClick={() => {
                         window.scrollTo(0, 0);
@@ -79,7 +87,9 @@ const Cards = () => {
                 <div className='grid   grid-cols-1 sm:grid-cols-2  gap-[30px] rounded-[4px]'>
 
                     {
-                        ShowTablet.map(CardsData => <SingleCards
+                        ShowTablet.filter((item) => {
+                            return searchCarts.toLowerCase() === '' ? item : item.title.toLowerCase().includes(searchCarts);
+                        }).map(CardsData => <SingleCards
                             key={CardsData.id}
                             CardsData={CardsData}
 
@@ -93,7 +103,13 @@ const Cards = () => {
                 </div>
 
 
-                <div className='flex  justify-center mt-[80px] items-center'>
+                <div data-aos="fade-up"
+                       
+                       data-aos-duration="500"
+                       data-aos-easing="ease-in"
+                       data-aos-mirror="false"
+                       data-aos-once="true"
+                       data-aos-anchor-placement="top-center" className='flex  justify-center mt-[80px] items-center'>
 
                     <Link onClick={() => {
                         window.scrollTo(0, 0);

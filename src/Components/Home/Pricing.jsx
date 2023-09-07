@@ -7,7 +7,14 @@ const Pricing = () => {
     return (
         <>
 
-            <div className='mt-[100px]'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center" className='mt-[100px]'>
                 <h1 className='text-[25px] sm:text-[45px] text-center font-semibold SemiBold'>Affordable Pricing</h1>
                 <p className='text-center text-lg mt-[20px] font-normal Normal'>
                     Unlimited HTML5 Template For Your Creative Projects
@@ -16,7 +23,14 @@ const Pricing = () => {
 
             {/* Pricing cards */}
 
-            <div className='  mt-[80px]'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center" className='  mt-[80px]'>
                 <div className='grid   sm:grid-cols-2 lg:flex gap-[50px] px-5 lg:px-0 justify-center'>
 
                     {/* 1 */}
@@ -58,10 +72,10 @@ const Pricing = () => {
 
                         </div>
 
-                        <Link onClick={()=>{
-                            window.scrollTo(0,0);
+                        <Link onClick={() => {
+                            window.scrollTo(0, 0);
                         }} to='/viewAllFigmaTemplate' className=' flex justify-center mt-[50px] '>
-                            <button  className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px] text-[16px] font-bold Bold'>FIGMA</button>
+                            <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px] text-[16px] font-bold Bold'>FIGMA</button>
                         </Link>
 
                         <p className='mt-[30px] px-[42px] pb-[30px] text-center italicBold text-[14px] font-bold italic'>“This Price Is Only For <Link className='text-primary'>Figma Design</Link> Resources”</p>
@@ -110,8 +124,8 @@ const Pricing = () => {
 
                         </div>
 
-                        <Link onClick={()=>{
-                            window.scrollTo(0,0);
+                        <Link onClick={() => {
+                            window.scrollTo(0, 0);
                         }} to='/viewAllHtmlTemplate' className=' flex justify-center mt-[50px] '>
                             <button className='bg-[#60599E] hover:bg-[#3f3a68] rounded-[4px] mx-auto text-white w-[222px] h-[54px]  text-[16px] font-bold Bold'>HTML5</button>
                         </Link>
@@ -168,7 +182,7 @@ const Pricing = () => {
                         </div>
 
 
-                        
+
 
 
 
@@ -183,7 +197,14 @@ const Pricing = () => {
             </div>
 
 
-            <div className='mt-[50px] sm:mt-[150px] pb-[49px]'>
+            <div data-aos="fade-up"
+
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center" className='mt-[50px] sm:mt-[150px] pb-[49px]'>
 
                 <h1 className='text-center tracking-[3px] uppercase opacity-60 text-[14px] XpeedText font-bold Bold'>Xpeed Page Template</h1>
 
@@ -194,8 +215,8 @@ const Pricing = () => {
 
                 <div className='flex  justify-center mt-[30px] sm:mt-[50px] items-center'>
 
-                    <Link onClick={()=>{
-                        window.scrollTo(0,0);
+                    <Link onClick={() => {
+                        window.scrollTo(0, 0);
                     }} to='/contact' className='text-[16px] font-bold Bold rounded-[4px]   py-[20px] px-[50px] bg-[#60599E] hover:bg-[#3f3a68] text-white'>Contact Us</Link>
                 </div>
 
